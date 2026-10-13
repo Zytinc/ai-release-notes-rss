@@ -567,6 +567,13 @@
     "gemini_api": {
       "items": [
         {
+          "guid": "gemini_api-747fb7f8d58aa8a0ec73314a",
+          "title": "Gemini API update — October 13, 2026",
+          "link": "https://ai.google.dev/gemini-api/docs/changelog",
+          "published": "2026-10-13T00:00:00+00:00",
+          "description": "Gemini 4 Argon ( gemini-4-argon ) generally available (GA) : Released Gemini 4 Argon ( gemini-4-argon ), our most capable model built for complex coding, agentic, math, and science tasks. For API changes, pricing, and migration guidance, see What's new in Gemini 4 Argon . Gemini 4 Argon ( gemini-4-argon ) generally available (GA) : Released Gemini 4 Argon ( gemini-4-argon ), our most capable model built for complex coding, agentic, math, and science tasks. For API changes, pricing, and migration guidance, see What's new in Gemini 4 Argon ."
+        },
+        {
           "guid": "gemini_api-2ec78de41443a755d5f3eb92",
           "title": "Gemini API update — October 8, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
@@ -1118,13 +1125,6 @@
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2025-09-23T00:00:00+00:00",
           "description": "Released gemini-2.5-flash-native-audio-preview-09-2025 , a new native audio model for the Live API with improved function calling and speech cut off handling. To learn more, see the Live API guide and Gemini 2.5 Flash Native Audio ."
-        },
-        {
-          "guid": "gemini_api-00ead4bcdb9a7fbd35c667dd",
-          "title": "Gemini API update — September 16, 2025",
-          "link": "https://ai.google.dev/gemini-api/docs/changelog",
-          "published": "2025-09-16T00:00:00+00:00",
-          "description": "Deprecation announcement: The following models will be shut down in October 2025: embedding-001 embedding-gecko-001 gemini-embedding-exp-03-07 ( gemini-embedding-exp ) See the Embeddings page for details on the latest embeddings model. Deprecation announcement: The following models will be shut down in October 2025: embedding-001 embedding-gecko-001 gemini-embedding-exp-03-07 ( gemini-embedding-exp ) See the Embeddings page for details on the latest embeddings model."
         }
       ]
     }
