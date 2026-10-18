@@ -1,12 +1,14 @@
 # AI Release Notes RSS
 
-为没有公开 RSS 的官方产品更新页生成两个标准 RSS 2.0 订阅源，供 Folo 或任意 RSS 阅读器使用。
+为没有公开 RSS 的官方产品更新页和博客生成标准 RSS 2.0 订阅源，供 Folo 或任意 RSS 阅读器使用。
 
 ## 订阅源
 
 - Claude Apps Release Notes：`feeds/claude-apps-release-notes.xml`
 - Gemini API Changelog：`feeds/gemini-api-changelog.xml`
 - Grok Bot Changelog：`feeds/xai-grok-bot-changelog.xml`
+- Manus 产品更新：`feeds/manus-updates.xml`
+- Manus 官方博客：`feeds/manus-blog.xml`
 
 ## 运行方式
 
@@ -19,5 +21,7 @@ GitHub Actions 每 6 小时执行 `scripts/generate_feeds.py`。脚本仅抓取�
 - [Claude Apps Release Notes](https://support.claude.com/en/articles/12138966-release-notes)
 - [Gemini API Changelog](https://ai.google.dev/gemini-api/docs/changelog)
 - [Grok Bot Changelog](https://x.ai/changelog/bot)
+- [Manus 产品更新](https://manus.im/zh-cn/updates)
+- [Manus 官方博客](https://manus.im/zh-cn/blog)
 
 本仓库不包含账号凭证、Cookie、私有数据或对官方内容的全文镜像。

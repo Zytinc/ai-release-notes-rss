@@ -1481,6 +1481,714 @@
           "description": "New:\n• Members with a Standard seat on a self-serve team can use Grok Bot through a linked SuperGrok Heavy subscription. (Teams)\nImproved:\n• Your Bot can create routines that start from a Microsoft Teams message, a Linear issue, a Sentry alert, or a PagerDuty incident.\n• Auto-review asks before your Bot runs a task you didn't ask for.\n• Pull request links open where you or your team chose, or on GitHub if neither has chosen.\nFixed:\n• The account row in the sidebar opens the account menu, even during setup.\n• Your Bot stops showing that it's working once a background task finishes.\n• A connector that stops responding times out after three minutes, so your Bot can carry on.\n• Update Grok Bot's Computer finishes and keeps file permissions and shortcuts.\n• Choosing a shape or color keeps a picture you added until you press Set avatar."
         }
       ]
+    },
+    "manus_updates": {
+      "items": [
+        {
+          "guid": "manus_updates-QEW6gYWxJKEqURsK4oe23n",
+          "title": "Manus Flex: Use Your Own API Key",
+          "link": "https://manus.im/zh-cn/updates",
+          "published": "2026-09-29T20:14:56.856000+00:00",
+          "description": "Connect your API key from a supported provider and use it with Manus."
+        },
+        {
+          "guid": "manus_updates-G8j8NpHvwgQYV5G4jyaP9L",
+          "title": "Introducing Manus 2.0",
+          "link": "https://manus.im/blog/introducing-manus-2-0",
+          "published": "2026-09-28T18:51:11.258000+00:00",
+          "description": "A new architecture, new products, and new capabilities: Manus Studio with Video Editor and Game Dev, event-triggered automations, Cloud Computer, and Cue, our new agent app."
+        },
+        {
+          "guid": "manus_updates-3WLvpLgd6nsmXv6dTcCWQA",
+          "title": "Introducing Branch",
+          "link": "https://manus.im/zh-cn/updates",
+          "published": "2026-07-10T03:10:52.457000+00:00",
+          "description": "Start a parallel session from any message. Your files, instructions, and full history carry over — the original stays untouched."
+        },
+        {
+          "guid": "manus_updates-ZSMkJa5BHykzSqfzEYeVWf",
+          "title": "Introducing Shopify On Manus",
+          "link": "https://manus.im/zh-cn/updates",
+          "published": "2026-06-04T15:15:12.827000+00:00",
+          "description": "Build, Run, and Grow Your Store From One Chat"
+        },
+        {
+          "guid": "manus_updates-eLXsFzMAnPkD7wpMRFm4LE",
+          "title": "NEW: Unlock richer web intelligence with Similarweb in Manus.",
+          "link": "https://manus.im/zh-cn/updates",
+          "published": "2026-05-18T05:46:19.489000+00:00",
+          "description": "Analyze keywords, referrals, landing pages, and growth signals directly inside Manus"
+        },
+        {
+          "guid": "manus_updates-cSDXBxenihcUCXtZi9cMJH",
+          "title": "Introducing Cloud Computer",
+          "link": "https://manus.im/zh-cn/updates",
+          "published": "2026-05-04T13:44:44.143000+00:00",
+          "description": "A dedicated machine in the cloud that runs your bots, Python scripts, and software around the clock. Now anyone can build and run anything."
+        },
+        {
+          "guid": "manus_updates-4cLF9WsKzbffNs5YeCs7XC",
+          "title": "Control Manus Desktop from your phone",
+          "link": "https://manus.im/zh-cn/updates",
+          "published": "2026-03-30T15:07:27.663000+00:00",
+          "description": "Assign a task from your phone, and come back to finished work on your computer."
+        },
+        {
+          "guid": "manus_updates-kWFY9AHuSkFL8nGNXxnqrn",
+          "title": "Bring Manus to Your Desktop",
+          "link": "https://manus.im/zh-cn/updates",
+          "published": "2026-03-16T15:05:09.849000+00:00",
+          "description": "Download Manus Desktop to unlock My Computer, giving Manus direct access to your local files, apps, and tools. Organize files, rename projects, build apps, and run tasks directly on your machine."
+        },
+        {
+          "guid": "manus_updates-R59zXYxTtJTxHvQzmYfkET",
+          "title": "Introducing Manus Skills",
+          "link": "https://manus.im/zh-cn/updates",
+          "published": "2026-01-28T04:49:59.904000+00:00",
+          "description": "Turn your AI into any expert you need. Capture specialized knowledge, and extend Manus infinitely."
+        },
+        {
+          "guid": "manus_updates-9PMRVRafdBqZYsG6NaZnou",
+          "title": "Manus Partners with Similarweb",
+          "link": "https://manus.im/zh-cn/updates",
+          "published": "2026-01-13T12:13:21.745000+00:00",
+          "description": "Competitive analysis just got easier. Ask Manus about any website's traffic, rankings, or marketing channels."
+        },
+        {
+          "guid": "manus_updates-6VaMfuvWYxuPrznMBzgcp7",
+          "title": "Manus's next step",
+          "link": "https://manus.im/blog/manus-joins-meta-for-next-era-of-innovation",
+          "published": "2025-12-29T11:56:44.592000+00:00",
+          "description": "Manus is joining Meta. Nothing changes for you — same team, same product, same commitment. We're now better positioned to bring general AI agents to more people worldwide."
+        },
+        {
+          "guid": "manus_updates-XikLSaBZavsgCF9mF5XTmA",
+          "title": "Welcome Manus 1.6",
+          "link": "https://manus.im/blog/manus-max-release",
+          "published": "2025-12-15T15:02:27.845000+00:00",
+          "description": "We've just released a major upgrade with a new flagship agent, Manus 1.6 Max, plus mobile app development and an interactive design view."
+        },
+        {
+          "guid": "manus_updates-K5riFVnAnwRirxT7QfDmF7",
+          "title": "Nano Banana Pro Now in Slides",
+          "link": "https://manus.im/zh-cn/updates",
+          "published": "2025-12-04T13:11:38.151000+00:00",
+          "description": "Google’s Nano Banana Pro is now integrated into Manus Slides. Look for the 🍌 icon to use it in your presentations."
+        },
+        {
+          "guid": "manus_updates-4wnF3goShawKzvGiWLYesS",
+          "title": "Introducing Manus Browser Operator",
+          "link": "https://chromewebstore.google.com/detail/manus-browser-operator/cecngibhkljoiafhjfmcgbmikfogdiko",
+          "published": "2025-11-18T12:44:21.571000+00:00",
+          "description": "Manus can now perform tasks directly in your browser, autonomously. It securely works alongside you in your active tabs so you don’t need to log in again or set up complex integrations."
+        },
+        {
+          "guid": "manus_updates-L6R3owNVE66b5b6zixbdK5",
+          "title": "Start testing payments instantly with Stripe",
+          "link": "https://manus.im/zh-cn/updates",
+          "published": "2025-11-12T11:16:39.971000+00:00",
+          "description": "The moment you enable payments, Manus spins up a temporary Stripe sandbox—so you can build, test, and launch your payment flow in minutes."
+        },
+        {
+          "guid": "manus_updates-aYtj5b9FCYYkmYLCp45K9T",
+          "title": "Introducing Manus 1.5",
+          "link": "https://manus.im/blog/manus-1.5-release",
+          "published": "2025-10-16T15:03:10.309000+00:00",
+          "description": "We released [**Manus 1.5**](https://manus.im/blog/manus-1.5-release): faster, higher quality, unlimited context, and an upgraded builder to create full apps in one prompt with backend, login, databases, AI features, notifications, and analytics."
+        },
+        {
+          "guid": "manus_updates-mux5RnW2MzXTuHCDMhBJVo",
+          "title": "Introducing Manus collaboration",
+          "link": "https://manus.im/zh-cn/updates",
+          "published": "2025-09-12T11:35:11.007000+00:00",
+          "description": "Collaborate with your team in real time, stay on the latest version, and keep work moving forward—all in one shared workspace."
+        },
+        {
+          "guid": "manus_updates-AGnyn84cJGHBgY3mgaGSd2",
+          "title": "Introducing Manus Webpage Templates",
+          "link": "https://manus.im/zh-cn/updates",
+          "published": "2025-09-08T14:24:04.112000+00:00",
+          "description": "Why spend hours building a webpage when Manus can do it in minutes? Prompt your idea → Pick a template → Let Manus do the rest"
+        },
+        {
+          "guid": "manus_updates-QYAXVXNTzLrZzXYMp6vYAE",
+          "title": "Introducing Mail Manus",
+          "link": "https://manus.im/app?openSetting=mailManus",
+          "published": "2025-09-03T15:40:19.434000+00:00",
+          "description": "Forward any email to Manus to instantly create a task—reports, requests, questions. One forward, zero extra steps. Mail Manus handles the rest."
+        },
+        {
+          "guid": "manus_updates-KXChMuKKVyAeiWUGdRccdL",
+          "title": "Introducing Wide Research",
+          "link": "https://manus.im/zh-cn/updates",
+          "published": "2025-08-01T13:42:27.209000+00:00",
+          "description": "Tackle complex research in a single step. With Wide Research, Manus breaks massive, large-scale tasks into multiple sub-tasks — and runs them all at once. Launching today for Pro users, with a gradual rollout planned for Plus and Basic tiers."
+        }
+      ]
+    },
+    "manus_blog": {
+      "items": [
+        {
+          "guid": "manus_blog-circa-builds-customer-story",
+          "title": "How This Boston Startup Is Giving Demolition Waste a Second Life",
+          "link": "https://manus.im/zh-cn/blog/circa-builds-customer-story",
+          "published": "2026-10-13T00:00:00+00:00",
+          "description": "Boston demolition startup Circa grew from one truck to nearly $100K in five months, using AI to run lean and keep reusable building materials out of landfills."
+        },
+        {
+          "guid": "manus_blog-manus-partners-oppo",
+          "title": "Manus 与 OPPO 合作，将 Agent AI 体验带到智能手机",
+          "link": "https://manus.im/zh-cn/blog/manus-partners-oppo",
+          "published": "2026-10-13T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-introducing-video-editor",
+          "title": "推出 Manus 2.0 视频编辑器：人人都能制作值得分享的视频",
+          "link": "https://manus.im/zh-cn/blog/introducing-video-editor",
+          "published": "2026-10-01T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-introducing-game-developer",
+          "title": "隆重推出 Game Dev：让每个人都能做出自己想玩的游戏",
+          "link": "https://manus.im/zh-cn/blog/introducing-game-developer",
+          "published": "2026-10-01T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-introducing-manus-flex",
+          "title": "隆重推出 Manus Flex：在 Manus 工作区中使用您自己的 API 密钥",
+          "link": "https://manus.im/zh-cn/blog/introducing-manus-flex",
+          "published": "2026-09-29T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-introducing-manus-2-0",
+          "title": "Manus 2.0 正式发布",
+          "link": "https://manus.im/zh-cn/blog/introducing-manus-2-0",
+          "published": "2026-09-28T00:00:00+00:00",
+          "description": "Manus 2.0 正式发布,带来全新的 Cascade agent 框架、云电脑与自动化、面向专业创作的 Manus Studio,以及全新的个人 agent 应用 Cue。"
+        },
+        {
+          "guid": "manus_blog-learn-ai-with-manus",
+          "title": "扩大实用 AI 学习的普及范围",
+          "link": "https://manus.im/zh-cn/blog/learn-ai-with-manus",
+          "published": "2026-09-16T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
+          "guid": "manus_blog-wally",
+          "title": "癌症夺走了他的声带,她为弟弟构建了一个声音",
+          "link": "https://manus.im/zh-cn/blog/wally",
+          "published": "2026-09-09T00:00:00+00:00",
+          "description": "Manus 官方博客文章（客户故事）。"
+        },
+        {
+          "guid": "manus_blog-manus-resumes-independent-operations",
+          "title": "Manus 恢复独立运营",
+          "link": "https://manus.im/zh-cn/blog/manus-resumes-independent-operations",
+          "published": "2026-09-01T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-a-note-to-our-users",
+          "title": "致 Manus 用户的一封信",
+          "link": "https://manus.im/zh-cn/blog/a-note-to-our-users",
+          "published": "2026-08-11T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-elevenlabs-connector",
+          "title": "隆重推出 Manus 上的 ElevenLabs:一次对话,让你的创意开口说话",
+          "link": "https://manus.im/zh-cn/blog/elevenlabs-connector",
+          "published": "2026-08-03T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-manus-supabase-connector",
+          "title": "使用 Manus 构建、迁移并运行您的 Supabase 数据库",
+          "link": "https://manus.im/zh-cn/blog/manus-supabase-connector",
+          "published": "2026-07-24T00:00:00+00:00",
+          "description": "Manus 官方博客文章（资源）。"
+        },
+        {
+          "guid": "manus_blog-best-ai-agents-customer-service",
+          "title": "7 Best AI Agents for Customer Service in 2026 (Compared)",
+          "link": "https://manus.im/zh-cn/blog/best-ai-agents-customer-service",
+          "published": "2026-07-24T00:00:00+00:00",
+          "description": "We compared the 7 best AI customer service agents in 2026 across pricing, deployment, and performance, from Fin and Sierra to Manus, Zendesk, and Ada."
+        },
+        {
+          "guid": "manus_blog-best-ai-agents-enterprise",
+          "title": "10 Best AI Agents for Enterprise in 2026, Reviewed and Compared",
+          "link": "https://manus.im/zh-cn/blog/best-ai-agents-enterprise",
+          "published": "2026-07-24T00:00:00+00:00",
+          "description": "A detailed comparison of the 10 best enterprise AI agents in 2026, including Agentforce, Copilot Studio, ServiceNow, Manus, and ChatGPT Enterprise. Compare pricing, features, and use cases."
+        },
+        {
+          "guid": "manus_blog-best-ai-agents",
+          "title": "10 Best AI Agents in 2026, Reviewed and Compared",
+          "link": "https://manus.im/zh-cn/blog/best-ai-agents",
+          "published": "2026-07-24T00:00:00+00:00",
+          "description": "A balanced comparison of the top 10 AI agents for productivity, coding, customer service, and more. Discover the right AI agent for your workflow."
+        },
+        {
+          "guid": "manus_blog-manus-plan-mode",
+          "title": "隆重推出 Plan Mode：与 Manus 协作的全新方式",
+          "link": "https://manus.im/zh-cn/blog/manus-plan-mode",
+          "published": "2026-07-22T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-Ascendea-James-Customer-Story",
+          "title": "Manus 如何成为“James”——推动 Ascendea 产出提升 90 倍的 AI 幕僚长",
+          "link": "https://manus.im/zh-cn/blog/Ascendea-James-Customer-Story",
+          "published": "2026-07-17T00:00:00+00:00",
+          "description": "Manus 官方博客文章（客户故事）。"
+        },
+        {
+          "guid": "manus_blog-manus-ppt-slides",
+          "title": "隆重推出 Manus 的 PowerPoint 幻灯片",
+          "link": "https://manus.im/zh-cn/blog/manus-ppt-slides",
+          "published": "2026-07-14T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-manus-auto-publish",
+          "title": "自动发布：构建一次，持续上线",
+          "link": "https://manus.im/zh-cn/blog/manus-auto-publish",
+          "published": "2026-07-13T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-manus-branch",
+          "title": "全新推出 Branch：一份上下文，多条并行路径",
+          "link": "https://manus.im/zh-cn/blog/manus-branch",
+          "published": "2026-07-09T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-manus-mobbin-connector",
+          "title": "Manus 上的 Mobbin 连接器：将经过验证的应用设计转化为成品",
+          "link": "https://manus.im/zh-cn/blog/manus-mobbin-connector",
+          "published": "2026-06-30T00:00:00+00:00",
+          "description": "Manus 官方博客文章（资源）。"
+        },
+        {
+          "guid": "manus_blog-manus-hosting-web-builder",
+          "title": "介绍托管模式:让服务器匹配你的项目",
+          "link": "https://manus.im/zh-cn/blog/manus-hosting-web-builder",
+          "published": "2026-06-24T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-build-a-course-business-with-manus-web-builder",
+          "title": "我如何用 Website Builder 把一个课程页面变成一项课程业务",
+          "link": "https://manus.im/zh-cn/blog/build-a-course-business-with-manus-web-builder",
+          "published": "2026-06-18T00:00:00+00:00",
+          "description": "Manus 官方博客文章（学术）。"
+        },
+        {
+          "guid": "manus_blog-deep-dive-canva-connector",
+          "title": "通过 Canva 连接器,将 Manus 变成你的设计部门",
+          "link": "https://manus.im/zh-cn/blog/deep-dive-canva-connector",
+          "published": "2026-06-12T00:00:00+00:00",
+          "description": "Manus 官方博客文章（资源）。"
+        },
+        {
+          "guid": "manus_blog-heicoders-academy",
+          "title": "Heicoders Academy 如何以不到 20 人的团队搭建起 12,000 名学生的运营体系",
+          "link": "https://manus.im/zh-cn/blog/heicoders-academy",
+          "published": "2026-06-11T00:00:00+00:00",
+          "description": "Manus 官方博客文章（客户故事）。"
+        },
+        {
+          "guid": "manus_blog-manus-zoom",
+          "title": "推出 Zoom 连接器:将每场 Zoom 会议转化为您的下一个工作流",
+          "link": "https://manus.im/zh-cn/blog/manus-zoom",
+          "published": "2026-06-09T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-manus-google-multi-account",
+          "title": "在 Manus 上连接多个 Gmail 和 Google Calendar 账户",
+          "link": "https://manus.im/zh-cn/blog/manus-google-multi-account",
+          "published": "2026-06-08T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-deep-dive-airtable-connector",
+          "title": "一句提示词，在你的整个 Airtable 数据库中完成搜索、更新和报告",
+          "link": "https://manus.im/zh-cn/blog/deep-dive-airtable-connector",
+          "published": "2026-06-05T00:00:00+00:00",
+          "description": "Manus 官方博客文章（资源）。"
+        },
+        {
+          "guid": "manus_blog-alyak-tv",
+          "title": "这位药剂师打造了一款随身体变化而调整的健身追踪器",
+          "link": "https://manus.im/zh-cn/blog/alyak-tv",
+          "published": "2026-06-04T00:00:00+00:00",
+          "description": "Manus 官方博客文章（客户故事）。"
+        },
+        {
+          "guid": "manus_blog-manus-hubspot",
+          "title": "将 HubSpot CRM 集成到 Gmail 中，改变了一支销售团队的跟进方式",
+          "link": "https://manus.im/zh-cn/blog/manus-hubspot",
+          "published": "2026-06-03T00:00:00+00:00",
+          "description": "Manus 官方博客文章（资源）。"
+        },
+        {
+          "guid": "manus_blog-k-id-manus-use-case",
+          "title": "k-ID 借助 Manus 构建合规引擎",
+          "link": "https://manus.im/zh-cn/blog/k-id-manus-use-case",
+          "published": "2026-05-29T00:00:00+00:00",
+          "description": "Manus 官方博客文章（客户故事）。"
+        },
+        {
+          "guid": "manus_blog-k-id-customer-story",
+          "title": "这位父亲筹集超 5000 万美元，致力于让互联网成为儿童更安全的地方",
+          "link": "https://manus.im/zh-cn/blog/k-id-customer-story",
+          "published": "2026-05-29T00:00:00+00:00",
+          "description": "Manus 官方博客文章（客户故事）。"
+        },
+        {
+          "guid": "manus_blog-deep-dive-notion-connector",
+          "title": "将 Notion 变成工作流引擎的连接器",
+          "link": "https://manus.im/zh-cn/blog/deep-dive-notion-connector",
+          "published": "2026-05-28T00:00:00+00:00",
+          "description": "Manus 官方博客文章（资源）。"
+        },
+        {
+          "guid": "manus_blog-manus-shopify-connector",
+          "title": "隆重推出 Shopify on Manus：在一个对话中构建、运营并发展你的店铺",
+          "link": "https://manus.im/zh-cn/blog/manus-shopify-connector",
+          "published": "2026-05-25T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-manus-higgsfield-connector",
+          "title": "推出 Higgsfield MCP 连接器：给专业内容创作者更多选择",
+          "link": "https://manus.im/zh-cn/blog/manus-higgsfield-connector",
+          "published": "2026-05-19T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-manus-schedules",
+          "title": "介绍定时任务 2.0 更新",
+          "link": "https://manus.im/zh-cn/blog/manus-schedules",
+          "published": "2026-05-18T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-deep-dive-similarweb-connector",
+          "title": "竞争研究中最低调的强力操作：将 Similarweb 接入 Manus",
+          "link": "https://manus.im/zh-cn/blog/deep-dive-similarweb-connector",
+          "published": "2026-05-15T00:00:00+00:00",
+          "description": "Manus 官方博客文章（资源）。"
+        },
+        {
+          "guid": "manus_blog-deep-dive-google-drive-connector",
+          "title": "Google Drive 承载上下文。Manus 执行接下来的所有步骤。",
+          "link": "https://manus.im/zh-cn/blog/deep-dive-google-drive-connector",
+          "published": "2026-05-15T00:00:00+00:00",
+          "description": "Manus 官方博客文章（资源）。"
+        },
+        {
+          "guid": "manus_blog-manus-similarweb-upgrade",
+          "title": "Manus 与 Similarweb 深度结合：分析竞争对手增长背后的关键词、引荐与页面",
+          "link": "https://manus.im/zh-cn/blog/manus-similarweb-upgrade",
+          "published": "2026-05-14T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-mirimim",
+          "title": "这款教授社交技能的应用——两位父母如何改变自闭症护理",
+          "link": "https://manus.im/zh-cn/blog/mirimim",
+          "published": "2026-05-13T00:00:00+00:00",
+          "description": "Manus 官方博客文章（客户故事）。"
+        },
+        {
+          "guid": "manus_blog-manus-preferred-browser",
+          "title": "介绍首选浏览器：将自定义浏览器添加到你的 Manus 自动化流程",
+          "link": "https://manus.im/zh-cn/blog/manus-preferred-browser",
+          "published": "2026-05-12T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-mandai-smokehouse",
+          "title": "借助 AI 在家中经营一家烧烤店",
+          "link": "https://manus.im/zh-cn/blog/mandai-smokehouse",
+          "published": "2026-05-11T00:00:00+00:00",
+          "description": "Manus 官方博客文章（客户故事）。"
+        },
+        {
+          "guid": "manus_blog-manus-make-a-copy-webdev",
+          "title": "复制您用 Manus 构建的网站",
+          "link": "https://manus.im/zh-cn/blog/manus-make-a-copy-webdev",
+          "published": "2026-05-11T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-manus-projects-self-updating",
+          "title": "全新功能:从每个任务中学习的 Project",
+          "link": "https://manus.im/zh-cn/blog/manus-projects-self-updating",
+          "published": "2026-05-06T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-deep-dive-browser-operator-connector",
+          "title": "大多数人都忽略了 Browser Operator。这里告诉你如何超越表层研究。",
+          "link": "https://manus.im/zh-cn/blog/deep-dive-browser-operator-connector",
+          "published": "2026-05-05T00:00:00+00:00",
+          "description": "Manus 官方博客文章（资源）。"
+        },
+        {
+          "guid": "manus_blog-manus-recommended-connectors",
+          "title": "新能力：Manus 现在能够向你推荐连接器了",
+          "link": "https://manus.im/zh-cn/blog/manus-recommended-connectors",
+          "published": "2026-05-05T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-manus-cloud-computer",
+          "title": "Cloud Computer 介绍：降低构建门槛",
+          "link": "https://manus.im/zh-cn/blog/manus-cloud-computer",
+          "published": "2026-04-30T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-deep-dive-gmail-gcal-connector",
+          "title": "我使用 Manus 把收件箱变成了推介幻灯片和可视化仪表板。方法如下。",
+          "link": "https://manus.im/zh-cn/blog/deep-dive-gmail-gcal-connector",
+          "published": "2026-04-30T00:00:00+00:00",
+          "description": "Manus 官方博客文章（资源）。"
+        },
+        {
+          "guid": "manus_blog-best-replit-alternatives",
+          "title": "2026 年 5 大最佳 Replit 替代方案:我测试 AI 应用构建器的真实体验",
+          "link": "https://manus.im/zh-cn/blog/best-replit-alternatives",
+          "published": "2026-04-30T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
+          "guid": "manus_blog-manus-gpt-image-2",
+          "title": "Manus Slides 推出 GPT Image 2",
+          "link": "https://manus.im/zh-cn/blog/manus-gpt-image-2",
+          "published": "2026-04-29T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-best-ai-agents-for-small-business",
+          "title": "我测试了 5 款面向小型企业的 AI Agent（以下是真正有效的工具）",
+          "link": "https://manus.im/zh-cn/blog/best-ai-agents-for-small-business",
+          "published": "2026-04-24T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
+          "guid": "manus_blog-prompts-for-brands",
+          "title": "如何为品牌拍摄编写 AI 图像提示词",
+          "link": "https://manus.im/zh-cn/blog/prompts-for-brands",
+          "published": "2026-04-09T00:00:00+00:00",
+          "description": "Manus 官方博客文章（资源）。"
+        },
+        {
+          "guid": "manus_blog-manus-your-partner-on-slack",
+          "title": "Manus for Slack:将你的工作区变为自主引擎",
+          "link": "https://manus.im/zh-cn/blog/manus-your-partner-on-slack",
+          "published": "2026-04-06T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-best-ai-agents-for-desktop",
+          "title": "2026 年五款最佳桌面 AI Agent",
+          "link": "https://manus.im/zh-cn/blog/best-ai-agents-for-desktop",
+          "published": "2026-04-06T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
+          "guid": "manus_blog-openclaw-vs-manus-desktop",
+          "title": "你应该选择哪个AI Agent：OpenClaw还是Manus Desktop",
+          "link": "https://manus.im/zh-cn/blog/openclaw-vs-manus-desktop",
+          "published": "2026-04-02T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
+          "guid": "manus_blog-manus-meta-ads-manager-connector",
+          "title": "使用 Manus 连接器连接 Meta Ads Manager",
+          "link": "https://manus.im/zh-cn/blog/manus-meta-ads-manager-connector",
+          "published": "2026-03-18T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-manus-instagram-connector",
+          "title": "使用 Manus 连接器连接 Instagram",
+          "link": "https://manus.im/zh-cn/blog/manus-instagram-connector",
+          "published": "2026-03-18T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-manus-instagram-creator-marketplace",
+          "title": "使用 Manus Connectors 连接 Instagram Creator Marketplace",
+          "link": "https://manus.im/zh-cn/blog/manus-instagram-creator-marketplace",
+          "published": "2026-03-18T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-manus-google-drive-connector-update-cli",
+          "title": "Manus 现已解锁 Google Workspace 中的精准操作",
+          "link": "https://manus.im/zh-cn/blog/manus-google-drive-connector-update-cli",
+          "published": "2026-03-17T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-manus-my-computer-desktop",
+          "title": "介绍我的电脑：当 Manus 遇见您的桌面",
+          "link": "https://manus.im/zh-cn/blog/manus-my-computer-desktop",
+          "published": "2026-03-16T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-year-one",
+          "title": "首封年度信 - Mens et Manus. 序章",
+          "link": "https://manus.im/zh-cn/blog/year-one",
+          "published": "2026-03-12T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-best-ai-ecommerce-website-builders",
+          "title": "9个最佳AI电子商务网站构建器",
+          "link": "https://manus.im/zh-cn/blog/best-ai-ecommerce-website-builders",
+          "published": "2026-03-10T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
+          "guid": "manus_blog-best-ai-app-builders",
+          "title": "2026 年最佳 AI 应用构建工具——我们测试了 7 个平台，使用相同的提示",
+          "link": "https://manus.im/zh-cn/blog/best-ai-app-builders",
+          "published": "2026-03-06T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
+          "guid": "manus_blog-best-ai-video-editing-software",
+          "title": "2026 年十大最佳 AI 视频剪辑软件",
+          "link": "https://manus.im/zh-cn/blog/best-ai-video-editing-software",
+          "published": "2026-03-06T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
+          "guid": "manus_blog-best-ai-portfolio-makers",
+          "title": "我们测试了 8 个工具，找出 2026 年最佳免费 AI 作品集制作工具",
+          "link": "https://manus.im/zh-cn/blog/best-ai-portfolio-makers",
+          "published": "2026-03-06T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
+          "guid": "manus_blog-best-text-to-video-ai",
+          "title": "2026年12款最佳文本转视频AI工具（排名与测试）",
+          "link": "https://manus.im/zh-cn/blog/best-text-to-video-ai",
+          "published": "2026-03-06T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
+          "guid": "manus_blog-veo3-video-review",
+          "title": "我测试了 Google Veo 3，这是我的诚实评测",
+          "link": "https://manus.im/zh-cn/blog/veo3-video-review",
+          "published": "2026-03-06T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
+          "guid": "manus_blog-email-agent-tutorial",
+          "title": "# 在 30 分钟内构建您的 AI 邮件支持 Agent",
+          "link": "https://manus.im/zh-cn/blog/email-agent-tutorial",
+          "published": "2026-02-23T00:00:00+00:00",
+          "description": "Manus 官方博客文章（资源）。"
+        },
+        {
+          "guid": "manus_blog-manus-agents-telegram",
+          "title": "在您的聊天中引入 Manus：您的个人 Agent，随时随地",
+          "link": "https://manus.im/zh-cn/blog/manus-agents-telegram",
+          "published": "2026-02-16T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-free-pdf-to-ppt-converters",
+          "title": "2026 年最佳免费 PDF 转 PPT 转换器（测试与比较）",
+          "link": "https://manus.im/zh-cn/blog/free-pdf-to-ppt-converters",
+          "published": "2026-02-13T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
+          "guid": "manus_blog-best-ai-productivity-tools",
+          "title": "2026 年不容错过的 12 款最佳 AI 生产力工具",
+          "link": "https://manus.im/zh-cn/blog/best-ai-productivity-tools",
+          "published": "2026-02-13T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
+          "guid": "manus_blog-best-ai-tools-for-code-review",
+          "title": "2026年最佳AI代码审查工具",
+          "link": "https://manus.im/zh-cn/blog/best-ai-tools-for-code-review",
+          "published": "2026-02-13T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
+          "guid": "manus_blog-manus-vs-synthesia",
+          "title": "Manus vs Synthesia：哪个视频生成器适合您？",
+          "link": "https://manus.im/zh-cn/blog/manus-vs-synthesia",
+          "published": "2026-02-13T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
+          "guid": "manus_blog-manus-project-skills",
+          "title": "介绍项目技能：将您的团队专业知识转化为可重复使用的资产",
+          "link": "https://manus.im/zh-cn/blog/manus-project-skills",
+          "published": "2026-02-12T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        },
+        {
+          "guid": "manus_blog-manus-beginner-prompts",
+          "title": "初学者提示：开始使用 Manus",
+          "link": "https://manus.im/zh-cn/blog/manus-beginner-prompts",
+          "published": "2026-02-11T00:00:00+00:00",
+          "description": "Manus 官方博客文章（资源）。"
+        },
+        {
+          "guid": "manus_blog-best-landing-page-generator",
+          "title": "2026 年 7 个最佳 AI 登陆页面生成器（测试和比较）",
+          "link": "https://manus.im/zh-cn/blog/best-landing-page-generator",
+          "published": "2026-02-06T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
+          "guid": "manus_blog-best-b2b-sales-presentations-tools",
+          "title": "2026 年最佳 B2B 销售演示 AI 工具（测试与比较）",
+          "link": "https://manus.im/zh-cn/blog/best-b2b-sales-presentations-tools",
+          "published": "2026-02-06T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
+          "guid": "manus_blog-best-ai-presentation-makers",
+          "title": "2026年12款最佳免费AI演示文稿制作工具（测试与排名）",
+          "link": "https://manus.im/zh-cn/blog/best-ai-presentation-makers",
+          "published": "2026-02-06T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
+          "guid": "manus_blog-best-ai-image-generator",
+          "title": "2026年5个最佳AI图像生成器（我测试了所有）",
+          "link": "https://manus.im/zh-cn/blog/best-ai-image-generator",
+          "published": "2026-02-02T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
+          "guid": "manus_blog-manus-skills",
+          "title": "Manus AI 拥抱开放标准：集成 Agent Skills 开启 Agent 新篇章",
+          "link": "https://manus.im/zh-cn/blog/manus-skills",
+          "published": "2026-01-27T00:00:00+00:00",
+          "description": "Manus 官方博客文章（产品）。"
+        }
+      ]
     }
   }
 }

@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>Manus Product Updates</title>
+    <link>https://manus.im/zh-cn/updates</link>
+    <description>Manus 官方产品公告与功能更新。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 29 Sep 2026 20:14:56 GMT</lastBuildDate>
+    <generator>ai-release-notes-rss</generator>
+    <item>
+      <title>Manus Flex: Use Your Own API Key</title>
+      <link>https://manus.im/zh-cn/updates</link>
+      <guid isPermaLink="false">manus_updates-QEW6gYWxJKEqURsK4oe23n</guid>
+      <pubDate>Tue, 29 Sep 2026 20:14:56 GMT</pubDate>
+      <description>Connect your API key from a supported provider and use it with Manus.</description>
+    </item>
+    <item>
+      <title>Introducing Manus 2.0</title>
+      <link>https://manus.im/blog/introducing-manus-2-0</link>
+      <guid isPermaLink="false">manus_updates-G8j8NpHvwgQYV5G4jyaP9L</guid>
+      <pubDate>Mon, 28 Sep 2026 18:51:11 GMT</pubDate>
+      <description>A new architecture, new products, and new capabilities: Manus Studio with Video Editor and Game Dev, event-triggered automations, Cloud Computer, and Cue, our new agent app.</description>
+    </item>
+    <item>
+      <title>Introducing Branch</title>
+      <link>https://manus.im/zh-cn/updates</link>
+      <guid isPermaLink="false">manus_updates-3WLvpLgd6nsmXv6dTcCWQA</guid>
+      <pubDate>Fri, 10 Jul 2026 03:10:52 GMT</pubDate>
+      <description>Start a parallel session from any message. Your files, instructions, and full history carry over — the original stays untouched.</description>
+    </item>
+    <item>
+      <title>Introducing Shopify On Manus</title>
+      <link>https://manus.im/zh-cn/updates</link>
+      <guid isPermaLink="false">manus_updates-ZSMkJa5BHykzSqfzEYeVWf</guid>
+      <pubDate>Thu, 04 Jun 2026 15:15:12 GMT</pubDate>
+      <description>Build, Run, and Grow Your Store From One Chat</description>
+    </item>
+    <item>
+      <title>NEW: Unlock richer web intelligence with Similarweb in Manus.</title>
+      <link>https://manus.im/zh-cn/updates</link>
+      <guid isPermaLink="false">manus_updates-eLXsFzMAnPkD7wpMRFm4LE</guid>
+      <pubDate>Mon, 18 May 2026 05:46:19 GMT</pubDate>
+      <description>Analyze keywords, referrals, landing pages, and growth signals directly inside Manus</description>
+    </item>
+    <item>
+      <title>Introducing Cloud Computer</title>
+      <link>https://manus.im/zh-cn/updates</link>
+      <guid isPermaLink="false">manus_updates-cSDXBxenihcUCXtZi9cMJH</guid>
+      <pubDate>Mon, 04 May 2026 13:44:44 GMT</pubDate>
+      <description>A dedicated machine in the cloud that runs your bots, Python scripts, and software around the clock. Now anyone can build and run anything.</description>
+    </item>
+    <item>
+      <title>Control Manus Desktop from your phone</title>
+      <link>https://manus.im/zh-cn/updates</link>
+      <guid isPermaLink="false">manus_updates-4cLF9WsKzbffNs5YeCs7XC</guid>
+      <pubDate>Mon, 30 Mar 2026 15:07:27 GMT</pubDate>
+      <description>Assign a task from your phone, and come back to finished work on your computer.</description>
+    </item>
+    <item>
+      <title>Bring Manus to Your Desktop</title>
+      <link>https://manus.im/zh-cn/updates</link>
+      <guid isPermaLink="false">manus_updates-kWFY9AHuSkFL8nGNXxnqrn</guid>
+      <pubDate>Mon, 16 Mar 2026 15:05:09 GMT</pubDate>
+      <description>Download Manus Desktop to unlock My Computer, giving Manus direct access to your local files, apps, and tools. Organize files, rename projects, build apps, and run tasks directly on your machine.</description>
+    </item>
+    <item>
+      <title>Introducing Manus Skills</title>
+      <link>https://manus.im/zh-cn/updates</link>
+      <guid isPermaLink="false">manus_updates-R59zXYxTtJTxHvQzmYfkET</guid>
+      <pubDate>Wed, 28 Jan 2026 04:49:59 GMT</pubDate>
+      <description>Turn your AI into any expert you need. Capture specialized knowledge, and extend Manus infinitely.</description>
+    </item>
+    <item>
+      <title>Manus Partners with Similarweb</title>
+      <link>https://manus.im/zh-cn/updates</link>
+      <guid isPermaLink="false">manus_updates-9PMRVRafdBqZYsG6NaZnou</guid>
+      <pubDate>Tue, 13 Jan 2026 12:13:21 GMT</pubDate>
+      <description>Competitive analysis just got easier. Ask Manus about any website's traffic, rankings, or marketing channels.</description>
+    </item>
+    <item>
+      <title>Manus's next step</title>
+      <link>https://manus.im/blog/manus-joins-meta-for-next-era-of-innovation</link>
+      <guid isPermaLink="false">manus_updates-6VaMfuvWYxuPrznMBzgcp7</guid>
+      <pubDate>Mon, 29 Dec 2025 11:56:44 GMT</pubDate>
+      <description>Manus is joining Meta. Nothing changes for you — same team, same product, same commitment. We're now better positioned to bring general AI agents to more people worldwide.</description>
+    </item>
+    <item>
+      <title>Welcome Manus 1.6</title>
+      <link>https://manus.im/blog/manus-max-release</link>
+      <guid isPermaLink="false">manus_updates-XikLSaBZavsgCF9mF5XTmA</guid>
+      <pubDate>Mon, 15 Dec 2025 15:02:27 GMT</pubDate>
+      <description>We've just released a major upgrade with a new flagship agent, Manus 1.6 Max, plus mobile app development and an interactive design view.</description>
+    </item>
+    <item>
+      <title>Nano Banana Pro Now in Slides</title>
+      <link>https://manus.im/zh-cn/updates</link>
+      <guid isPermaLink="false">manus_updates-K5riFVnAnwRirxT7QfDmF7</guid>
+      <pubDate>Thu, 04 Dec 2025 13:11:38 GMT</pubDate>
+      <description>Google’s Nano Banana Pro is now integrated into Manus Slides. Look for the 🍌 icon to use it in your presentations.</description>
+    </item>
+    <item>
+      <title>Introducing Manus Browser Operator</title>
+      <link>https://chromewebstore.google.com/detail/manus-browser-operator/cecngibhkljoiafhjfmcgbmikfogdiko</link>
+      <guid isPermaLink="false">manus_updates-4wnF3goShawKzvGiWLYesS</guid>
+      <pubDate>Tue, 18 Nov 2025 12:44:21 GMT</pubDate>
+      <description>Manus can now perform tasks directly in your browser, autonomously. It securely works alongside you in your active tabs so you don’t need to log in again or set up complex integrations.</description>
+    </item>
+    <item>
+      <title>Start testing payments instantly with Stripe</title>
+      <link>https://manus.im/zh-cn/updates</link>
+      <guid isPermaLink="false">manus_updates-L6R3owNVE66b5b6zixbdK5</guid>
+      <pubDate>Wed, 12 Nov 2025 11:16:39 GMT</pubDate>
+      <description>The moment you enable payments, Manus spins up a temporary Stripe sandbox—so you can build, test, and launch your payment flow in minutes.</description>
+    </item>
+    <item>
+      <title>Introducing Manus 1.5</title>
+      <link>https://manus.im/blog/manus-1.5-release</link>
+      <guid isPermaLink="false">manus_updates-aYtj5b9FCYYkmYLCp45K9T</guid>
+      <pubDate>Thu, 16 Oct 2025 15:03:10 GMT</pubDate>
+      <description>We released [**Manus 1.5**](https://manus.im/blog/manus-1.5-release): faster, higher quality, unlimited context, and an upgraded builder to create full apps in one prompt with backend, login, databases, AI features, notifications, and analytics.</description>
+    </item>
+    <item>
+      <title>Introducing Manus collaboration</title>
+      <link>https://manus.im/zh-cn/updates</link>
+      <guid isPermaLink="false">manus_updates-mux5RnW2MzXTuHCDMhBJVo</guid>
+      <pubDate>Fri, 12 Sep 2025 11:35:11 GMT</pubDate>
+      <description>Collaborate with your team in real time, stay on the latest version, and keep work moving forward—all in one shared workspace.</description>
+    </item>
+    <item>
+      <title>Introducing Manus Webpage Templates</title>
+      <link>https://manus.im/zh-cn/updates</link>
+      <guid isPermaLink="false">manus_updates-AGnyn84cJGHBgY3mgaGSd2</guid>
+      <pubDate>Mon, 08 Sep 2025 14:24:04 GMT</pubDate>
+      <description>Why spend hours building a webpage when Manus can do it in minutes? Prompt your idea → Pick a template → Let Manus do the rest</description>
+    </item>
+    <item>
+      <title>Introducing Mail Manus</title>
+      <link>https://manus.im/app?openSetting=mailManus</link>
+      <guid isPermaLink="false">manus_updates-QYAXVXNTzLrZzXYMp6vYAE</guid>
+      <pubDate>Wed, 03 Sep 2025 15:40:19 GMT</pubDate>
+      <description>Forward any email to Manus to instantly create a task—reports, requests, questions. One forward, zero extra steps. Mail Manus handles the rest.</description>
+    </item>
+    <item>
+      <title>Introducing Wide Research</title>
+      <link>https://manus.im/zh-cn/updates</link>
+      <guid isPermaLink="false">manus_updates-KXChMuKKVyAeiWUGdRccdL</guid>
+      <pubDate>Fri, 01 Aug 2025 13:42:27 GMT</pubDate>
+      <description>Tackle complex research in a single step. With Wide Research, Manus breaks massive, large-scale tasks into multiple sub-tasks — and runs them all at once. Launching today for Pro users, with a gradual rollout planned for Plus and Basic tiers.</description>
+    </item>
+  </channel>
+</rss>

@@ -41,9 +41,23 @@ SOURCES = {
         "feed_file": "xai-grok-bot-changelog.xml",
         "description": "Grok Bot 的公开版本更新、改进与修复说明。",
     },
+    "manus_updates": {
+        "name": "Manus Product Updates",
+        "url": "https://manus.im/zh-cn/updates",
+        "api_url": "https://api.manus.im/notifier.v1.NotificationPublicService/GetPublicUpdateNotifications",
+        "feed_file": "manus-updates.xml",
+        "description": "Manus 官方产品公告与功能更新。",
+    },
+    "manus_blog": {
+        "name": "Manus Official Blog",
+        "url": "https://manus.im/zh-cn/blog",
+        "feed_file": "manus-blog.xml",
+        "description": "Manus 官方博客文章，包括产品发布、客户案例与其他文章。",
+    },
 }
 
 DATE_PATTERNS = (
+    "%Y年%m月%d日",
     "%B %d, %Y",
     "%b %d, %Y",
     "%B %Y",
@@ -123,6 +137,23 @@ def make_item(source_key: str, title: str, published: datetime, description: str
         "link": source["url"],
         "published": published.isoformat(),
         "description": description or source["description"],
+    }
+
+
+def make_direct_item(
+    source_key: str,
+    guid: str,
+    title: str,
+    published: datetime,
+    description: str,
+    link: str,
+) -> dict[str, str]:
+    return {
+        "guid": f"{source_key}-{guid}",
+        "title": title,
+        "link": link,
+        "published": published.astimezone(UTC).isoformat(),
+        "description": description or SOURCES[source_key]["description"],
     }
 
 
@@ -253,6 +284,116 @@ def extract_xai_grok_bot() -> list[dict[str, str]]:
     return deduplicate(entries)
 
 
+def extract_manus_updates() -> list[dict[str, str]]:
+    """Read Manus's public update-notification API used by its official Updates page."""
+    source = SOURCES["manus_updates"]
+    response = requests.post(
+        source["api_url"],
+        json={"limit": 20},
+        headers={
+            "User-Agent": USER_AGENT,
+            "Origin": "https://manus.im",
+            "Referer": source["url"],
+            "Accept": "application/json",
+        },
+        timeout=40,
+    )
+    response.raise_for_status()
+    payload = response.json()
+    if not payload.get("success") or not isinstance(payload.get("data"), list):
+        raise RuntimeError("Manus public update API returned an unexpected response")
+
+    entries: list[dict[str, str]] = []
+    for notification in payload["data"]:
+        if notification.get("notificationCategory") != "CATEGORY_UPDATE":
+            continue
+        if notification.get("isPopupUpdateLog") is False:
+            continue
+        detail = notification.get("detail") or {}
+        title = clean_text(str(detail.get("title") or ""))
+        created = notification.get("createAt")
+        if not title or not created:
+            continue
+        published = datetime.fromisoformat(str(created).replace("Z", "+00:00"))
+        button = detail.get("button") or {}
+        target = button.get("target")
+        link = target if isinstance(target, str) and target.startswith("https://") else source["url"]
+        guid = str(notification.get("uid") or hashlib.sha256(f"{created}|{title}".encode()).hexdigest()[:24])
+        entries.append(
+            make_direct_item(
+                "manus_updates",
+                guid,
+                title,
+                published,
+                clean_text(str(detail.get("content") or "")),
+                link,
+            )
+        )
+    return deduplicate(entries)
+
+
+def extract_manus_blog() -> list[dict[str, str]]:
+    """Read article cards from the public Chinese Manus Blog listing."""
+    source = SOURCES["manus_blog"]
+    soup = fetch_soup(source["url"])
+    entries: list[dict[str, str]] = []
+    seen_slugs: set[str] = set()
+    for anchor in soup.find_all("a", href=True):
+        path = anchor["href"].split("?", 1)[0].rstrip("/")
+        match = re.fullmatch(r"/(?:[a-z]{2}(?:-[a-z]{2})?/)?blog/([^/]+)", path, flags=re.I)
+        if not match:
+            continue
+        slug = match.group(1)
+        if slug in seen_slugs:
+            continue
+        link = f"https://manus.im/zh-cn/blog/{slug}"
+        detail_description = ""
+        title_node = anchor.find(["h2", "h3"])
+        title = clean_text(title_node.get_text(" ", strip=True)) if title_node else ""
+        if not title and title_node:
+            title = clean_text(str(title_node.get("title") or ""))
+        if not title:
+            title = clean_text(str(anchor.get("title") or ""))
+        if not title:
+            article_soup = fetch_soup(link)
+            article_title = article_soup.find("h1")
+            title = clean_text(article_title.get_text(" ", strip=True)) if article_title else ""
+            description_meta = article_soup.find("meta", attrs={"property": "og:description"})
+            if description_meta:
+                detail_description = clean_text(str(description_meta.get("content") or ""))
+        if not title:
+            title = slug.replace("-", " ").replace("_", " ").strip().capitalize()
+
+        date_text = next(
+            (
+                clean_text(span.get_text(" ", strip=True))
+                for span in anchor.find_all("span")
+                if re.search(r"\d{4}年\d{1,2}月\d{1,2}日|[A-Z][a-z]+ \d{1,2}, \d{4}", span.get_text(" ", strip=True))
+            ),
+            "",
+        )
+        published = parse_date(date_text)
+        if not published:
+            continue
+        description_node = anchor.find("p")
+        description = clean_text(description_node.get_text(" ", strip=True)) if description_node else ""
+        category = next(
+            (
+                clean_text(span.get_text(" ", strip=True))
+                for span in anchor.find_all("span")
+                if clean_text(span.get_text(" ", strip=True)) not in {"·", date_text}
+            ),
+            "",
+        )
+        if not description and detail_description:
+            description = detail_description
+        if not description and category:
+            description = f"Manus 官方博客文章（{category}）。"
+        entries.append(make_direct_item("manus_blog", slug, title, published, description, link))
+        seen_slugs.add(slug)
+    return deduplicate(entries)
+
+
 def deduplicate(entries: list[dict[str, str]]) -> list[dict[str, str]]:
     by_guid = {entry["guid"]: entry for entry in entries}
     return sorted(by_guid.values(), key=lambda item: item["published"], reverse=True)
@@ -309,6 +450,8 @@ def main() -> int:
         "claude_apps": extract_claude_apps,
         "gemini_api": extract_gemini_api,
         "xai_grok_bot": extract_xai_grok_bot,
+        "manus_updates": extract_manus_updates,
+        "manus_blog": extract_manus_blog,
     }
     successful = 0
     failures: list[str] = []
