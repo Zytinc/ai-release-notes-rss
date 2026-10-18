@@ -6,6 +6,7 @@
 
 - Claude Apps Release Notes：`feeds/claude-apps-release-notes.xml`
 - Gemini API Changelog：`feeds/gemini-api-changelog.xml`
+- Grok Bot Changelog：`feeds/xai-grok-bot-changelog.xml`
 
 ## 运行方式
 
@@ -17,5 +18,6 @@ GitHub Actions 每 6 小时执行 `scripts/generate_feeds.py`。脚本仅抓取�
 
 - [Claude Apps Release Notes](https://support.claude.com/en/articles/12138966-release-notes)
 - [Gemini API Changelog](https://ai.google.dev/gemini-api/docs/changelog)
+- [Grok Bot Changelog](https://x.ai/changelog/bot)
 
 本仓库不包含账号凭证、Cookie、私有数据或对官方内容的全文镜像。

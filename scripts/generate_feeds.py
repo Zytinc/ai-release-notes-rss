@@ -7,7 +7,7 @@ import json
 import re
 import sys
 from datetime import UTC, datetime
-from email.utils import format_datetime
+from email.utils import format_datetime, parsedate_to_datetime
 from pathlib import Path
 from typing import Any
 from xml.etree import ElementTree as ET
@@ -33,6 +33,13 @@ SOURCES = {
         "url": "https://ai.google.dev/gemini-api/docs/changelog",
         "feed_file": "gemini-api-changelog.xml",
         "description": "Gemini API 的模型、工具调用、平台与弃用更新。",
+    },
+    "xai_grok_bot": {
+        "name": "Grok Bot Changelog",
+        "url": "https://x.ai/changelog/bot",
+        "fetch_url": "https://r.jina.ai/http://https://x.ai/changelog/bot/rss.xml",
+        "feed_file": "xai-grok-bot-changelog.xml",
+        "description": "Grok Bot 的公开版本更新、改进与修复说明。",
     },
 }
 
@@ -74,6 +81,20 @@ def fetch_soup(url: str) -> BeautifulSoup:
     )
     response.raise_for_status()
     return BeautifulSoup(response.text, "html.parser")
+
+
+def fetch_text(url: str) -> str:
+    response = requests.get(
+        url,
+        headers={
+            "User-Agent": USER_AGENT,
+            "Accept": "text/plain,text/markdown;q=0.9,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.9",
+        },
+        timeout=60,
+    )
+    response.raise_for_status()
+    return response.text
 
 
 def text_until_next_heading(heading: Tag, limit: int = 1200) -> str:
@@ -161,6 +182,77 @@ def extract_gemini_api() -> list[dict[str, str]]:
     return deduplicate(entries)
 
 
+XAI_ENTRY_HEADING = re.compile(
+    r"^### \[(?P<title>.+)\]\((?P<link>https://x\.ai/changelog/bot#(?P<version>v[\w.-]+))\)$"
+)
+XAI_DATE = re.compile(r"^[A-Z][a-z]{2}, \d{2} [A-Z][a-z]{2} \d{4} \d{2}:\d{2}:\d{2} GMT$")
+
+
+def clean_xai_markdown(lines: list[str]) -> str:
+    """Keep update sections readable in RSS readers without relaying proxy metadata."""
+    output: list[str] = []
+    for line in lines:
+        line = line.rstrip()
+        if not line:
+            continue
+        if line.startswith("### "):
+            output.append(line[4:] + ":")
+        elif line.startswith("*   "):
+            output.append("• " + line[4:])
+        else:
+            output.append(line)
+    return "\n".join(output)
+
+
+def extract_xai_grok_bot() -> list[dict[str, str]]:
+    """Turn the publicly visible Grok Bot changelog into a stable local RSS mirror.
+
+    xAI publishes an RSS file, but rejects ordinary server-side feed clients with HTTP 403.
+    The proxy returns the same public changelog as Markdown, which is parsed into our own
+    static feed for readers such as Folo.
+    """
+    source = SOURCES["xai_grok_bot"]
+    raw = fetch_text(source["fetch_url"])
+    marker = "Markdown Content:\n"
+    if marker not in raw:
+        raise RuntimeError("xAI changelog proxy response did not contain Markdown content")
+
+    lines = raw.split(marker, 1)[1].splitlines()
+    starts = [index for index, line in enumerate(lines) if XAI_ENTRY_HEADING.match(line.strip())]
+    if not starts:
+        raise RuntimeError("No Grok Bot changelog entries were parsed")
+
+    entries: list[dict[str, str]] = []
+    for position, start in enumerate(starts):
+        heading = XAI_ENTRY_HEADING.match(lines[start].strip())
+        assert heading is not None
+        end = starts[position + 1] if position + 1 < len(starts) else len(lines)
+        chunk = lines[start + 1 : end]
+
+        source_link_index = next(
+            (index for index, line in enumerate(chunk) if line.strip().startswith(f"[{heading['link']}](")),
+            None,
+        )
+        if source_link_index is None:
+            raise RuntimeError(f"Missing source link for {heading['version']}")
+        pubdate = next((line.strip() for line in chunk[source_link_index + 1 :] if XAI_DATE.match(line.strip())), None)
+        if not pubdate:
+            raise RuntimeError(f"Missing publication date for {heading['version']}")
+
+        published = parsedate_to_datetime(pubdate).astimezone(UTC)
+        description = clean_xai_markdown(chunk[:source_link_index])
+        entries.append(
+            {
+                "guid": f"xai_grok_bot-{heading['version']}",
+                "title": heading["title"],
+                "link": heading["link"],
+                "published": published.isoformat(),
+                "description": description or source["description"],
+            }
+        )
+    return deduplicate(entries)
+
+
 def deduplicate(entries: list[dict[str, str]]) -> list[dict[str, str]]:
     by_guid = {entry["guid"]: entry for entry in entries}
     return sorted(by_guid.values(), key=lambda item: item["published"], reverse=True)
@@ -213,7 +305,11 @@ def write_rss(source_key: str, items: list[dict[str, str]]) -> None:
 
 def main() -> int:
     state = load_state()
-    extractors = {"claude_apps": extract_claude_apps, "gemini_api": extract_gemini_api}
+    extractors = {
+        "claude_apps": extract_claude_apps,
+        "gemini_api": extract_gemini_api,
+        "xai_grok_bot": extract_xai_grok_bot,
+    }
     successful = 0
     failures: list[str] = []
 
