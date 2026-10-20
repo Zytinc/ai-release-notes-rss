@@ -9,6 +9,7 @@
 - Grok Bot Changelog：`feeds/xai-grok-bot-changelog.xml`
 - Manus 产品更新：`feeds/manus-updates.xml`
 - Manus 官方博客：`feeds/manus-blog.xml`
+- 小宇宙《柠檬拿铁》：`feeds/xiaoyuzhou-lemon-latte.xml`
 
 ## 运行方式
 
@@ -23,5 +24,6 @@ GitHub Actions 每 6 小时执行 `scripts/generate_feeds.py`。脚本仅抓取�
 - [Grok Bot Changelog](https://x.ai/changelog/bot)
 - [Manus 产品更新](https://manus.im/zh-cn/updates)
 - [Manus 官方博客](https://manus.im/zh-cn/blog)
+- [小宇宙《柠檬拿铁》](https://www.xiaoyuzhoufm.com/podcast/69d70d4093435f38037d6e0b)
 
 本仓库不包含账号凭证、Cookie、私有数据或对官方内容的全文镜像。

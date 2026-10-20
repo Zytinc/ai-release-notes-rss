@@ -20,6 +20,8 @@ STATE_PATH = ROOT / "data" / "state.json"
 FEED_DIR = ROOT / "docs" / "feeds"
 USER_AGENT = "ai-release-notes-rss/1.0 (+https://github.com/Zytinc/ai-release-notes-rss)"
 MAX_HISTORY = 80
+ITUNES_NS = "http://www.itunes.com/dtds/podcast-1.0.dtd"
+ET.register_namespace("itunes", ITUNES_NS)
 
 SOURCES = {
     "claude_apps": {
@@ -53,6 +55,14 @@ SOURCES = {
         "url": "https://manus.im/zh-cn/blog",
         "feed_file": "manus-blog.xml",
         "description": "Manus 官方博客文章，包括产品发布、客户案例与其他文章。",
+    },
+    "xiaoyuzhou_lemon_latte": {
+        "name": "柠檬拿铁（小宇宙）",
+        "url": "https://www.xiaoyuzhoufm.com/podcast/69d70d4093435f38037d6e0b",
+        "feed_file": "xiaoyuzhou-lemon-latte.xml",
+        "description": "小宇宙播客《柠檬拿铁》的单集更新与节目简介。",
+        "author": "张小吉要多思考、JaredLiu",
+        "image": "https://image.xyzcdn.net/FlktqFSAbDvPWzqF_P_o_6hXqPZx.jpg",
     },
 }
 
@@ -394,6 +404,66 @@ def extract_manus_blog() -> list[dict[str, str]]:
     return deduplicate(entries)
 
 
+def extract_xiaoyuzhou_lemon_latte() -> list[dict[str, str]]:
+    """Build a podcast feed from public episode metadata embedded in Xiaoyuzhou's page."""
+    source = SOURCES["xiaoyuzhou_lemon_latte"]
+    response = requests.get(
+        source["url"],
+        headers={
+            "User-Agent": USER_AGENT,
+            "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+        },
+        timeout=40,
+    )
+    response.raise_for_status()
+    soup = BeautifulSoup(response.text, "html.parser")
+    next_data = soup.find("script", id="__NEXT_DATA__")
+    if not next_data:
+        raise RuntimeError("Xiaoyuzhou podcast page no longer exposes its public episode data")
+    payload = json.loads(next_data.string or next_data.get_text())
+    podcast = payload.get("props", {}).get("pageProps", {}).get("podcast")
+    if not isinstance(podcast, dict) or podcast.get("pid") != "69d70d4093435f38037d6e0b":
+        raise RuntimeError("Unexpected Xiaoyuzhou podcast page data")
+
+    entries: list[dict[str, str]] = []
+    for episode in podcast.get("episodes", []):
+        if episode.get("status") not in (None, "NORMAL"):
+            continue
+        if episode.get("isPrivateMedia") or episode.get("payType") not in (None, "FREE"):
+            continue
+        title = clean_text(str(episode.get("title") or ""))
+        published_raw = episode.get("pubDate")
+        episode_id = str(episode.get("eid") or "")
+        if not title or not published_raw or not episode_id:
+            continue
+        published = datetime.fromisoformat(str(published_raw).replace("Z", "+00:00"))
+        description = str(episode.get("description") or episode.get("shownotes") or "")
+        description = "\n".join(line.rstrip() for line in description.replace("\r\n", "\n").splitlines()).strip()
+        item = make_direct_item(
+            "xiaoyuzhou_lemon_latte",
+            episode_id,
+            title,
+            published,
+            description,
+            f"https://www.xiaoyuzhoufm.com/episode/{episode_id}",
+        )
+        enclosure = episode.get("enclosure") or {}
+        media = episode.get("media") or {}
+        media_url = enclosure.get("url") or (media.get("source") or {}).get("url")
+        if media_url:
+            item["enclosure_url"] = str(media_url)
+            item["enclosure_length"] = str(media.get("size") or enclosure.get("length") or 0)
+            item["enclosure_type"] = str(media.get("mimeType") or "audio/mp4")
+        duration = episode.get("duration")
+        if duration:
+            seconds = int(float(duration))
+            hours, remainder = divmod(seconds, 3600)
+            minutes, seconds = divmod(remainder, 60)
+            item["duration"] = f"{hours}:{minutes:02d}:{seconds:02d}" if hours else f"{minutes}:{seconds:02d}"
+        entries.append(item)
+    return deduplicate(entries)
+
+
 def deduplicate(entries: list[dict[str, str]]) -> list[dict[str, str]]:
     by_guid = {entry["guid"]: entry for entry in entries}
     return sorted(by_guid.values(), key=lambda item: item["published"], reverse=True)
@@ -424,6 +494,22 @@ def write_rss(source_key: str, items: list[dict[str, str]]) -> None:
     ET.SubElement(channel, "link").text = source["url"]
     ET.SubElement(channel, "description").text = source["description"]
     ET.SubElement(channel, "language").text = "zh-CN"
+    if source.get("author"):
+        ET.SubElement(channel, f"{{{ITUNES_NS}}}author").text = source["author"]
+        ET.SubElement(channel, f"{{{ITUNES_NS}}}summary").text = source["description"]
+        ET.SubElement(channel, f"{{{ITUNES_NS}}}explicit").text = "false"
+    if source.get("image"):
+        ET.SubElement(channel, "image").extend([
+            ET.Element("url"),
+            ET.Element("title"),
+            ET.Element("link"),
+        ])
+        image_node = channel.find("image")
+        assert image_node is not None
+        image_node.find("url").text = source["image"]
+        image_node.find("title").text = source["name"]
+        image_node.find("link").text = source["url"]
+        ET.SubElement(channel, f"{{{ITUNES_NS}}}image", href=source["image"])
     latest = max((datetime.fromisoformat(item["published"]) for item in items), default=utcnow())
     ET.SubElement(channel, "lastBuildDate").text = format_datetime(latest, usegmt=True)
     ET.SubElement(channel, "generator").text = "ai-release-notes-rss"
@@ -437,6 +523,16 @@ def write_rss(source_key: str, items: list[dict[str, str]]) -> None:
         published = datetime.fromisoformat(item["published"])
         ET.SubElement(node, "pubDate").text = format_datetime(published, usegmt=True)
         ET.SubElement(node, "description").text = item["description"]
+        if item.get("enclosure_url"):
+            ET.SubElement(
+                node,
+                "enclosure",
+                url=item["enclosure_url"],
+                length=item.get("enclosure_length", "0"),
+                type=item.get("enclosure_type", "audio/mp4"),
+            )
+        if item.get("duration"):
+            ET.SubElement(node, f"{{{ITUNES_NS}}}duration").text = item["duration"]
 
     tree = ET.ElementTree(rss)
     ET.indent(tree, space="  ")
@@ -452,6 +548,7 @@ def main() -> int:
         "xai_grok_bot": extract_xai_grok_bot,
         "manus_updates": extract_manus_updates,
         "manus_blog": extract_manus_blog,
+        "xiaoyuzhou_lemon_latte": extract_xiaoyuzhou_lemon_latte,
     }
     successful = 0
     failures: list[str] = []
