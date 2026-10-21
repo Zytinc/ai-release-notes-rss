@@ -5,8 +5,15 @@
     <link>https://support.claude.com/en/articles/12138966-release-notes</link>
     <description>Claude Apps、Desktop、Mobile、Cowork、Connectors 等产品更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 07 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 00:00:00 GMT</lastBuildDate>
     <generator>ai-release-notes-rss</generator>
+    <item>
+      <title>Claude Duet research preview for Pro and Max plans</title>
+      <link>https://support.claude.com/en/articles/12138966-release-notes</link>
+      <guid isPermaLink="false">claude_apps-1d37cdf714043b7d2e36e62e</guid>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
+      <description>We just opened a research preview for users on Pro and Max plans: Claude Duet, a new app where Claude works as a proactive agent. For more information, see our blog post: Introducing Claude Duet .</description>
+    </item>
     <item>
       <title>Claude Haiku 5.5 launch</title>
       <link>https://support.claude.com/en/articles/12138966-release-notes</link>
@@ -559,13 +566,6 @@
       <guid isPermaLink="false">claude_apps-bede51588d57805737de135c</guid>
       <pubDate>Mon, 11 Aug 2025 00:00:00 GMT</pubDate>
       <description>Users on Max, Team, Enterprise plans can prompt Claude to search over past chats, allowing finer-grained context continuation and synthesizing across topics. See Searching past chats .</description>
-    </item>
-    <item>
-      <title>Claude Code Security Reviews</title>
-      <link>https://support.claude.com/en/articles/12138966-release-notes</link>
-      <guid isPermaLink="false">claude_apps-8132a1e2f257c7c2f8fa109d</guid>
-      <pubDate>Wed, 06 Aug 2025 00:00:00 GMT</pubDate>
-      <description>Two new cybersecurity features were added to Claude Code: /security-review command GitHub Actions See Automated Security Reviews in Claude Code .</description>
     </item>
   </channel>
 </rss>
