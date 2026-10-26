@@ -567,6 +567,13 @@
     "gemini_api": {
       "items": [
         {
+          "guid": "gemini_api-044123371c335ce57fe1aefc",
+          "title": "Gemini API update — October 26, 2026",
+          "link": "https://ai.google.dev/gemini-api/docs/changelog",
+          "published": "2026-10-26T00:00:00+00:00",
+          "description": "Generate Content API storage on by default : New projects using the Generate Content API ( generateContent , streamGenerateContent , and batchGenerateContent ) on the paid tier now store requests by default ( store=true ), matching the Interactions API. Existing projects keep their current setting. To opt out, set store=false on individual requests or turn off Generate Content API logging in the Settings panel of the Logs and Datasets dashboard. See Logs and datasets for details."
+        },
+        {
           "guid": "gemini_api-747fb7f8d58aa8a0ec73314a",
           "title": "Gemini API update — October 13, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
@@ -1118,13 +1125,6 @@
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2025-09-25T00:00:00+00:00",
           "description": "Released Gemini Robotics ER 1.5 model in preview. See the Robotics overview to learn about how to use the model for your robotics application. Launched following preview models: gemini-2.5-flash-preview-09-2025 gemini-2.5-flash-lite-preview-09-2025 See the Models page for details. Launched following preview models: gemini-2.5-flash-preview-09-2025 gemini-2.5-flash-lite-preview-09-2025 See the Models page for details."
-        },
-        {
-          "guid": "gemini_api-89a4d4fb1986f9f23ba0579f",
-          "title": "Gemini API update — September 23, 2025",
-          "link": "https://ai.google.dev/gemini-api/docs/changelog",
-          "published": "2025-09-23T00:00:00+00:00",
-          "description": "Released gemini-2.5-flash-native-audio-preview-09-2025 , a new native audio model for the Live API with improved function calling and speech cut off handling. To learn more, see the Live API guide and Gemini 2.5 Flash Native Audio ."
         }
       ]
     },
