@@ -5,8 +5,37 @@
     <link>https://x.ai/changelog/bot</link>
     <description>Grok Bot 的公开版本更新、改进与修复说明。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 23 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 00:00:00 GMT</lastBuildDate>
     <generator>ai-release-notes-rss</generator>
+    <item>
+      <title>Auto-review rule cards and smarter connectors (0.75.8)</title>
+      <link>https://x.ai/changelog/bot#v0.75.8</link>
+      <guid isPermaLink="false">xai_grok_bot-v0.75.8</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Also includes 0.75.6 and 0.75.7
+New:
+• In the app, a Bot can offer to add, change, or remove one of your [Auto-review rules](https://docs.x.ai/grok-bot/approvals-security-and-privacy#configure-auto-review) on a card you confirm. Requires Grok Bot 0.75.2 or later.
+Improved:
+• Auto-review takes a second look before showing an approval card, so fewer safe actions need one.
+• A Bot's status line shows up right after you send, even for quick replies.
+• When background work finishes, the Bot completes what you asked, including steps you said to take once it was done, and says what it would do next instead of acting on its own or on another agent's approval. Requires Grok Bot 0.75.2 or later.
+• Auto-review no longer counts a Bot saving or editing one of its routines as risky by itself.
+• Auto-review approval cards in Slack describe the action, as they do in the app.
+• Scheduling uses the calendar you've connected, Google Calendar or Outlook Calendar, and offers to connect one only when neither is.
+• In a chat only you can see, a Bot reads your own private files without asking first.
+• When a Bot installs a plugin while working, it can use the plugin's skills right away.
+• People not on a Team Bot's share list, including teammates, no longer have access to it until an owner shares it with them. (Teams)
+Fixed:
+• When a connector such as X adds tools or fields, Bots can use them without you reconnecting it.
+• A connector whose sign-in expired shows Authenticate in the app instead of Connected, matching what the Bot says. Requires Grok Bot 0.71.2 or later.
+• Images a connector returns as files reach the Bot as images, and other binary files are no longer read as garbled text.
+• X Money connects in one tap for more X accounts, and if it can't connect yours, the Bot says so instead of offering a sign-in.
+• When a Bot posts to Slack for you, such as from a routine, your phone isn't notified and its unread badge doesn't go up.
+• In Slack, when a safety check blocks a Bot's reply, the Bot says so and suggests trying a different message.
+• For most accounts, with [Route traffic through this computer](https://docs.x.ai/grok-bot/private-networks#route-through-a-members-desktop) on, the connection comes back as soon as the Bot's computer wakes.
+• A Team Bot's routines can read Slack channels you and the Bot are both in, instead of refusing every read. (Teams)
+• When a Team Bot edits one of its own Slack messages, the message shows a muted (edited) label. (Teams)</description>
+    </item>
     <item>
       <title>Vault, email forwarding, and fewer approval cards (0.75.5)</title>
       <link>https://x.ai/changelog/bot#v0.75.5</link>
