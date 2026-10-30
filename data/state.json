@@ -567,6 +567,13 @@
     "gemini_api": {
       "items": [
         {
+          "guid": "gemini_api-66f49493e7ff6ed42402eea1",
+          "title": "Gemini API update — October 30, 2026",
+          "link": "https://ai.google.dev/gemini-api/docs/changelog",
+          "published": "2026-10-30T00:00:00+00:00",
+          "description": "Computer Use generally available (GA) : Released the Computer Use tool to general availability (GA) across the Interactions and GenerateContent APIs."
+        },
+        {
           "guid": "gemini_api-9d83bea0519e6e13d380cd95",
           "title": "Gemini API update — October 27, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
@@ -1118,13 +1125,6 @@
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2025-10-02T00:00:00+00:00",
           "description": "Launched Gemini 2.5 Flash Image GA: Image Generation with Gemini"
-        },
-        {
-          "guid": "gemini_api-ff82ea74272f194c7ed7b099",
-          "title": "Gemini API update — September 29, 2025",
-          "link": "https://ai.google.dev/gemini-api/docs/changelog",
-          "published": "2025-09-29T00:00:00+00:00",
-          "description": "The following Gemini 1.5 models are now shut down: gemini-1.5-pro gemini-1.5-flash-8b gemini-1.5-flash gemini-1.5-pro gemini-1.5-flash-8b gemini-1.5-flash"
         }
       ]
     },

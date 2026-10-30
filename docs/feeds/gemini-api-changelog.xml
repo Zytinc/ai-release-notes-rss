@@ -5,8 +5,15 @@
     <link>https://ai.google.dev/gemini-api/docs/changelog</link>
     <description>Gemini API 的模型、工具调用、平台与弃用更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 27 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 00:00:00 GMT</lastBuildDate>
     <generator>ai-release-notes-rss</generator>
+    <item>
+      <title>Gemini API update — October 30, 2026</title>
+      <link>https://ai.google.dev/gemini-api/docs/changelog</link>
+      <guid isPermaLink="false">gemini_api-66f49493e7ff6ed42402eea1</guid>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Computer Use generally available (GA) : Released the Computer Use tool to general availability (GA) across the Interactions and GenerateContent APIs.</description>
+    </item>
     <item>
       <title>Gemini API update — October 27, 2026</title>
       <link>https://ai.google.dev/gemini-api/docs/changelog</link>
@@ -559,13 +566,6 @@
       <guid isPermaLink="false">gemini_api-f6a7d0b9e27d052ce4cb5774</guid>
       <pubDate>Thu, 02 Oct 2025 00:00:00 GMT</pubDate>
       <description>Launched Gemini 2.5 Flash Image GA: Image Generation with Gemini</description>
-    </item>
-    <item>
-      <title>Gemini API update — September 29, 2025</title>
-      <link>https://ai.google.dev/gemini-api/docs/changelog</link>
-      <guid isPermaLink="false">gemini_api-ff82ea74272f194c7ed7b099</guid>
-      <pubDate>Mon, 29 Sep 2025 00:00:00 GMT</pubDate>
-      <description>The following Gemini 1.5 models are now shut down: gemini-1.5-pro gemini-1.5-flash-8b gemini-1.5-flash gemini-1.5-pro gemini-1.5-flash-8b gemini-1.5-flash</description>
     </item>
   </channel>
 </rss>
