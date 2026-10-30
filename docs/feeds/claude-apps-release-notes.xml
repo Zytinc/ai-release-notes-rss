@@ -61,7 +61,7 @@
       <link>https://support.claude.com/en/articles/12138966-release-notes</link>
       <guid isPermaLink="false">claude_apps-5fb8a699aab823e4d0028b1b</guid>
       <pubDate>Wed, 16 Sep 2026 00:00:00 GMT</pubDate>
-      <description>You can now ask for a design, deck, or document in any conversation with Claude, including in Claude Code and the Artifacts tab, and edit it with Claude or directly as you work. Claude Design works inside your conversations with all of its features, including on-canvas editing and importing your design system. Claude Slides gives presentations their own starting point, and Claude Docs is a new way to write living documents with Claude and your team. Artifacts, including Claude Design, Claude Slides, and Claude Docs, are available on every plan, including Free. On Enterprise plans, Claude Design, Claude Slides, and Claude Docs are in beta and off by default until an owner turns them on. Learn more in What are artifacts and how do I use them? and Get started with Claude Docs .</description>
+      <description>You can now ask for a design, deck, or document in any conversation with Claude, including in Claude Code and the Artifacts tab, and edit it with Claude or directly as you work. Claude Design works inside your conversations with all of its features, including on-canvas editing and importing your design system. Claude Slides gives presentations their own starting point, and Claude Docs is a new way to write living documents with Claude and your team. Artifacts, including Claude Design, Claude Slides, and Claude Docs, are available on every plan, including Free. On Enterprise plans, Claude Design, Claude Slides, and Claude Docs are in beta. Learn more in What are artifacts and how do I use them? and Get started with Claude Docs .</description>
     </item>
     <item>
       <title>Launching Salesforce in Claude (beta)</title>
@@ -89,7 +89,7 @@
       <link>https://support.claude.com/en/articles/12138966-release-notes</link>
       <guid isPermaLink="false">claude_apps-bcb42df46d21201295f59539</guid>
       <pubDate>Tue, 25 Aug 2026 00:00:00 GMT</pubDate>
-      <description>Memory now works across chat and Cowork in the cloud. Everything Claude remembers is listed under Topics in Settings &gt; Memory , where you can edit or delete any item. Topics such as health or beliefs stay out of memory unless you turn on Include sensitive topics in memory . Memory is on by default for Free, Pro, and Max plans and off by default for Team and Enterprise organizations. See Use Claude's chat search and memory to build on previous context .</description>
+      <description>Memory now works across chat and Cowork in the cloud. Everything Claude remembers is listed under Topics in Settings &gt; Memory , where you can edit or delete any item. Topics such as health or beliefs stay out of memory unless you turn on Include sensitive topics in memory . See Use Claude's chat search and memory to build on previous context .</description>
     </item>
     <item>
       <title>Skill and plugin security scanning (beta)</title>

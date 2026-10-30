@@ -56,7 +56,7 @@
           "title": "Create designs, decks, and docs in any conversation",
           "link": "https://support.claude.com/en/articles/12138966-release-notes",
           "published": "2026-09-16T00:00:00+00:00",
-          "description": "You can now ask for a design, deck, or document in any conversation with Claude, including in Claude Code and the Artifacts tab, and edit it with Claude or directly as you work. Claude Design works inside your conversations with all of its features, including on-canvas editing and importing your design system. Claude Slides gives presentations their own starting point, and Claude Docs is a new way to write living documents with Claude and your team. Artifacts, including Claude Design, Claude Slides, and Claude Docs, are available on every plan, including Free. On Enterprise plans, Claude Design, Claude Slides, and Claude Docs are in beta and off by default until an owner turns them on. Learn more in What are artifacts and how do I use them? and Get started with Claude Docs ."
+          "description": "You can now ask for a design, deck, or document in any conversation with Claude, including in Claude Code and the Artifacts tab, and edit it with Claude or directly as you work. Claude Design works inside your conversations with all of its features, including on-canvas editing and importing your design system. Claude Slides gives presentations their own starting point, and Claude Docs is a new way to write living documents with Claude and your team. Artifacts, including Claude Design, Claude Slides, and Claude Docs, are available on every plan, including Free. On Enterprise plans, Claude Design, Claude Slides, and Claude Docs are in beta. Learn more in What are artifacts and how do I use them? and Get started with Claude Docs ."
         },
         {
           "guid": "claude_apps-852d22c8bfc8265e969778ad",
@@ -84,7 +84,7 @@
           "title": "Memory in Claude Cowork, editable topics, and a sensitive topics setting",
           "link": "https://support.claude.com/en/articles/12138966-release-notes",
           "published": "2026-08-25T00:00:00+00:00",
-          "description": "Memory now works across chat and Cowork in the cloud. Everything Claude remembers is listed under Topics in Settings > Memory , where you can edit or delete any item. Topics such as health or beliefs stay out of memory unless you turn on Include sensitive topics in memory . Memory is on by default for Free, Pro, and Max plans and off by default for Team and Enterprise organizations. See Use Claude's chat search and memory to build on previous context ."
+          "description": "Memory now works across chat and Cowork in the cloud. Everything Claude remembers is listed under Topics in Settings > Memory , where you can edit or delete any item. Topics such as health or beliefs stay out of memory unless you turn on Include sensitive topics in memory . See Use Claude's chat search and memory to build on previous context ."
         },
         {
           "guid": "claude_apps-838d970d35c98271b67fe9b0",
@@ -1671,6 +1671,13 @@
     "manus_blog": {
       "items": [
         {
+          "guid": "manus_blog-rebuilding-manus-with-manus",
+          "title": "用 Manus 重建 Manus：什么变了，什么出了问题，以及我们现在如何工作",
+          "link": "https://manus.im/zh-cn/blog/rebuilding-manus-with-manus",
+          "published": "2026-10-30T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
           "guid": "manus_blog-circa-builds-customer-story",
           "title": "How This Boston Startup Is Giving Demolition Waste a Second Life",
           "link": "https://manus.im/zh-cn/blog/circa-builds-customer-story",
@@ -2222,13 +2229,6 @@
           "link": "https://manus.im/zh-cn/blog/best-ai-image-generator",
           "published": "2026-02-02T00:00:00+00:00",
           "description": "Manus 官方博客文章（其他）。"
-        },
-        {
-          "guid": "manus_blog-manus-skills",
-          "title": "Manus AI 拥抱开放标准：集成 Agent Skills 开启 Agent 新篇章",
-          "link": "https://manus.im/zh-cn/blog/manus-skills",
-          "published": "2026-01-27T00:00:00+00:00",
-          "description": "Manus 官方博客文章（产品）。"
         }
       ]
     },

@@ -5,8 +5,15 @@
     <link>https://manus.im/zh-cn/blog</link>
     <description>Manus 官方博客文章，包括产品发布、客户案例与其他文章。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 13 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 00:00:00 GMT</lastBuildDate>
     <generator>ai-release-notes-rss</generator>
+    <item>
+      <title>用 Manus 重建 Manus：什么变了，什么出了问题，以及我们现在如何工作</title>
+      <link>https://manus.im/zh-cn/blog/rebuilding-manus-with-manus</link>
+      <guid isPermaLink="false">manus_blog-rebuilding-manus-with-manus</guid>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Manus 官方博客文章（其他）。</description>
+    </item>
     <item>
       <title>How This Boston Startup Is Giving Demolition Waste a Second Life</title>
       <link>https://manus.im/zh-cn/blog/circa-builds-customer-story</link>
@@ -559,13 +566,6 @@
       <guid isPermaLink="false">manus_blog-best-ai-image-generator</guid>
       <pubDate>Mon, 02 Feb 2026 00:00:00 GMT</pubDate>
       <description>Manus 官方博客文章（其他）。</description>
-    </item>
-    <item>
-      <title>Manus AI 拥抱开放标准：集成 Agent Skills 开启 Agent 新篇章</title>
-      <link>https://manus.im/zh-cn/blog/manus-skills</link>
-      <guid isPermaLink="false">manus_blog-manus-skills</guid>
-      <pubDate>Tue, 27 Jan 2026 00:00:00 GMT</pubDate>
-      <description>Manus 官方博客文章（产品）。</description>
     </item>
   </channel>
 </rss>
