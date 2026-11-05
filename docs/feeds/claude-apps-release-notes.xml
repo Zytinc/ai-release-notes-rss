@@ -5,8 +5,15 @@
     <link>https://support.claude.com/en/articles/12138966-release-notes</link>
     <description>Claude Apps、Desktop、Mobile、Cowork、Connectors 等产品更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 21 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 00:00:00 GMT</lastBuildDate>
     <generator>ai-release-notes-rss</generator>
+    <item>
+      <title>New security and admin controls for Enterprise plans</title>
+      <link>https://support.claude.com/en/articles/12138966-release-notes</link>
+      <guid isPermaLink="false">claude_apps-d8f7391ce3a9c555a1952273</guid>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Claude Enterprise has new security and admin features, including a security center, inference hooks, centralized management, and additional access controls, several in beta. For more information, see our blog post: More visibility and control over Claude Enterprise for security teams .</description>
+    </item>
     <item>
       <title>Claude Duet research preview for Pro and Max plans</title>
       <link>https://support.claude.com/en/articles/12138966-release-notes</link>
@@ -559,13 +566,6 @@
       <guid isPermaLink="false">claude_apps-d65fd5516fb65434de08a5f9</guid>
       <pubDate>Tue, 12 Aug 2025 00:00:00 GMT</pubDate>
       <description>The 1M token context window for Claude Sonnet 4 is currently in beta for API organizations in usage tier 4, or with custom rate limits. See 1M token context window in our docs for more information.</description>
-    </item>
-    <item>
-      <title>Ability to search past conversations</title>
-      <link>https://support.claude.com/en/articles/12138966-release-notes</link>
-      <guid isPermaLink="false">claude_apps-bede51588d57805737de135c</guid>
-      <pubDate>Mon, 11 Aug 2025 00:00:00 GMT</pubDate>
-      <description>Users on Max, Team, Enterprise plans can prompt Claude to search over past chats, allowing finer-grained context continuation and synthesizing across topics. See Searching past chats .</description>
     </item>
   </channel>
 </rss>

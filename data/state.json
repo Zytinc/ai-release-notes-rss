@@ -3,6 +3,13 @@
     "claude_apps": {
       "items": [
         {
+          "guid": "claude_apps-d8f7391ce3a9c555a1952273",
+          "title": "New security and admin controls for Enterprise plans",
+          "link": "https://support.claude.com/en/articles/12138966-release-notes",
+          "published": "2026-11-05T00:00:00+00:00",
+          "description": "Claude Enterprise has new security and admin features, including a security center, inference hooks, centralized management, and additional access controls, several in beta. For more information, see our blog post: More visibility and control over Claude Enterprise for security teams ."
+        },
+        {
           "guid": "claude_apps-1d37cdf714043b7d2e36e62e",
           "title": "Claude Duet research preview for Pro and Max plans",
           "link": "https://support.claude.com/en/articles/12138966-release-notes",
@@ -554,13 +561,6 @@
           "link": "https://support.claude.com/en/articles/12138966-release-notes",
           "published": "2025-08-12T00:00:00+00:00",
           "description": "The 1M token context window for Claude Sonnet 4 is currently in beta for API organizations in usage tier 4, or with custom rate limits. See 1M token context window in our docs for more information."
-        },
-        {
-          "guid": "claude_apps-bede51588d57805737de135c",
-          "title": "Ability to search past conversations",
-          "link": "https://support.claude.com/en/articles/12138966-release-notes",
-          "published": "2025-08-11T00:00:00+00:00",
-          "description": "Users on Max, Team, Enterprise plans can prompt Claude to search over past chats, allowing finer-grained context continuation and synthesizing across topics. See Searching past chats ."
         }
       ]
     },
