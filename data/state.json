@@ -3,6 +3,13 @@
     "claude_apps": {
       "items": [
         {
+          "guid": "claude_apps-5a26b8a0b13c7e61a02bafc2",
+          "title": "Track spend by cost code with project tags (beta)",
+          "link": "https://support.claude.com/en/articles/12138966-release-notes",
+          "published": "2026-11-06T00:00:00+00:00",
+          "description": "Eligible Enterprise organizations can now tag projects with the codes they already use, like a charge code or client-matter number, and see most spend in those projects by tag. This feature is available in beta. For more information, see Track spend by cost code with project tags ."
+        },
+        {
           "guid": "claude_apps-d8f7391ce3a9c555a1952273",
           "title": "New security and admin controls for Enterprise plans",
           "link": "https://support.claude.com/en/articles/12138966-release-notes",
@@ -554,13 +561,6 @@
           "link": "https://support.claude.com/en/articles/12138966-release-notes",
           "published": "2025-08-20T00:00:00+00:00",
           "description": "Introduced a premium seat tier for Team and Enterprise plans offering more usage and access to Claude Code. Refer to the following articles for more information: Purchasing and managing seats Using Claude Code with your Team or Enterprise plan Extra usage for Team and Enterprise plans A new setting allows Team and Enterprise plan users to purchase more usage to continue chatting with Claude or using Claude Code after hitting their usage limit. See Extra Usage for Team and Enterprise Plans ."
-        },
-        {
-          "guid": "claude_apps-2ffcf17aa8d20224a4e26621",
-          "title": "Ability to change monthly Team plan billing to annual",
-          "link": "https://support.claude.com/en/articles/12138966-release-notes",
-          "published": "2025-08-15T00:00:00+00:00",
-          "description": "Allowing Team plan organizations with monthly billing to upgrade to annual billing. See How to change your Team plan from monthly to annual billing ."
         }
       ]
     },
@@ -1671,6 +1671,27 @@
     "manus_blog": {
       "items": [
         {
+          "guid": "manus_blog-how-to-build-your-first-game-with-ai",
+          "title": "如何使用 AI 制作你的第一款电子游戏：分步指南",
+          "link": "https://manus.im/zh-cn/blog/how-to-build-your-first-game-with-ai",
+          "published": "2026-11-06T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
+          "guid": "manus_blog-best-ai-game-makers-for-beginners",
+          "title": "2026 年面向初学者的 10 款最佳 AI 游戏制作工具（无需编程）",
+          "link": "https://manus.im/zh-cn/blog/best-ai-game-makers-for-beginners",
+          "published": "2026-11-06T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
+          "guid": "manus_blog-best-ai-tools-for-game-development",
+          "title": "2026 年游戏开发最佳 AI 工具：我们的十大精选",
+          "link": "https://manus.im/zh-cn/blog/best-ai-tools-for-game-development",
+          "published": "2026-11-06T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
           "guid": "manus_blog-rebuilding-manus-with-manus",
           "title": "用 Manus 重建 Manus：什么变了，什么出了问题，以及我们现在如何工作",
           "link": "https://manus.im/zh-cn/blog/rebuilding-manus-with-manus",
@@ -2207,27 +2228,6 @@
           "title": "2026 年 7 个最佳 AI 登陆页面生成器（测试和比较）",
           "link": "https://manus.im/zh-cn/blog/best-landing-page-generator",
           "published": "2026-02-06T00:00:00+00:00",
-          "description": "Manus 官方博客文章（其他）。"
-        },
-        {
-          "guid": "manus_blog-best-b2b-sales-presentations-tools",
-          "title": "2026 年最佳 B2B 销售演示 AI 工具（测试与比较）",
-          "link": "https://manus.im/zh-cn/blog/best-b2b-sales-presentations-tools",
-          "published": "2026-02-06T00:00:00+00:00",
-          "description": "Manus 官方博客文章（其他）。"
-        },
-        {
-          "guid": "manus_blog-best-ai-presentation-makers",
-          "title": "2026年12款最佳免费AI演示文稿制作工具（测试与排名）",
-          "link": "https://manus.im/zh-cn/blog/best-ai-presentation-makers",
-          "published": "2026-02-06T00:00:00+00:00",
-          "description": "Manus 官方博客文章（其他）。"
-        },
-        {
-          "guid": "manus_blog-best-ai-image-generator",
-          "title": "2026年5个最佳AI图像生成器（我测试了所有）",
-          "link": "https://manus.im/zh-cn/blog/best-ai-image-generator",
-          "published": "2026-02-02T00:00:00+00:00",
           "description": "Manus 官方博客文章（其他）。"
         }
       ]

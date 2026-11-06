@@ -5,8 +5,29 @@
     <link>https://manus.im/zh-cn/blog</link>
     <description>Manus 官方博客文章，包括产品发布、客户案例与其他文章。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 30 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 00:00:00 GMT</lastBuildDate>
     <generator>ai-release-notes-rss</generator>
+    <item>
+      <title>如何使用 AI 制作你的第一款电子游戏：分步指南</title>
+      <link>https://manus.im/zh-cn/blog/how-to-build-your-first-game-with-ai</link>
+      <guid isPermaLink="false">manus_blog-how-to-build-your-first-game-with-ai</guid>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Manus 官方博客文章（其他）。</description>
+    </item>
+    <item>
+      <title>2026 年面向初学者的 10 款最佳 AI 游戏制作工具（无需编程）</title>
+      <link>https://manus.im/zh-cn/blog/best-ai-game-makers-for-beginners</link>
+      <guid isPermaLink="false">manus_blog-best-ai-game-makers-for-beginners</guid>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Manus 官方博客文章（其他）。</description>
+    </item>
+    <item>
+      <title>2026 年游戏开发最佳 AI 工具：我们的十大精选</title>
+      <link>https://manus.im/zh-cn/blog/best-ai-tools-for-game-development</link>
+      <guid isPermaLink="false">manus_blog-best-ai-tools-for-game-development</guid>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Manus 官方博客文章（其他）。</description>
+    </item>
     <item>
       <title>用 Manus 重建 Manus：什么变了，什么出了问题，以及我们现在如何工作</title>
       <link>https://manus.im/zh-cn/blog/rebuilding-manus-with-manus</link>
@@ -544,27 +565,6 @@
       <link>https://manus.im/zh-cn/blog/best-landing-page-generator</link>
       <guid isPermaLink="false">manus_blog-best-landing-page-generator</guid>
       <pubDate>Fri, 06 Feb 2026 00:00:00 GMT</pubDate>
-      <description>Manus 官方博客文章（其他）。</description>
-    </item>
-    <item>
-      <title>2026 年最佳 B2B 销售演示 AI 工具（测试与比较）</title>
-      <link>https://manus.im/zh-cn/blog/best-b2b-sales-presentations-tools</link>
-      <guid isPermaLink="false">manus_blog-best-b2b-sales-presentations-tools</guid>
-      <pubDate>Fri, 06 Feb 2026 00:00:00 GMT</pubDate>
-      <description>Manus 官方博客文章（其他）。</description>
-    </item>
-    <item>
-      <title>2026年12款最佳免费AI演示文稿制作工具（测试与排名）</title>
-      <link>https://manus.im/zh-cn/blog/best-ai-presentation-makers</link>
-      <guid isPermaLink="false">manus_blog-best-ai-presentation-makers</guid>
-      <pubDate>Fri, 06 Feb 2026 00:00:00 GMT</pubDate>
-      <description>Manus 官方博客文章（其他）。</description>
-    </item>
-    <item>
-      <title>2026年5个最佳AI图像生成器（我测试了所有）</title>
-      <link>https://manus.im/zh-cn/blog/best-ai-image-generator</link>
-      <guid isPermaLink="false">manus_blog-best-ai-image-generator</guid>
-      <pubDate>Mon, 02 Feb 2026 00:00:00 GMT</pubDate>
       <description>Manus 官方博客文章（其他）。</description>
     </item>
   </channel>

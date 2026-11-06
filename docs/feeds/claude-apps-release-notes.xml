@@ -5,8 +5,15 @@
     <link>https://support.claude.com/en/articles/12138966-release-notes</link>
     <description>Claude Apps、Desktop、Mobile、Cowork、Connectors 等产品更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 05 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 00:00:00 GMT</lastBuildDate>
     <generator>ai-release-notes-rss</generator>
+    <item>
+      <title>Track spend by cost code with project tags (beta)</title>
+      <link>https://support.claude.com/en/articles/12138966-release-notes</link>
+      <guid isPermaLink="false">claude_apps-5a26b8a0b13c7e61a02bafc2</guid>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Eligible Enterprise organizations can now tag projects with the codes they already use, like a charge code or client-matter number, and see most spend in those projects by tag. This feature is available in beta. For more information, see Track spend by cost code with project tags .</description>
+    </item>
     <item>
       <title>New security and admin controls for Enterprise plans</title>
       <link>https://support.claude.com/en/articles/12138966-release-notes</link>
@@ -559,13 +566,6 @@
       <guid isPermaLink="false">claude_apps-a112d5c6fed71a0b6082b0a7</guid>
       <pubDate>Wed, 20 Aug 2025 00:00:00 GMT</pubDate>
       <description>Introduced a premium seat tier for Team and Enterprise plans offering more usage and access to Claude Code. Refer to the following articles for more information: Purchasing and managing seats Using Claude Code with your Team or Enterprise plan Extra usage for Team and Enterprise plans A new setting allows Team and Enterprise plan users to purchase more usage to continue chatting with Claude or using Claude Code after hitting their usage limit. See Extra Usage for Team and Enterprise Plans .</description>
-    </item>
-    <item>
-      <title>Ability to change monthly Team plan billing to annual</title>
-      <link>https://support.claude.com/en/articles/12138966-release-notes</link>
-      <guid isPermaLink="false">claude_apps-2ffcf17aa8d20224a4e26621</guid>
-      <pubDate>Fri, 15 Aug 2025 00:00:00 GMT</pubDate>
-      <description>Allowing Team plan organizations with monthly billing to upgrade to annual billing. See How to change your Team plan from monthly to annual billing .</description>
     </item>
   </channel>
 </rss>
