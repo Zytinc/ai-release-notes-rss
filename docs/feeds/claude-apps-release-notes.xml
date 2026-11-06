@@ -15,6 +15,13 @@
       <description>Claude Enterprise has new security and admin features, including a security center, inference hooks, centralized management, and additional access controls, several in beta. For more information, see our blog post: More visibility and control over Claude Enterprise for security teams .</description>
     </item>
     <item>
+      <title>Personal Finance in Claude</title>
+      <link>https://support.claude.com/en/articles/12138966-release-notes</link>
+      <guid isPermaLink="false">claude_apps-46168468507fb825f941c23a</guid>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+      <description>We’re rolling out Personal Finance, a beta that lets you link your bank, credit card, loan, and investment accounts to Claude, so you can see your balances and spending on one page and ask Claude questions about your own money. It's available on Pro, Max, and Ultra plans, and is available in the US only. For more information, see our blog post: Introducing Personal Finance in Claude .</description>
+    </item>
+    <item>
       <title>Claude Duet research preview for Pro and Max plans</title>
       <link>https://support.claude.com/en/articles/12138966-release-notes</link>
       <guid isPermaLink="false">claude_apps-1d37cdf714043b7d2e36e62e</guid>
@@ -559,13 +566,6 @@
       <guid isPermaLink="false">claude_apps-2ffcf17aa8d20224a4e26621</guid>
       <pubDate>Fri, 15 Aug 2025 00:00:00 GMT</pubDate>
       <description>Allowing Team plan organizations with monthly billing to upgrade to annual billing. See How to change your Team plan from monthly to annual billing .</description>
-    </item>
-    <item>
-      <title>1M token context window</title>
-      <link>https://support.claude.com/en/articles/12138966-release-notes</link>
-      <guid isPermaLink="false">claude_apps-d65fd5516fb65434de08a5f9</guid>
-      <pubDate>Tue, 12 Aug 2025 00:00:00 GMT</pubDate>
-      <description>The 1M token context window for Claude Sonnet 4 is currently in beta for API organizations in usage tier 4, or with custom rate limits. See 1M token context window in our docs for more information.</description>
     </item>
   </channel>
 </rss>

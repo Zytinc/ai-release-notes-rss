@@ -10,6 +10,13 @@
           "description": "Claude Enterprise has new security and admin features, including a security center, inference hooks, centralized management, and additional access controls, several in beta. For more information, see our blog post: More visibility and control over Claude Enterprise for security teams ."
         },
         {
+          "guid": "claude_apps-46168468507fb825f941c23a",
+          "title": "Personal Finance in Claude",
+          "link": "https://support.claude.com/en/articles/12138966-release-notes",
+          "published": "2026-11-05T00:00:00+00:00",
+          "description": "We’re rolling out Personal Finance, a beta that lets you link your bank, credit card, loan, and investment accounts to Claude, so you can see your balances and spending on one page and ask Claude questions about your own money. It's available on Pro, Max, and Ultra plans, and is available in the US only. For more information, see our blog post: Introducing Personal Finance in Claude ."
+        },
+        {
           "guid": "claude_apps-1d37cdf714043b7d2e36e62e",
           "title": "Claude Duet research preview for Pro and Max plans",
           "link": "https://support.claude.com/en/articles/12138966-release-notes",
@@ -554,13 +561,6 @@
           "link": "https://support.claude.com/en/articles/12138966-release-notes",
           "published": "2025-08-15T00:00:00+00:00",
           "description": "Allowing Team plan organizations with monthly billing to upgrade to annual billing. See How to change your Team plan from monthly to annual billing ."
-        },
-        {
-          "guid": "claude_apps-d65fd5516fb65434de08a5f9",
-          "title": "1M token context window",
-          "link": "https://support.claude.com/en/articles/12138966-release-notes",
-          "published": "2025-08-12T00:00:00+00:00",
-          "description": "The 1M token context window for Claude Sonnet 4 is currently in beta for API organizations in usage tier 4, or with custom rate limits. See 1M token context window in our docs for more information."
         }
       ]
     },
