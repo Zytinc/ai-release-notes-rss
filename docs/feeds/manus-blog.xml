@@ -29,6 +29,13 @@
       <description>Manus 官方博客文章（其他）。</description>
     </item>
     <item>
+      <title>How we built a data agent with Manus to help every team make better decisions</title>
+      <link>https://manus.im/zh-cn/blog/how-we-built-a-data-agent</link>
+      <guid isPermaLink="false">manus_blog-how-we-built-a-data-agent</guid>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Manus's four-person data team built a data agent that more than 40 people use every week. We sat down with Ben Zhong, whose Slack title is "Data Guy," to hear how it came together, and what other teams can take from it.</description>
+    </item>
+    <item>
       <title>用 Manus 重建 Manus：什么变了，什么出了问题，以及我们现在如何工作</title>
       <link>https://manus.im/zh-cn/blog/rebuilding-manus-with-manus</link>
       <guid isPermaLink="false">manus_blog-rebuilding-manus-with-manus</guid>
@@ -559,13 +566,6 @@
       <guid isPermaLink="false">manus_blog-manus-beginner-prompts</guid>
       <pubDate>Wed, 11 Feb 2026 00:00:00 GMT</pubDate>
       <description>Manus 官方博客文章（资源）。</description>
-    </item>
-    <item>
-      <title>2026 年 7 个最佳 AI 登陆页面生成器（测试和比较）</title>
-      <link>https://manus.im/zh-cn/blog/best-landing-page-generator</link>
-      <guid isPermaLink="false">manus_blog-best-landing-page-generator</guid>
-      <pubDate>Fri, 06 Feb 2026 00:00:00 GMT</pubDate>
-      <description>Manus 官方博客文章（其他）。</description>
     </item>
   </channel>
 </rss>
