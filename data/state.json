@@ -3,6 +3,13 @@
     "claude_apps": {
       "items": [
         {
+          "guid": "claude_apps-4b589a645e178355ba02f22e",
+          "title": "Claude Meetings is rolling out in beta on Team and Enterprise plans in Claude and Claude Desktop. You can add Claude to a Google Meet call as a visible participant that takes notes, answers questions, and builds artifacts, such as docs, whiteboards, and slides, during the call. For more information, see Use Claude Meetings .",
+          "link": "https://support.claude.com/en/articles/12138966-release-notes",
+          "published": "2026-11-12T00:00:00+00:00",
+          "description": "Claude Apps、Desktop、Mobile、Cowork、Connectors 等产品更新。"
+        },
+        {
           "guid": "claude_apps-5a26b8a0b13c7e61a02bafc2",
           "title": "Track spend by cost code with project tags (beta)",
           "link": "https://support.claude.com/en/articles/12138966-release-notes",
@@ -554,13 +561,6 @@
           "link": "https://support.claude.com/en/articles/12138966-release-notes",
           "published": "2025-08-21T00:00:00+00:00",
           "description": "Claude users with free, Pro, or Max plans can generate an embed code for any published artifacts."
-        },
-        {
-          "guid": "claude_apps-a112d5c6fed71a0b6082b0a7",
-          "title": "Premium seats with Claude Code for Team and Enterprise plans",
-          "link": "https://support.claude.com/en/articles/12138966-release-notes",
-          "published": "2025-08-20T00:00:00+00:00",
-          "description": "Introduced a premium seat tier for Team and Enterprise plans offering more usage and access to Claude Code. Refer to the following articles for more information: Purchasing and managing seats Using Claude Code with your Team or Enterprise plan Extra usage for Team and Enterprise plans A new setting allows Team and Enterprise plan users to purchase more usage to continue chatting with Claude or using Claude Code after hitting their usage limit. See Extra Usage for Team and Enterprise Plans ."
         }
       ]
     },

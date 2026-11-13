@@ -5,8 +5,15 @@
     <link>https://support.claude.com/en/articles/12138966-release-notes</link>
     <description>Claude Apps、Desktop、Mobile、Cowork、Connectors 等产品更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 06 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 00:00:00 GMT</lastBuildDate>
     <generator>ai-release-notes-rss</generator>
+    <item>
+      <title>Claude Meetings is rolling out in beta on Team and Enterprise plans in Claude and Claude Desktop. You can add Claude to a Google Meet call as a visible participant that takes notes, answers questions, and builds artifacts, such as docs, whiteboards, and slides, during the call. For more information, see Use Claude Meetings .</title>
+      <link>https://support.claude.com/en/articles/12138966-release-notes</link>
+      <guid isPermaLink="false">claude_apps-4b589a645e178355ba02f22e</guid>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Claude Apps、Desktop、Mobile、Cowork、Connectors 等产品更新。</description>
+    </item>
     <item>
       <title>Track spend by cost code with project tags (beta)</title>
       <link>https://support.claude.com/en/articles/12138966-release-notes</link>
@@ -559,13 +566,6 @@
       <guid isPermaLink="false">claude_apps-d83b91bd1debf4dbae4943ae</guid>
       <pubDate>Thu, 21 Aug 2025 00:00:00 GMT</pubDate>
       <description>Claude users with free, Pro, or Max plans can generate an embed code for any published artifacts.</description>
-    </item>
-    <item>
-      <title>Premium seats with Claude Code for Team and Enterprise plans</title>
-      <link>https://support.claude.com/en/articles/12138966-release-notes</link>
-      <guid isPermaLink="false">claude_apps-a112d5c6fed71a0b6082b0a7</guid>
-      <pubDate>Wed, 20 Aug 2025 00:00:00 GMT</pubDate>
-      <description>Introduced a premium seat tier for Team and Enterprise plans offering more usage and access to Claude Code. Refer to the following articles for more information: Purchasing and managing seats Using Claude Code with your Team or Enterprise plan Extra usage for Team and Enterprise plans A new setting allows Team and Enterprise plan users to purchase more usage to continue chatting with Claude or using Claude Code after hitting their usage limit. See Extra Usage for Team and Enterprise Plans .</description>
     </item>
   </channel>
 </rss>
