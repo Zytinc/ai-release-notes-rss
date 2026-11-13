@@ -5,8 +5,29 @@
     <link>https://manus.im/zh-cn/blog</link>
     <description>Manus 官方博客文章，包括产品发布、客户案例与其他文章。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 06 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 00:00:00 GMT</lastBuildDate>
     <generator>ai-release-notes-rss</generator>
+    <item>
+      <title>50 个创意游戏点子，助你启动下一个项目</title>
+      <link>https://manus.im/zh-cn/blog/game-ideas</link>
+      <guid isPermaLink="false">manus_blog-game-ideas</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Manus 官方博客文章（其他）。</description>
+    </item>
+    <item>
+      <title>如何在零代码的情况下制作手机游戏</title>
+      <link>https://manus.im/zh-cn/blog/how-to-make-a-mobile-game</link>
+      <guid isPermaLink="false">manus_blog-how-to-make-a-mobile-game</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Manus 官方博客文章（其他）。</description>
+    </item>
+    <item>
+      <title>AI 游戏制作工具 vs. 游戏引擎：选择前你需要了解的内容</title>
+      <link>https://manus.im/zh-cn/blog/ai-game-maker-vs-game-engine</link>
+      <guid isPermaLink="false">manus_blog-ai-game-maker-vs-game-engine</guid>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Manus 官方博客文章（其他）。</description>
+    </item>
     <item>
       <title>如何使用 AI 制作你的第一款电子游戏：分步指南</title>
       <link>https://manus.im/zh-cn/blog/how-to-build-your-first-game-with-ai</link>
@@ -545,27 +566,6 @@
       <guid isPermaLink="false">manus_blog-best-ai-tools-for-code-review</guid>
       <pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate>
       <description>Manus 官方博客文章（其他）。</description>
-    </item>
-    <item>
-      <title>Manus vs Synthesia：哪个视频生成器适合您？</title>
-      <link>https://manus.im/zh-cn/blog/manus-vs-synthesia</link>
-      <guid isPermaLink="false">manus_blog-manus-vs-synthesia</guid>
-      <pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate>
-      <description>Manus 官方博客文章（其他）。</description>
-    </item>
-    <item>
-      <title>介绍项目技能：将您的团队专业知识转化为可重复使用的资产</title>
-      <link>https://manus.im/zh-cn/blog/manus-project-skills</link>
-      <guid isPermaLink="false">manus_blog-manus-project-skills</guid>
-      <pubDate>Thu, 12 Feb 2026 00:00:00 GMT</pubDate>
-      <description>Manus 官方博客文章（产品）。</description>
-    </item>
-    <item>
-      <title>初学者提示：开始使用 Manus</title>
-      <link>https://manus.im/zh-cn/blog/manus-beginner-prompts</link>
-      <guid isPermaLink="false">manus_blog-manus-beginner-prompts</guid>
-      <pubDate>Wed, 11 Feb 2026 00:00:00 GMT</pubDate>
-      <description>Manus 官方博客文章（资源）。</description>
     </item>
   </channel>
 </rss>

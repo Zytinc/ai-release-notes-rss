@@ -1706,6 +1706,27 @@
     "manus_blog": {
       "items": [
         {
+          "guid": "manus_blog-game-ideas",
+          "title": "50 个创意游戏点子，助你启动下一个项目",
+          "link": "https://manus.im/zh-cn/blog/game-ideas",
+          "published": "2026-11-13T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
+          "guid": "manus_blog-how-to-make-a-mobile-game",
+          "title": "如何在零代码的情况下制作手机游戏",
+          "link": "https://manus.im/zh-cn/blog/how-to-make-a-mobile-game",
+          "published": "2026-11-13T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
+          "guid": "manus_blog-ai-game-maker-vs-game-engine",
+          "title": "AI 游戏制作工具 vs. 游戏引擎：选择前你需要了解的内容",
+          "link": "https://manus.im/zh-cn/blog/ai-game-maker-vs-game-engine",
+          "published": "2026-11-13T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
           "guid": "manus_blog-how-to-build-your-first-game-with-ai",
           "title": "如何使用 AI 制作你的第一款电子游戏：分步指南",
           "link": "https://manus.im/zh-cn/blog/how-to-build-your-first-game-with-ai",
@@ -2243,27 +2264,6 @@
           "link": "https://manus.im/zh-cn/blog/best-ai-tools-for-code-review",
           "published": "2026-02-13T00:00:00+00:00",
           "description": "Manus 官方博客文章（其他）。"
-        },
-        {
-          "guid": "manus_blog-manus-vs-synthesia",
-          "title": "Manus vs Synthesia：哪个视频生成器适合您？",
-          "link": "https://manus.im/zh-cn/blog/manus-vs-synthesia",
-          "published": "2026-02-13T00:00:00+00:00",
-          "description": "Manus 官方博客文章（其他）。"
-        },
-        {
-          "guid": "manus_blog-manus-project-skills",
-          "title": "介绍项目技能：将您的团队专业知识转化为可重复使用的资产",
-          "link": "https://manus.im/zh-cn/blog/manus-project-skills",
-          "published": "2026-02-12T00:00:00+00:00",
-          "description": "Manus 官方博客文章（产品）。"
-        },
-        {
-          "guid": "manus_blog-manus-beginner-prompts",
-          "title": "初学者提示：开始使用 Manus",
-          "link": "https://manus.im/zh-cn/blog/manus-beginner-prompts",
-          "published": "2026-02-11T00:00:00+00:00",
-          "description": "Manus 官方博客文章（资源）。"
         }
       ]
     },
