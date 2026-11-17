@@ -5,14 +5,28 @@
     <link>https://support.claude.com/en/articles/12138966-release-notes</link>
     <description>Claude Apps、Desktop、Mobile、Cowork、Connectors 等产品更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 12 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 00:00:00 GMT</lastBuildDate>
     <generator>ai-release-notes-rss</generator>
+    <item>
+      <title>Choose a release channel in Claude Desktop</title>
+      <link>https://support.claude.com/en/articles/12138966-release-notes</link>
+      <guid isPermaLink="false">claude_apps-2e93286f0e44f69b6a74fe71</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <description>You can now use a release channel to set which version of Claude Desktop you get when the app updates. Stable stays the default and gets new versions less often, after more testing. Latest gets a new version about once a day, so fixes and new features reach you sooner. For more information, see Choose a release channel .</description>
+    </item>
     <item>
       <title>Claude Meetings is rolling out in beta on Team and Enterprise plans in Claude and Claude Desktop. You can add Claude to a Google Meet call as a visible participant that takes notes, answers questions, and builds artifacts, such as docs, whiteboards, and slides, during the call. For more information, see Use Claude Meetings .</title>
       <link>https://support.claude.com/en/articles/12138966-release-notes</link>
       <guid isPermaLink="false">claude_apps-4b589a645e178355ba02f22e</guid>
       <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
       <description>Claude Apps、Desktop、Mobile、Cowork、Connectors 等产品更新。</description>
+    </item>
+    <item>
+      <title>Add Claude to your meetings</title>
+      <link>https://support.claude.com/en/articles/12138966-release-notes</link>
+      <guid isPermaLink="false">claude_apps-d0c6c405286813239733b037</guid>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Claude Meetings is rolling out in beta on Team and Enterprise plans in Claude and Claude Desktop. You can add Claude to a Google Meet call as a visible participant that takes notes, answers questions, and builds artifacts, such as docs, whiteboards, and slides, during the call. For more information, see Use Claude Meetings .</description>
     </item>
     <item>
       <title>Track spend by cost code with project tags (beta)</title>
@@ -552,20 +566,6 @@
       <guid isPermaLink="false">claude_apps-1dedfe3e761fab13ce4b25ce</guid>
       <pubDate>Tue, 26 Aug 2025 00:00:00 GMT</pubDate>
       <description>An experimental browser extension that allows Claude to read, click, and navigate websites alongside you. See Getting Started with Claude in Chrome .</description>
-    </item>
-    <item>
-      <title>Admin controls for desktop extensions</title>
-      <link>https://support.claude.com/en/articles/12138966-release-notes</link>
-      <guid isPermaLink="false">claude_apps-16472433dcfba9b139027227</guid>
-      <pubDate>Thu, 21 Aug 2025 00:00:00 GMT</pubDate>
-      <description>Allows Team and Enterprise plans to enable/disable public desktop extensions and upload custom extensions. See Admin Controls for Desktop Extensions .</description>
-    </item>
-    <item>
-      <title>Making shared artifacts embeddable</title>
-      <link>https://support.claude.com/en/articles/12138966-release-notes</link>
-      <guid isPermaLink="false">claude_apps-d83b91bd1debf4dbae4943ae</guid>
-      <pubDate>Thu, 21 Aug 2025 00:00:00 GMT</pubDate>
-      <description>Claude users with free, Pro, or Max plans can generate an embed code for any published artifacts.</description>
     </item>
   </channel>
 </rss>
