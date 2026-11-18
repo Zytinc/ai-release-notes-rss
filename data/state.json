@@ -1727,6 +1727,13 @@
     "manus_blog": {
       "items": [
         {
+          "guid": "manus_blog-manus-joins-godot-foundation",
+          "title": "Manus Joins the Godot Foundation as a Platinum Sponsor",
+          "link": "https://manus.im/zh-cn/blog/manus-joins-godot-foundation",
+          "published": "2026-11-16T00:00:00+00:00",
+          "description": "Manus is joining the Godot Foundation as a Platinum Sponsor to help fund Godot, the free, open-source engine for making 2D and 3D games."
+        },
+        {
           "guid": "manus_blog-game-ideas",
           "title": "50 个创意游戏点子，助你启动下一个项目",
           "link": "https://manus.im/zh-cn/blog/game-ideas",
@@ -2276,13 +2283,6 @@
           "guid": "manus_blog-best-ai-productivity-tools",
           "title": "2026 年不容错过的 12 款最佳 AI 生产力工具",
           "link": "https://manus.im/zh-cn/blog/best-ai-productivity-tools",
-          "published": "2026-02-13T00:00:00+00:00",
-          "description": "Manus 官方博客文章（其他）。"
-        },
-        {
-          "guid": "manus_blog-best-ai-tools-for-code-review",
-          "title": "2026年最佳AI代码审查工具",
-          "link": "https://manus.im/zh-cn/blog/best-ai-tools-for-code-review",
           "published": "2026-02-13T00:00:00+00:00",
           "description": "Manus 官方博客文章（其他）。"
         }
