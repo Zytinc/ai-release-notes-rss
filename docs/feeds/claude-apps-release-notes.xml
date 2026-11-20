@@ -5,8 +5,15 @@
     <link>https://support.claude.com/en/articles/12138966-release-notes</link>
     <description>Claude Apps、Desktop、Mobile、Cowork、Connectors 等产品更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 17 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 00:00:00 GMT</lastBuildDate>
     <generator>ai-release-notes-rss</generator>
+    <item>
+      <title>Computer use (beta) for Team and Enterprise plans</title>
+      <link>https://support.claude.com/en/articles/12138966-release-notes</link>
+      <guid isPermaLink="false">claude_apps-6b1030daed5d5737378262c6</guid>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Computer use lets Claude see a user's screen and work in the desktop apps they allow. It works in the new Claude experience in Claude Desktop, and from Claude on the web and Claude Mobile where Computer access is on. It's now available in beta on Team and Enterprise plans, and is rolling out to organizations gradually. For more information, see Set up computer use for Team and Enterprise plans .</description>
+    </item>
     <item>
       <title>Choose a release channel in Claude Desktop</title>
       <link>https://support.claude.com/en/articles/12138966-release-notes</link>
@@ -559,13 +566,6 @@
       <guid isPermaLink="false">claude_apps-2b0fc24580b006c4928fde17</guid>
       <pubDate>Wed, 27 Aug 2025 00:00:00 GMT</pubDate>
       <description>A new API tool that allows Claude to execute Python code in a secure, sandboxed environment. Refer to our docs for more information: Code execution tool .</description>
-    </item>
-    <item>
-      <title>Claude in Chrome</title>
-      <link>https://support.claude.com/en/articles/12138966-release-notes</link>
-      <guid isPermaLink="false">claude_apps-1dedfe3e761fab13ce4b25ce</guid>
-      <pubDate>Tue, 26 Aug 2025 00:00:00 GMT</pubDate>
-      <description>An experimental browser extension that allows Claude to read, click, and navigate websites alongside you. See Getting Started with Claude in Chrome .</description>
     </item>
   </channel>
 </rss>

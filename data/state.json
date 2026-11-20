@@ -3,6 +3,13 @@
     "claude_apps": {
       "items": [
         {
+          "guid": "claude_apps-6b1030daed5d5737378262c6",
+          "title": "Computer use (beta) for Team and Enterprise plans",
+          "link": "https://support.claude.com/en/articles/12138966-release-notes",
+          "published": "2026-11-20T00:00:00+00:00",
+          "description": "Computer use lets Claude see a user's screen and work in the desktop apps they allow. It works in the new Claude experience in Claude Desktop, and from Claude on the web and Claude Mobile where Computer access is on. It's now available in beta on Team and Enterprise plans, and is rolling out to organizations gradually. For more information, see Set up computer use for Team and Enterprise plans ."
+        },
+        {
           "guid": "claude_apps-2e93286f0e44f69b6a74fe71",
           "title": "Choose a release channel in Claude Desktop",
           "link": "https://support.claude.com/en/articles/12138966-release-notes",
@@ -554,13 +561,6 @@
           "link": "https://support.claude.com/en/articles/12138966-release-notes",
           "published": "2025-08-27T00:00:00+00:00",
           "description": "A new API tool that allows Claude to execute Python code in a secure, sandboxed environment. Refer to our docs for more information: Code execution tool ."
-        },
-        {
-          "guid": "claude_apps-1dedfe3e761fab13ce4b25ce",
-          "title": "Claude in Chrome",
-          "link": "https://support.claude.com/en/articles/12138966-release-notes",
-          "published": "2025-08-26T00:00:00+00:00",
-          "description": "An experimental browser extension that allows Claude to read, click, and navigate websites alongside you. See Getting Started with Claude in Chrome ."
         }
       ]
     },
@@ -1734,6 +1734,27 @@
     "manus_blog": {
       "items": [
         {
+          "guid": "manus_blog-how-make-a-multiplayer-game",
+          "title": "如何在 Manus 中制作多人游戏(无需编码)",
+          "link": "https://manus.im/zh-cn/blog/how-make-a-multiplayer-game",
+          "published": "2026-11-20T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
+          "guid": "manus_blog-how-to-make-a-3d-game",
+          "title": "初学者如何构建 3D 游戏",
+          "link": "https://manus.im/zh-cn/blog/how-to-make-a-3d-game",
+          "published": "2026-11-20T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
+          "guid": "manus_blog-best-ai-character-generators",
+          "title": "2026 年 11 款最佳 AI 角色生成器（免费与付费）",
+          "link": "https://manus.im/zh-cn/blog/best-ai-character-generators",
+          "published": "2026-11-20T00:00:00+00:00",
+          "description": "Manus 官方博客文章（其他）。"
+        },
+        {
           "guid": "manus_blog-manus-joins-godot-foundation",
           "title": "Manus Joins the Godot Foundation as a Platinum Sponsor",
           "link": "https://manus.im/zh-cn/blog/manus-joins-godot-foundation",
@@ -2271,27 +2292,6 @@
           "link": "https://manus.im/zh-cn/blog/email-agent-tutorial",
           "published": "2026-02-23T00:00:00+00:00",
           "description": "Manus 官方博客文章（资源）。"
-        },
-        {
-          "guid": "manus_blog-manus-agents-telegram",
-          "title": "在您的聊天中引入 Manus：您的个人 Agent，随时随地",
-          "link": "https://manus.im/zh-cn/blog/manus-agents-telegram",
-          "published": "2026-02-16T00:00:00+00:00",
-          "description": "Manus 官方博客文章（产品）。"
-        },
-        {
-          "guid": "manus_blog-free-pdf-to-ppt-converters",
-          "title": "2026 年最佳免费 PDF 转 PPT 转换器（测试与比较）",
-          "link": "https://manus.im/zh-cn/blog/free-pdf-to-ppt-converters",
-          "published": "2026-02-13T00:00:00+00:00",
-          "description": "Manus 官方博客文章（其他）。"
-        },
-        {
-          "guid": "manus_blog-best-ai-productivity-tools",
-          "title": "2026 年不容错过的 12 款最佳 AI 生产力工具",
-          "link": "https://manus.im/zh-cn/blog/best-ai-productivity-tools",
-          "published": "2026-02-13T00:00:00+00:00",
-          "description": "Manus 官方博客文章（其他）。"
         }
       ]
     },
