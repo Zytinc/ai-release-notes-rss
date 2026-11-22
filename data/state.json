@@ -10,6 +10,13 @@
           "description": "Computer use lets Claude see a user's screen and work in the desktop apps they allow. It works in the new Claude experience in Claude Desktop, and from Claude on the web and Claude Mobile where Computer access is on. It's now available in beta on Team and Enterprise plans, and is rolling out to organizations gradually. For more information, see Set up computer use for Team and Enterprise plans ."
         },
         {
+          "guid": "claude_apps-02e20eb392034bb4b1472d11",
+          "title": "A refreshed look for Claude Mobile",
+          "link": "https://support.claude.com/en/articles/12138966-release-notes",
+          "published": "2026-11-20T00:00:00+00:00",
+          "description": "A refreshed look for Claude Mobile is rolling out gradually, starting with Claude for iOS. Your chats, projects, and plan stay the same. There's nothing to turn on. Keep your app updated, and note that the new look needs iOS 26 or later."
+        },
+        {
           "guid": "claude_apps-2e93286f0e44f69b6a74fe71",
           "title": "Choose a release channel in Claude Desktop",
           "link": "https://support.claude.com/en/articles/12138966-release-notes",
@@ -554,13 +561,6 @@
           "link": "https://support.claude.com/en/articles/12138966-release-notes",
           "published": "2025-09-03T00:00:00+00:00",
           "description": "Claude can now connect with iOS and Android apps to draft calendar events, help you find locations, and manage reminders (iOS only). See updates to the following two articles for more information: Using Claude with iOS Apps Using Claude with Android Apps"
-        },
-        {
-          "guid": "claude_apps-2b0fc24580b006c4928fde17",
-          "title": "Code Execution Tool",
-          "link": "https://support.claude.com/en/articles/12138966-release-notes",
-          "published": "2025-08-27T00:00:00+00:00",
-          "description": "A new API tool that allows Claude to execute Python code in a secure, sandboxed environment. Refer to our docs for more information: Code execution tool ."
         }
       ]
     },
