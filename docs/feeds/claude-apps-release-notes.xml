@@ -5,8 +5,29 @@
     <link>https://support.claude.com/en/articles/12138966-release-notes</link>
     <description>Claude Apps、Desktop、Mobile、Cowork、Connectors 等产品更新。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 20 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 00:00:00 GMT</lastBuildDate>
     <generator>ai-release-notes-rss</generator>
+    <item>
+      <title>Monthly recap is out of beta</title>
+      <link>https://support.claude.com/en/articles/12138966-release-notes</link>
+      <guid isPermaLink="false">claude_apps-7670d6ab7bdab7cbd13b84c6</guid>
+      <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+      <description>The monthly recap (Reflect, in Settings) is now out of beta for Free, Pro, Max, and Ultra plans on the web, Claude Desktop, and Claude for iOS and Android. Recaps can now draw on your Claude Code sessions and Claude Cowork tasks in the cloud, and you can delete your stored recaps from the page. For more information, see See your monthly recap .</description>
+    </item>
+    <item>
+      <title>Install artifacts as apps (beta)</title>
+      <link>https://support.claude.com/en/articles/12138966-release-notes</link>
+      <guid isPermaLink="false">claude_apps-037e27adc6edf17bd48fe3e9</guid>
+      <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+      <description>You can now install an artifact that Claude makes for you as an app on your Mac or Windows computer. It gets its own window and icon, opens like any other app, and can even interact with the operating system the way any other app might. This feature is currently in beta. For more information, see Install an app as an artifact .</description>
+    </item>
+    <item>
+      <title>Send files to connected apps and save files from them (beta)</title>
+      <link>https://support.claude.com/en/articles/12138966-release-notes</link>
+      <guid isPermaLink="false">claude_apps-be0dac8c0231752089f52be9</guid>
+      <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Claude can now send a file to an app you've connected, or save a file that the app offers. File transfers with connectors are rolling out gradually in beta on Pro, Max, and Ultra plans, and on Team and Enterprise plans when an owner turns them on. For more information, see Send files to connected apps and save files from them .</description>
+    </item>
     <item>
       <title>Computer use (beta) for Team and Enterprise plans</title>
       <link>https://support.claude.com/en/articles/12138966-release-notes</link>
@@ -545,27 +566,6 @@
       <guid isPermaLink="false">claude_apps-969e855a38383e30a1e31da7</guid>
       <pubDate>Tue, 16 Sep 2025 00:00:00 GMT</pubDate>
       <description>Claude in Chrome expanded to 10,000 Max plan users with the release of new capabilities: Long-running workflows: Claude in Chrome can handle more complex, multi-step workflows, and continue working even when you switch tabs (as long as Chrome is open). /slash commands: Save your best-working prompts as shortcuts (/slash commands) and reuse these proven workflows instantly without retyping instructions to Claude. Contextual prompt suggestions: Claude in Chrome gives contextual prompt suggestions or helpful tips based on what website you’re on.</description>
-    </item>
-    <item>
-      <title>Claude’s memory on Team plans and incognito chats for free, Pro, Max, and Team plans</title>
-      <link>https://support.claude.com/en/articles/12138966-release-notes</link>
-      <guid isPermaLink="false">claude_apps-c84c19b2b9405e86a8bce11c</guid>
-      <pubDate>Thu, 11 Sep 2025 00:00:00 GMT</pubDate>
-      <description>Claude can now remember relevant context from your chats and will generate a memory summary. Incognito chats give you a way to exclude conversations from Claude’s memory. Refer to the following new articles for more information: Using Claude’s chat search and memory to build on previous context Importing and exporting your memory from Claude Using incognito chats</description>
-    </item>
-    <item>
-      <title>Creating and editing files with Claude</title>
-      <link>https://support.claude.com/en/articles/12138966-release-notes</link>
-      <guid isPermaLink="false">claude_apps-5ef7bbe17473c3a8047c7df0</guid>
-      <pubDate>Tue, 09 Sep 2025 00:00:00 GMT</pubDate>
-      <description>Claude can now create and edit Excel spreadsheets, PowerPoint slide decks, documents, and PDFs directly in the Claude app. Refer to the following two articles for more information: Create and edit files with Claude Create and edit files with Claude to eliminate hours of busy work</description>
-    </item>
-    <item>
-      <title>Location, maps, and calendar access on Claude for iOS and Android</title>
-      <link>https://support.claude.com/en/articles/12138966-release-notes</link>
-      <guid isPermaLink="false">claude_apps-fc5c9d5509b12832f74e9a0f</guid>
-      <pubDate>Wed, 03 Sep 2025 00:00:00 GMT</pubDate>
-      <description>Claude can now connect with iOS and Android apps to draft calendar events, help you find locations, and manage reminders (iOS only). See updates to the following two articles for more information: Using Claude with iOS Apps Using Claude with Android Apps</description>
     </item>
   </channel>
 </rss>
