@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>Sand.ai 研究博客</title>
+    <link>https://sandai.cn/research/</link>
+    <description>Sand.ai 中文官网研究页中的论文、模型发布与技术文章，包括 MAGI-2。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 24 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <generator>ai-release-notes-rss</generator>
+    <item>
+      <title>MAGI-2：480B 旗舰视频生成模型</title>
+      <link>https://sand.ai/blog/magi-2/</link>
+      <guid isPermaLink="false">sand_research-magi-2</guid>
+      <pubDate>Tue, 24 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Sand.ai 中文官网研究页中的论文、模型发布与技术文章，包括 MAGI-2。</description>
+    </item>
+    <item>
+      <title>MAGI-2 Preview：高效扩展视频生成模型</title>
+      <link>https://sandai.cn/blog/magi-2-preview</link>
+      <guid isPermaLink="false">sand_research-magi-2-preview</guid>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Sand.ai 中文官网研究页中的论文、模型发布与技术文章，包括 MAGI-2。</description>
+    </item>
+    <item>
+      <title>用 MoE 扩展视频扩散模型</title>
+      <link>https://sandai.cn/blog/scaling-video-diffusion-models-with-moe</link>
+      <guid isPermaLink="false">sand_research-scaling-video-diffusion-models-with-moe</guid>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
+      <description>Sand.ai 中文官网研究页中的论文、模型发布与技术文章，包括 MAGI-2。</description>
+    </item>
+    <item>
+      <title>MAGICompiler：突破大模型局部编译的边界</title>
+      <link>https://sandai.cn/blog/magi-compiler-blog</link>
+      <guid isPermaLink="false">sand_research-magi-compiler-blog</guid>
+      <pubDate>Mon, 30 Mar 2026 00:00:00 GMT</pubDate>
+      <description>Sand.ai 中文官网研究页中的论文、模型发布与技术文章，包括 MAGI-2。</description>
+    </item>
+    <item>
+      <title>MAGIAttention 技术博客</title>
+      <link>https://sandai.cn/blog/magi-attention-code</link>
+      <guid isPermaLink="false">sand_research-magi-attention-code</guid>
+      <pubDate>Mon, 30 Mar 2026 00:00:00 GMT</pubDate>
+      <description>Sand.ai 中文官网研究页中的论文、模型发布与技术文章，包括 MAGI-2。</description>
+    </item>
+    <item>
+      <title>daVinci-MAGIHuman 技术报告</title>
+      <link>https://arxiv.org/abs/2603.21986</link>
+      <guid isPermaLink="false">sand_research-2603.21986</guid>
+      <pubDate>Mon, 23 Mar 2026 00:00:00 GMT</pubDate>
+      <description>Sand.ai 中文官网研究页中的论文、模型发布与技术文章，包括 MAGI-2。</description>
+    </item>
+    <item>
+      <title>MAGI-1 技术报告</title>
+      <link>https://arxiv.org/abs/2505.13211</link>
+      <guid isPermaLink="false">sand_research-2505.13211</guid>
+      <pubDate>Mon, 21 Apr 2025 00:00:00 GMT</pubDate>
+      <description>Sand.ai 中文官网研究页中的论文、模型发布与技术文章，包括 MAGI-2。</description>
+    </item>
+    <item>
+      <title>MAGI-1 推理代码与模型权重</title>
+      <link>https://github.com/SandAI-org/MAGI-1</link>
+      <guid isPermaLink="false">sand_research-MAGI-1</guid>
+      <pubDate>Mon, 21 Apr 2025 00:00:00 GMT</pubDate>
+      <description>Sand.ai 中文官网研究页中的论文、模型发布与技术文章，包括 MAGI-2。</description>
+    </item>
+    <item>
+      <title>MAGIAttention 代码</title>
+      <link>https://github.com/SandAI-org/MagiAttention</link>
+      <guid isPermaLink="false">sand_research-MagiAttention</guid>
+      <pubDate>Mon, 21 Apr 2025 00:00:00 GMT</pubDate>
+      <description>Sand.ai 中文官网研究页中的论文、模型发布与技术文章，包括 MAGI-2。</description>
+    </item>
+  </channel>
+</rss>

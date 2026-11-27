@@ -2,79 +2,149 @@
 <rss version="2.0">
   <channel>
     <title>Kimi 研究博客</title>
-    <link>https://www.kimi.ai/blog/</link>
+    <link>https://www.kimi.ai/zh-hans/blog/</link>
     <description>Kimi 官方研究与技术博客文章。</description>
     <language>zh-CN</language>
     <lastBuildDate>Sat, 24 Oct 2026 00:00:00 GMT</lastBuildDate>
     <generator>ai-release-notes-rss</generator>
     <item>
       <title>Kimi K3.1 Pro</title>
-      <link>https://www.kimi.ai/blog/kimi-k3-1-pro</link>
-      <guid isPermaLink="false">kimi_research-853cf9d0ca463f57e052ecec</guid>
+      <link>https://www.kimi.ai/zh-hans/blog/kimi-k3-1-pro</link>
+      <guid isPermaLink="false">kimi_research-kimi-k3-1-pro</guid>
       <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
       <description>Kimi 官方研究与技术博客文章。</description>
     </item>
     <item>
       <title>Kimi K3</title>
-      <link>https://www.kimi.ai/blog/kimi-k3</link>
-      <guid isPermaLink="false">kimi_research-2bcfe0bf20107eabd7c4421c</guid>
+      <link>https://www.kimi.ai/zh-hans/blog/kimi-k3</link>
+      <guid isPermaLink="false">kimi_research-kimi-k3</guid>
       <pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate>
       <description>Kimi 官方研究与技术博客文章。</description>
     </item>
     <item>
       <title>PerceptionBench</title>
-      <link>https://www.kimi.ai/blog/perception-bench</link>
-      <guid isPermaLink="false">kimi_research-8c8a7259d0ae19b9f26763fa</guid>
+      <link>https://www.kimi.ai/zh-hans/blog/perception-bench</link>
+      <guid isPermaLink="false">kimi_research-perception-bench</guid>
       <pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate>
       <description>Kimi 官方研究与技术博客文章。</description>
     </item>
     <item>
       <title>Kimi K2.6</title>
-      <link>https://www.kimi.ai/blog/kimi-k2-6</link>
-      <guid isPermaLink="false">kimi_research-dc2471f84226b30071179c2a</guid>
+      <link>https://www.kimi.ai/zh-hans/blog/kimi-k2-6</link>
+      <guid isPermaLink="false">kimi_research-kimi-k2-6</guid>
       <pubDate>Mon, 20 Apr 2026 00:00:00 GMT</pubDate>
       <description>Kimi 官方研究与技术博客文章。</description>
     </item>
     <item>
       <title>Agent Swarm</title>
-      <link>https://www.kimi.ai/blog/agent-swarm</link>
-      <guid isPermaLink="false">kimi_research-1fb06a13e473babb8a93e85b</guid>
+      <link>https://www.kimi.ai/zh-hans/blog/agent-swarm</link>
+      <guid isPermaLink="false">kimi_research-agent-swarm</guid>
       <pubDate>Mon, 09 Feb 2026 00:00:00 GMT</pubDate>
       <description>Kimi 官方研究与技术博客文章。</description>
     </item>
     <item>
       <title>WorldVQA</title>
-      <link>https://www.kimi.ai/blog/worldvqa</link>
-      <guid isPermaLink="false">kimi_research-9aa787e765799a62621235a0</guid>
+      <link>https://www.kimi.ai/zh-hans/blog/worldvqa</link>
+      <guid isPermaLink="false">kimi_research-worldvqa</guid>
       <pubDate>Tue, 03 Feb 2026 00:00:00 GMT</pubDate>
       <description>Kimi 官方研究与技术博客文章。</description>
     </item>
     <item>
       <title>Kimi K2.5</title>
-      <link>https://www.kimi.ai/blog/kimi-k2-5</link>
-      <guid isPermaLink="false">kimi_research-463a9c3921dc917b915fb4bc</guid>
+      <link>https://www.kimi.ai/zh-hans/blog/kimi-k2-5</link>
+      <guid isPermaLink="false">kimi_research-kimi-k2-5</guid>
       <pubDate>Tue, 27 Jan 2026 00:00:00 GMT</pubDate>
       <description>Kimi 官方研究与技术博客文章。</description>
     </item>
     <item>
       <title>Kimi Vendor Verifier</title>
-      <link>https://www.kimi.ai/blog/kimi-vendor-verifier</link>
-      <guid isPermaLink="false">kimi_research-91cec8bc36c58d9359d3fb6a</guid>
+      <link>https://www.kimi.ai/zh-hans/blog/kimi-vendor-verifier</link>
+      <guid isPermaLink="false">kimi_research-kimi-vendor-verifier</guid>
       <pubDate>Thu, 22 Jan 2026 00:00:00 GMT</pubDate>
       <description>Kimi 官方研究与技术博客文章。</description>
     </item>
     <item>
       <title>Kimi K2 Thinking</title>
-      <link>https://www.kimi.ai/blog/kimi-k2-thinking</link>
-      <guid isPermaLink="false">kimi_research-73e37dca078f9f092c1ede32</guid>
+      <link>https://www.kimi.ai/zh-hans/blog/kimi-k2-thinking</link>
+      <guid isPermaLink="false">kimi_research-kimi-k2-thinking</guid>
       <pubDate>Thu, 06 Nov 2025 00:00:00 GMT</pubDate>
       <description>Kimi 官方研究与技术博客文章。</description>
     </item>
     <item>
+      <title>Kimi-K2-Instruct-0905</title>
+      <link>https://www.kimi.ai/zh-hans/blog/Kimi-K2-Instruct-0905</link>
+      <guid isPermaLink="false">kimi_research-Kimi-K2-Instruct-0905</guid>
+      <pubDate>Fri, 05 Sep 2025 00:00:00 GMT</pubDate>
+      <description>Kimi 官方研究与技术博客文章。</description>
+    </item>
+    <item>
       <title>Kimi K2</title>
-      <link>https://www.kimi.ai/blog/kimi-k2</link>
-      <guid isPermaLink="false">kimi_research-74141fd9ad0232c56568d3a0</guid>
+      <link>https://www.kimi.ai/zh-hans/blog/kimi-k2</link>
+      <guid isPermaLink="false">kimi_research-kimi-k2</guid>
       <pubDate>Fri, 11 Jul 2025 00:00:00 GMT</pubDate>
+      <description>Kimi 官方研究与技术博客文章。</description>
+    </item>
+    <item>
+      <title>Kimi-Researcher</title>
+      <link>https://www.kimi.ai/zh-hans/blog/Kimi-Researcher</link>
+      <guid isPermaLink="false">kimi_research-Kimi-Researcher</guid>
+      <pubDate>Fri, 20 Jun 2025 00:00:00 GMT</pubDate>
+      <description>Kimi 官方研究与技术博客文章。</description>
+    </item>
+    <item>
+      <title>Kimi-Dev</title>
+      <link>https://www.kimi.ai/zh-hans/blog/Kimi-Dev</link>
+      <guid isPermaLink="false">kimi_research-Kimi-Dev</guid>
+      <pubDate>Tue, 17 Jun 2025 00:00:00 GMT</pubDate>
+      <description>Kimi 官方研究与技术博客文章。</description>
+    </item>
+    <item>
+      <title>Kimi-Audio</title>
+      <link>https://www.kimi.ai/zh-hans/blog/Kimi-Audio</link>
+      <guid isPermaLink="false">kimi_research-Kimi-Audio</guid>
+      <pubDate>Sat, 26 Apr 2025 00:00:00 GMT</pubDate>
+      <description>Kimi 官方研究与技术博客文章。</description>
+    </item>
+    <item>
+      <title>Kimina-Prover Preview</title>
+      <link>https://www.kimi.ai/zh-hans/blog/Kimina-Prover-Preview</link>
+      <guid isPermaLink="false">kimi_research-Kimina-Prover-Preview</guid>
+      <pubDate>Tue, 15 Apr 2025 00:00:00 GMT</pubDate>
+      <description>Kimi 官方研究与技术博客文章。</description>
+    </item>
+    <item>
+      <title>Kimi-VL</title>
+      <link>https://www.kimi.ai/zh-hans/blog/Kimi-VL</link>
+      <guid isPermaLink="false">kimi_research-Kimi-VL</guid>
+      <pubDate>Thu, 10 Apr 2025 00:00:00 GMT</pubDate>
+      <description>Kimi 官方研究与技术博客文章。</description>
+    </item>
+    <item>
+      <title>Muon is Scalable for LLM Training</title>
+      <link>https://www.kimi.ai/zh-hans/blog/Moonlight</link>
+      <guid isPermaLink="false">kimi_research-Moonlight</guid>
+      <pubDate>Sun, 23 Feb 2025 00:00:00 GMT</pubDate>
+      <description>Kimi 官方研究与技术博客文章。</description>
+    </item>
+    <item>
+      <title>MoBA: Mixture of Block Attention for Long-Context LLMs</title>
+      <link>https://www.kimi.ai/zh-hans/blog/MoBA</link>
+      <guid isPermaLink="false">kimi_research-MoBA</guid>
+      <pubDate>Tue, 18 Feb 2025 00:00:00 GMT</pubDate>
+      <description>Kimi 官方研究与技术博客文章。</description>
+    </item>
+    <item>
+      <title>Kimi K1.5: Scaling Reinforcement Learning with LLMs</title>
+      <link>https://www.kimi.ai/zh-hans/blog/Kimi-k1.5</link>
+      <guid isPermaLink="false">kimi_research-Kimi-k1.5</guid>
+      <pubDate>Mon, 20 Jan 2025 00:00:00 GMT</pubDate>
+      <description>Kimi 官方研究与技术博客文章。</description>
+    </item>
+    <item>
+      <title>Mooncake: A KVCache-centric Disaggregated Architecture for LLM Serving</title>
+      <link>https://www.kimi.ai/zh-hans/blog/Mooncake</link>
+      <guid isPermaLink="false">kimi_research-Mooncake</guid>
+      <pubDate>Wed, 26 Jun 2024 00:00:00 GMT</pubDate>
       <description>Kimi 官方研究与技术博客文章。</description>
     </item>
   </channel>

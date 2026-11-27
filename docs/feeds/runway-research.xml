@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>Runway Research</title>
+    <link>https://runway.com/research</link>
+    <description>Runway Research 官方 Publications 列表中的论文与研究发布。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 11 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <generator>ai-release-notes-rss</generator>
+    <item>
+      <title>Praxis-1: From Video Pretraining to Robot Control</title>
+      <link>https://runway.com/research/praxis-1-video-pretraining-to-robot-control</link>
+      <guid isPermaLink="false">runway_research-praxis-1-video-pretraining-to-robot-control</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description>With Praxis-1, we turn a 27B-parameter video foundation model into an open weight world model that predicts the future in short chunks. A small action expert reads the video model’s internal state as it imagines what comes next. Each time the robot acts, Praxis-1 predicts both what the scene will look like and the motion that will get it there. Praxis-1 fine-tuned on DROID is the top world action model and the top open-source robot foundation model on the RoboLab-120 leaderboard. On a real…</description>
+    </item>
+    <item>
+      <title>GWM Worlds 2</title>
+      <link>https://runway.com/research/introducing-gwm-worlds-2</link>
+      <guid isPermaLink="false">runway_research-introducing-gwm-worlds-2</guid>
+      <pubDate>Thu, 03 Sep 2026 00:00:00 GMT</pubDate>
+      <description>GWM Worlds 2 turns high-fidelity video and audio generation into real-time interactive simulation. You define a world — its environment, subjects, visual style, physical rules and ambience — then steer it with free-form text actions and continuous camera motion, generating continuous 720p video at 24 fps and audio at 48,000 Hz that responds to your inputs as you explore. A research preview extending GWM Worlds with generated audio and rich subject and scene control.</description>
+    </item>
+    <item>
+      <title>Solaris: Towards Interfaces That Are Generated, Not Coded</title>
+      <link>https://arxiv.org/abs/2609.00776</link>
+      <guid isPermaLink="false">runway_research-2609.00776</guid>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 GMT</pubDate>
+      <description>Digital interfaces are traditionally implemented through intermediate representations such as code, requiring their appearance and behavior to be specified in advance. We introduce Solaris, an interface world model that instead generates an interactive UI directly, frame by frame, in response to user actions. Solaris treats mouse interactions as conditioning signals and autoregressively synthesizes the resulting visual state at interactive speeds. To enable real-time generation while…</description>
+    </item>
+    <item>
+      <title>Runway Characters: Real-Time Expressive AI Characters from a Single Image</title>
+      <link>https://dl.acm.org/doi/10.1145/3799821.3820914</link>
+      <guid isPermaLink="false">runway_research-3799821.3820914</guid>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Runway Characters transforms a single reference image of any style, from photorealistic human to cartoon mascot, to a real-time conversational video agent. The system produces audio-synchronized facial animation — including lip-sync, gaze dynamics, head movement and secondary motion — from the conditioned audio and the reference image at 24fps in HD resolution. Runway Characters generates the frames autoregressively and has an effective 37 milliseconds of model time per frame. The server-side…</description>
+    </item>
+    <item>
+      <title>Autoregressive-to-Diffusion Vision Language Models</title>
+      <link>https://runway.com/research/autoregressive-to-diffusion-vlms</link>
+      <guid isPermaLink="false">runway_research-autoregressive-to-diffusion-vlms</guid>
+      <pubDate>Wed, 24 Sep 2025 00:00:00 GMT</pubDate>
+      <description>We develop a state-of-the-art diffusion vision language model, Autoregressive-to-Diffusion (A2D), by adapting an existing autoregressive vision language model for parallel diffusion decoding. Our approach makes it easy to unlock the speed-quality trade-off of diffusion language models without training from scratch, by leveraging existing pretrained autoregressive models.</description>
+    </item>
+    <item>
+      <title>Runway Game Worlds</title>
+      <link>https://runway.com/research/runway-game-worlds</link>
+      <guid isPermaLink="false">runway_research-runway-game-worlds</guid>
+      <pubDate>Thu, 21 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Over the last few months, we have been working on research and products that are moving us closer toward a future where you will be able to explore any character, story or world in real time. The Runway Game Worlds Beta is an early exploration of this research that employs novel uses of AI for non-linear narrative experiences, all generated in real time with personalized stories, characters and multi-modal media generation. At launch, you can play from a series of preset Game Worlds or create a…</description>
+    </item>
+    <item>
+      <title>Dual-Process Image Generation</title>
+      <link>https://arxiv.org/abs/2506.01955</link>
+      <guid isPermaLink="false">runway_research-2506.01955</guid>
+      <pubDate>Mon, 02 Jun 2025 00:00:00 GMT</pubDate>
+      <description>Prior methods for controlling image generation are limited in their ability to be taught new tasks. In contrast, vision-language models, or VLMs, can learn tasks in-context and produce the correct outputs for a given input. We propose a dual-process distillation scheme that allows feed-forward image generators to learn new tasks from deliberative VLMs. Our scheme uses a VLM to rate the generated images and backpropagates this gradient to update the weights of the image generator. Our general…</description>
+    </item>
+    <item>
+      <title>StochasticSplats: Stochastic Rasterization for Sorting-Free 3D Gaussian Splatting</title>
+      <link>https://arxiv.org/abs/2503.24366</link>
+      <guid isPermaLink="false">runway_research-2503.24366</guid>
+      <pubDate>Mon, 31 Mar 2025 00:00:00 GMT</pubDate>
+      <description>3D Gaussian splatting (3DGS) is a popular radiance field method, with many application-specific extensions. Most variants rely on the same core algorithm: depth-sorting of Gaussian splats then rasterizing in primitive order. This ensures correct alpha compositing, but can cause rendering artifacts due to built-in approximations. Moreover, for a fixed representation, sorted rendering offers little control over render cost and visual fidelity. For example, and counter-intuitively, rendering a…</description>
+    </item>
+    <item>
+      <title>Progressive Prompt Detailing for Improved Alignment in Text-to-Image Generative Models</title>
+      <link>https://arxiv.org/abs/2503.17794</link>
+      <guid isPermaLink="false">runway_research-2503.17794</guid>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 GMT</pubDate>
+      <description>Text-to-image generative models often struggle with long prompts detailing complex scenes, diverse objects with distinct visual characteristics and spatial relationships. In this work, we propose SCoPE (Scheduled interpolation of Coarse-to-fine Prompt Embeddings), a training-free method to improve text-to-image alignment by progressively refining the input prompt in a coarse-to-fine-grained manner. Given a detailed input prompt, we first decompose it into multiple sub-prompts which evolve from…</description>
+    </item>
+    <item>
+      <title>What's in a Latent? Leveraging Diffusion Latent Space for Domain Generalization</title>
+      <link>https://arxiv.org/abs/2503.06698</link>
+      <guid isPermaLink="false">runway_research-2503.06698</guid>
+      <pubDate>Sun, 09 Mar 2025 00:00:00 GMT</pubDate>
+      <description>Domain Generalization aims to develop models that can generalize to novel and unseen data distributions. In this work, we study how model architectures and pre-training objectives impact feature richness and propose a method to effectively leverage them for domain generalization. Specifically, given a pre-trained feature space, we first discover latent domain structures, referred to as pseudo-domains, that capture domain-specific variations in an unsupervised manner. Next, we augment existing…</description>
+    </item>
+    <item>
+      <title>Concept Steerers: Leveraging K-Sparse Autoencoders for Controllable Generations</title>
+      <link>https://arxiv.org/abs/2501.19066</link>
+      <guid isPermaLink="false">runway_research-2501.19066</guid>
+      <pubDate>Fri, 31 Jan 2025 00:00:00 GMT</pubDate>
+      <description>Despite the remarkable progress in text-to-image generative models, they are prone to adversarial attacks and inadvertently generate unsafe, unethical content. Existing approaches often rely on fine-tuning models to remove specific concepts, which is computationally expensive, lack scalability, and/or compromise generation quality. In this work, we propose a novel framework leveraging k-sparse autoencoders (k-SAEs) to enable efficient and interpretable concept manipulation in diffusion models.…</description>
+    </item>
+    <item>
+      <title>Revelio: Interpreting and leveraging semantic information in diffusion models</title>
+      <link>https://arxiv.org/abs/2411.16725</link>
+      <guid isPermaLink="false">runway_research-2411.16725</guid>
+      <pubDate>Sat, 23 Nov 2024 00:00:00 GMT</pubDate>
+      <description>We study rich visual semantic information is represented within various layers and denoising timesteps of different diffusion architectures. We uncover monosemantic interpretable features by leveraging k-sparse autoencoders (k-SAE). We substantiate our mechanistic interpretations via transfer learning using light-weight classifiers on off-the-shelf diffusion models' features. On datasets, we demonstrate the effectiveness of diffusion features for representation learning. We provide in-depth…</description>
+    </item>
+    <item>
+      <title>General World Models</title>
+      <link>https://runway.com/research/introducing-general-world-models</link>
+      <guid isPermaLink="false">runway_research-introducing-general-world-models</guid>
+      <pubDate>Mon, 11 Dec 2023 00:00:00 GMT</pubDate>
+      <description>We believe the next major advancement in AI will come from systems that understand the visual world and its dynamics, which is why we're starting a new long-term research effort around what we call general world models. A world model is an AI system that builds an internal representation of an environment, and uses it to simulate future events within that environment. Research in world models has so far been focused on very limited and controlled settings, either in toy simulated worlds or…</description>
+    </item>
+    <item>
+      <title>Mitigating stereotypical biases in text to image generative systems</title>
+      <link>https://arxiv.org/abs/2310.06904</link>
+      <guid isPermaLink="false">runway_research-2310.06904</guid>
+      <pubDate>Tue, 10 Oct 2023 00:00:00 GMT</pubDate>
+      <description>State-of-the-art generative text-to-image models are known to exhibit social biases and over-represent certain groups like people of perceived lighter skin tones and men in their outcomes. In this work, we propose a method to mitigate such biases and ensure that the outcomes are fair across different groups of people. We do this by finetuning text-to-image models on synthetic data that varies in perceived skin tones and genders constructed from diverse text prompts. These text prompts are…</description>
+    </item>
+    <item>
+      <title>Structure and Content-Guided Video Synthesis with Diffusion Models</title>
+      <link>https://arxiv.org/abs/2302.03011</link>
+      <guid isPermaLink="false">runway_research-2302.03011</guid>
+      <pubDate>Mon, 06 Feb 2023 00:00:00 GMT</pubDate>
+      <description>Text-guided generative diffusion models unlock powerful image creation and editing tools. While these have been extended to video generation, current approaches that edit the content of existing footage while retaining structure require expensive re-training for every input or rely on error-prone propagation of image edits across frames. In this work, we present a structure and content-guided video diffusion model that edits videos based on visual or textual descriptions of the desired output.…</description>
+    </item>
+    <item>
+      <title>Towards unified keyframe propagation models</title>
+      <link>https://arxiv.org/abs/2205.09731</link>
+      <guid isPermaLink="false">runway_research-2205.09731</guid>
+      <pubDate>Thu, 19 May 2022 00:00:00 GMT</pubDate>
+      <description>Many video editing tasks such as rotoscoping or object removal require the propagation of context across frames. While transformers and other attention-based approaches that aggregate features globally have demonstrated great success at propagating object masks from keyframes to the whole video, they struggle to propagate high-frequency details such as textures faithfully. We hypothesize that this is due to an inherent bias of global attention towards low-frequency features. To overcome this…</description>
+    </item>
+    <item>
+      <title>High-Resolution Image Synthesis with Latent Diffusion Models</title>
+      <link>https://arxiv.org/abs/2112.10752</link>
+      <guid isPermaLink="false">runway_research-2112.10752</guid>
+      <pubDate>Mon, 20 Dec 2021 00:00:00 GMT</pubDate>
+      <description>By decomposing the image formation process into a sequential application of denoising autoencoders, diffusion models (DMs) achieve state-of-the-art synthesis results on image data and beyond. Additionally, their formulation allows for a guiding mechanism to control the image generation process without retraining. However, since these models typically operate directly in pixel space, optimization of powerful DMs often consumes hundreds of GPU days and inference is expensive due to sequential…</description>
+    </item>
+    <item>
+      <title>Soundify: Matching sound effects to video</title>
+      <link>https://arxiv.org/abs/2112.09726</link>
+      <guid isPermaLink="false">runway_research-2112.09726</guid>
+      <pubDate>Fri, 17 Dec 2021 00:00:00 GMT</pubDate>
+      <description>In the art of video editing, sound helps add character to an object and immerse the viewer within a space. Through formative interviews with professional editors (N=10), we found that the task of adding sounds to video can be challenging. This paper presents Soundify, a system that assists editors in matching sounds to video. Given a video, Soundify identifies matching sounds, synchronizes the sounds to the video, and dynamically adjusts panning and volume to create spatial audio. In a human…</description>
+    </item>
+  </channel>
+</rss>

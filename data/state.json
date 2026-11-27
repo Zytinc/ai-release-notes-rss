@@ -567,207 +567,277 @@
     "gemini_api": {
       "items": [
         {
+          "guid": "gemini_api-0685cb5dc45d0d70c92e0fe6",
+          "title": "Gemini API update — November 19, 2026",
+          "link": "https://ai.google.dev/gemini-api/docs/changelog",
+          "published": "2026-11-19T00:00:00+00:00",
+          "description": "Genie 4 (genie-4) generally available (GA): Released Genie 4 (genie-4) on the Interactions API (v1beta) for real-time interactive world generation, streaming steerable 24 fps 16:9 video with synchronized 48 kHz stereo audio over WebRTC and WebSockets. Seed worlds from text, a 16:9 reference image, or both, and steer live with WASD/arrow keys and mid-session text events. Available on the paid tier at pricing of $1.50 per 1M input tokens, $9.00 per 1M text output tokens, and $17.50 per 1M video output tokens (~$0.10/sec, stereo audio included); see Interactive world generation with Genie 4, the Genie 4 prompt and controls guide, and rate limits. Tool retrieval (Preview): The Interactions API can now search your tool library and load function schemas on demand, so large tool sets no longer have to be sent in full on every request. Mark tools with defer_loading: true and add a {\"type\": \"tool_search\"} tool to let Gemini retrieve schemas for you, or set execution: \"client\" to run your own retrieval logic. Remote MCP servers support defer_loading as well. Tool Retrieval works with Gemini 3.6 and later models, including all Gemini 4 models, in the Interactions API. See the Tool retrieval g"
+        },
+        {
+          "guid": "gemini_api-659d72b158d36024276fc464",
+          "title": "Gemini API update — November 18, 2026",
+          "link": "https://ai.google.dev/gemini-api/docs/changelog",
+          "published": "2026-11-18T00:00:00+00:00",
+          "description": "Gemini 4 Neon (gemini-4-neon) generally available (GA): Released Gemini 4 Neon (gemini-4-neon), bringing frontier-level intelligence with fast end-to-end task completion across complex software engineering, knowledge work, and science workflows. Available on the paid tier at pricing of $3.00 per 1M input tokens and $15.00 per 1M output tokens, gemini-4-neon supports four thinking levels (low, medium, default high, and xhigh), a unified 1M-token context window, and long decode up to 1M tokens. See What's new in Gemini 4 Neon to get started. Multimodal file processing and slicing: You can now pass Microsoft Office and OpenDocument files (Word, PowerPoint, and Excel) directly to the Gemini API, and slice documents, spreadsheets, videos, and audio in user prompts and function responses. Select specific page ranges, worksheet tabs, cell ranges, time intervals, or content layers (such as page images, extracted text, formulas, or video transcripts) so you only process and pay for the content you need. To get started, see Document understanding, Video understanding, and Audio understanding."
+        },
+        {
+          "guid": "gemini_api-e96281f5a0e740731789c461",
+          "title": "Gemini API update — November 17, 2026",
+          "link": "https://ai.google.dev/gemini-api/docs/changelog",
+          "published": "2026-11-17T00:00:00+00:00",
+          "description": "Voice editing in Gemini 3.5 Transcribe: gemini-3.5-transcribe and gemini-3.5-transcribe-live now support voice-driven editing, rewriting, and formatting of dictated speech or pre-existing text (source_text). See the Audio transcription and Live transcription guides."
+        },
+        {
+          "guid": "gemini_api-6e27799d8b65ff5f7489fc10",
+          "title": "Gemini API update — November 12, 2026",
+          "link": "https://ai.google.dev/gemini-api/docs/changelog",
+          "published": "2026-11-12T00:00:00+00:00",
+          "description": "Gemini 4 Hydrogen (gemini-4-hydrogen) generally available (GA): Released Gemini 4 Hydrogen (gemini-4-hydrogen), bringing cutting-edge intelligence to everyone, with speed and efficiency for everyday coding and agentic workflows. Available on the free tier and at paid-tier pricing of $1.50 per 1M input tokens and $7.50 per 1M output tokens, gemini-4-hydrogen introduces a fourth xhigh thinking level alongside low, medium, and default high, and is now the default model for the Antigravity agent in Gemini Managed Agents. See What's new in Gemini 4 Hydrogen for API changes and migration guidance from Gemini 3.8 Flash."
+        },
+        {
+          "guid": "gemini_api-2c9658940ade9a6632748587",
+          "title": "Gemini API update — November 11, 2026",
+          "link": "https://ai.google.dev/gemini-api/docs/changelog",
+          "published": "2026-11-11T00:00:00+00:00",
+          "description": "Gemini Decision 1 and the Decisions API: Released Gemini Decision 1 (gemini-decision-1) and the Decisions API for fast, calibrated binary, categorical, and rubric decisions across text, images, audio, video, and PDFs with zero output tokens. View pricing and rate limits, or see the Decisions API guide to get started."
+        },
+        {
+          "guid": "gemini_api-77b78a93ae989b021c385dcd",
+          "title": "Gemini API update — November 10, 2026",
+          "link": "https://ai.google.dev/gemini-api/docs/changelog",
+          "published": "2026-11-10T00:00:00+00:00",
+          "description": "Gemini 4 Carbon (gemini-4-carbon) generally available (GA): Released Gemini 4 Carbon (gemini-4-carbon), our most capable reasoning model built for sustained agentic coding, multimodal knowledge work, scientific reasoning, and cybersecurity defense, available at introductory pricing of $2.00 per 1M input tokens and $10.00 per 1M output tokens through November 30, 2026. See What's new in Gemini 4 Carbon to get started."
+        },
+        {
+          "guid": "gemini_api-1910d1b421a924212f437417",
+          "title": "Gemini API update — November 6, 2026",
+          "link": "https://ai.google.dev/gemini-api/docs/changelog",
+          "published": "2026-11-06T00:00:00+00:00",
+          "description": "Gemini Embedding 2 Preview deprecation: gemini-embedding-2-preview is deprecated. Effective November 6, 2026, API requests to gemini-embedding-2-preview route to gemini-embedding-2 at Gemini Embedding 2 rates. Update your model string to gemini-embedding-2. gemini-embedding-2 uses the same API schema, pricing, and embedding space, so no other code changes or vector re-indexing are needed."
+        },
+        {
+          "guid": "gemini_api-980b550a52e4bf178cf7bf98",
+          "title": "Gemini API update — November 5, 2026",
+          "link": "https://ai.google.dev/gemini-api/docs/changelog",
+          "published": "2026-11-05T00:00:00+00:00",
+          "description": "Gemini Omni 1.2 Flash generally available (GA): Released Gemini Omni 1.2 Flash (gemini-omni-1.2-flash), featuring up to 15-second video generation and conversational editing (3 to 10 seconds for first and last frame interpolation, and 3 to 10 seconds per-turn video extension up to 30 seconds total length), improved character and subject consistency across up to 6 reference images, 30% lower video output pricing ($12.00 per 1M tokens), and doubled paid-tier rate limits. See the Gemini Omni Flash guide to get started. Gemini Omni 1.1 Flash automatic routing notice: Effective December 3, 2026, API requests to gemini-omni-1.1-flash will automatically route to gemini-omni-1.2-flash at Gemini Omni 1.2 Flash rates. Expanded Office and OpenDocument file support: The Gemini API now accepts PowerPoint 97-2003 (PPT), OpenDocument Presentation (ODP), and OpenDocument Spreadsheet (ODS) files as input, and adds page-image processing for Word 97-2003 (DOC) files. DOC, PPT, and ODP files are rendered as page images. For ODS files, the model receives the data and formulas from the first sheet. Processing for DOCX, DOTX, ODT, PPTX, XLSX, and XLS files is unchanged. See Office and OpenDocument files "
+        },
+        {
+          "guid": "gemini_api-4c16ca1b52701ffa2d9dbbf3",
+          "title": "Gemini API update — November 4, 2026",
+          "link": "https://ai.google.dev/gemini-api/docs/changelog",
+          "published": "2026-11-04T00:00:00+00:00",
+          "description": "Voice remixing for Gemini 3.8 TTS: Released Voice remixing, which lets you modify an existing prebuilt or designed voice using natural-language instructions to create a new, independent stored voice. Use POST /v1beta/voices with gemini-3.8-flash-tts (or remix interactively in Google AI Studio) to generate a voice_... ID, then synthesize speech with Gemini 3.8 Flash TTS or Gemini 3.8 Flash-Lite TTS. See the Voice remixing guide to get started."
+        },
+        {
+          "guid": "gemini_api-614e8b69a867b0a226d66f3b",
+          "title": "Gemini API update — November 2, 2026",
+          "link": "https://ai.google.dev/gemini-api/docs/changelog",
+          "published": "2026-11-02T00:00:00+00:00",
+          "description": "Gemini 2.5 Pro deprecation: gemini-2.5-pro is deprecated and is no longer available to select in Google AI Studio. Effective December 1, 2026, all API requests to gemini-2.5-pro will automatically route to gemini-3.8-flash and be billed at Gemini 3.8 Flash rates. Before December 1, 2026, update your model string to gemini-3.8-flash and review the Gemini 3.8 Flash migration guide. Breaking API changes include function calling and thought_signature validation, thinking_level replacing thinking_budget, and removed sampling parameters and prefilled model turns. Gemini 2.5 Flash deprecation: gemini-2.5-flash is deprecated and is no longer available to select in Google AI Studio. Effective December 1, 2026, all API requests to gemini-2.5-flash will automatically route to gemini-3.5-flash-lite and be billed at Gemini 3.5 Flash-Lite rates. Before December 1, 2026, update your model string to gemini-3.5-flash-lite and review the Gemini 3.5 Flash-Lite migration guide. Breaking API changes include function calling and thought_signature validation, thinking_level replacing thinking_budget, and removed sampling parameters and prefilled model turns."
+        },
+        {
           "guid": "gemini_api-66f49493e7ff6ed42402eea1",
           "title": "Gemini API update — October 30, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-10-30T00:00:00+00:00",
-          "description": "Computer Use generally available (GA) : Released the Computer Use tool to general availability (GA) across the Interactions and GenerateContent APIs."
+          "description": "Computer Use generally available (GA): Released the Computer Use tool to general availability (GA) across the Interactions and GenerateContent APIs."
         },
         {
           "guid": "gemini_api-9d83bea0519e6e13d380cd95",
           "title": "Gemini API update — October 27, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-10-27T00:00:00+00:00",
-          "description": "Gemini API CLI ( gemini-api ) beta : Released the Gemini API CLI ( gemini-api ), a stateless, zero-dependency command-line client for AI coding agents, scripts, and CI pipelines. Use gemini-api on the Interactions API to generate text and media, analyze files, and run Gemini managed agents . See the Gemini API CLI guide to get started."
+          "description": "Gemini API CLI (gemini-api) beta: Released the Gemini API CLI (gemini-api), a stateless, zero-dependency command-line client for AI coding agents, scripts, and CI pipelines. Use gemini-api on the Interactions API to generate text and media, analyze files, and run Gemini managed agents. See the Gemini API CLI guide to get started."
         },
         {
           "guid": "gemini_api-044123371c335ce57fe1aefc",
           "title": "Gemini API update — October 26, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-10-26T00:00:00+00:00",
-          "description": "Generate Content API storage on by default : New projects using the Generate Content API ( generateContent , streamGenerateContent , and batchGenerateContent ) on the paid tier now store requests by default ( store=true ), matching the Interactions API. Existing projects keep their current setting. To opt out, set store=false on individual requests or turn off Generate Content API logging in the Settings panel of the Logs and Datasets dashboard. See Logs and datasets for details."
+          "description": "Generate Content API storage on by default: New projects using the Generate Content API (generateContent, streamGenerateContent, and batchGenerateContent) on the paid tier now store requests by default (store=true), matching the Interactions API. Existing projects keep their current setting. To opt out, set store=false on individual requests or turn off Generate Content API logging in the Settings panel of the Logs and Datasets dashboard. See Logs and datasets for details."
         },
         {
           "guid": "gemini_api-747fb7f8d58aa8a0ec73314a",
           "title": "Gemini API update — October 13, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-10-13T00:00:00+00:00",
-          "description": "Gemini 4 Argon ( gemini-4-argon ) generally available (GA) : Released Gemini 4 Argon ( gemini-4-argon ), our most capable model built for complex coding, agentic, math, and science tasks. For API changes, pricing, and migration guidance, see What's new in Gemini 4 Argon . Gemini 4 Argon ( gemini-4-argon ) generally available (GA) : Released Gemini 4 Argon ( gemini-4-argon ), our most capable model built for complex coding, agentic, math, and science tasks. For API changes, pricing, and migration guidance, see What's new in Gemini 4 Argon ."
+          "description": "Gemini 4 Argon (gemini-4-argon) generally available (GA): Released Gemini 4 Argon (gemini-4-argon), our most capable model built for complex coding, agentic, math, and science tasks. For API changes, pricing, and migration guidance, see What's new in Gemini 4 Argon."
         },
         {
           "guid": "gemini_api-2ec78de41443a755d5f3eb92",
           "title": "Gemini API update — October 8, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-10-08T00:00:00+00:00",
-          "description": "Gemini 3.7 Flash deprecation : gemini-3.7-flash is deprecated and has been replaced by gemini-3.8-flash . It is no longer available to select in Google AI Studio, and API requests to gemini-3.7-flash are automatically routed to gemini-3.8-flash . Update your model string to gemini-3.8-flash and review the Gemini 3.8 Flash guide . Gemini 3.5 Flash deprecation : gemini-3.5-flash is deprecated and has been replaced by gemini-3.6-flash . It is no longer available to select in Google AI Studio, and API requests to gemini-3.5-flash are automatically routed to gemini-3.6-flash . Update your model string to gemini-3.6-flash (or gemini-3.8-flash ) and review the Gemini 3.6 Flash guide . Deep Research Agent deep-research-pro-preview-12-2025 deprecation : The deep-research-pro-preview-12-2025 agent is deprecated and will be shut down on October 23, 2026 . Migrate your requests to one of the newer Deep Research agent versions: deep-research-preview-04-2026 : Designed for speed and efficiency, ideal to be streamed back to a client UI. deep-research-max-preview-04-2026 : Maximum comprehensiveness for automated context gathering and synthesis. To migrate, update the agent parameter in your intera"
+          "description": "Gemini 3.7 Flash deprecation: gemini-3.7-flash is deprecated and has been replaced by gemini-3.8-flash. It is no longer available to select in Google AI Studio, and API requests to gemini-3.7-flash are automatically routed to gemini-3.8-flash. Update your model string to gemini-3.8-flash and review the Gemini 3.8 Flash guide. Gemini 3.5 Flash deprecation: gemini-3.5-flash is deprecated and has been replaced by gemini-3.6-flash. It is no longer available to select in Google AI Studio, and API requests to gemini-3.5-flash are automatically routed to gemini-3.6-flash. Update your model string to gemini-3.6-flash (or gemini-3.8-flash) and review the Gemini 3.6 Flash guide. Deep Research Agent deep-research-pro-preview-12-2025 deprecation: The deep-research-pro-preview-12-2025 agent is deprecated and will be shut down on October 23, 2026. Migrate your requests to one of the newer Deep Research agent versions: deep-research-preview-04-2026: Designed for speed and efficiency, ideal to be streamed back to a client UI. deep-research-max-preview-04-2026: Maximum comprehensiveness for automated context gathering and synthesis. To migrate, update the agent parameter in your interactions.create"
         },
         {
           "guid": "gemini_api-e4f913fd04ab455805e4a5fc",
           "title": "Gemini API update — October 6, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-10-06T00:00:00+00:00",
-          "description": "Gemini Nano Banana 2.1 generally available (GA) : Released Gemini Nano Banana 2.1 ( gemini-nano-banana-2.1 ), the latest high-efficiency image generation and conversational editing model. An update to Nano Banana 2 ( gemini-3.1-flash-image ), it maintains Flash-level speed and cost efficiency while delivering significant improvements in visual quality, prompt adherence, multi-turn character consistency, text rendering, and wide and panoramic aspect ratio generation ( 1:4 , 4:1 , 1:8 , 8:1 ) across 1K , 2K , and 4K resolutions. See the Image generation guide to get started. Gemini Nano Banana 2.1 generally available (GA) : Released Gemini Nano Banana 2.1 ( gemini-nano-banana-2.1 ), the latest high-efficiency image generation and conversational editing model. An update to Nano Banana 2 ( gemini-3.1-flash-image ), it maintains Flash-level speed and cost efficiency while delivering significant improvements in visual quality, prompt adherence, multi-turn character consistency, text rendering, and wide and panoramic aspect ratio generation ( 1:4 , 4:1 , 1:8 , 8:1 ) across 1K , 2K , and 4K resolutions. See the Image generation guide to get started. Deprecation announcement : The gemini-3."
+          "description": "Gemini Nano Banana 2.1 generally available (GA): Released Gemini Nano Banana 2.1 (gemini-nano-banana-2.1), the latest high-efficiency image generation and conversational editing model. An update to Nano Banana 2 (gemini-3.1-flash-image), it maintains Flash-level speed and cost efficiency while delivering significant improvements in visual quality, prompt adherence, multi-turn character consistency, text rendering, and wide and panoramic aspect ratio generation (1:4, 4:1, 1:8, 8:1) across 1K, 2K, and 4K resolutions. See the Image generation guide to get started. Deprecation announcement: The gemini-3.1-flash-image model is deprecated (no shutdown date announced). Migrate to gemini-nano-banana-2.1."
         },
         {
           "guid": "gemini_api-9b134c62a6e548bc73cfa348",
           "title": "Gemini API update — September 22, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-09-22T00:00:00+00:00",
-          "description": "Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS generally available (GA) : Released our next-generation text-to-speech (TTS) audio models and the Gemini API Voices endpoint ( /v1beta/voices ): Gemini 3.8 Flash TTS ( gemini-3.8-flash-tts ) : Flagship creative TTS model engineered for studio-grade voice fidelity, nuanced acting, regional dialects, and long-form multi-turn stability. Gemini 3.8 Flash-Lite TTS ( gemini-3.8-flash-lite-tts ) : Fast, cost-efficient TTS model built to replace gemini-3.1-flash-tts-preview for high-throughput production and real-time voice agent cascades. Voice design , Voice replication , and the Extended Voice Library : Create persistent custom vocal personas from text prompts, replicate voices with consent verification, and query 150+ prebuilt and custom voices. See the Text-to-speech guide to get started. Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS generally available (GA) : Released our next-generation text-to-speech (TTS) audio models and the Gemini API Voices endpoint ( /v1beta/voices ): Gemini 3.8 Flash TTS ( gemini-3.8-flash-tts ) : Flagship creative TTS model engineered for studio-grade voice fidelity, nuanced acting, regional dialects, a"
+          "description": "Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS generally available (GA): Released our next-generation text-to-speech (TTS) audio models and the Gemini API Voices endpoint (/v1beta/voices): Gemini 3.8 Flash TTS (gemini-3.8-flash-tts): Flagship creative TTS model engineered for studio-grade voice fidelity, nuanced acting, regional dialects, and long-form multi-turn stability. Gemini 3.8 Flash-Lite TTS (gemini-3.8-flash-lite-tts): Fast, cost-efficient TTS model built to replace gemini-3.1-flash-tts-preview for high-throughput production and real-time voice agent cascades. Voice design, Voice replication, and the Extended Voice Library: Create persistent custom vocal personas from text prompts, replicate voices with consent verification, and query 150+ prebuilt and custom voices. See the Text-to-speech guide to get started."
         },
         {
           "guid": "gemini_api-148ecd81f0f92430626a15f9",
           "title": "Gemini API update — September 18, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-09-18T00:00:00+00:00",
-          "description": "Gemini 2.5 models access update : To ensure reliable performance for everyone, we are limiting access to the 2.5 models to users who have actively used them in the past. These models are not deprecated and will continue to be served until further notice through the API. For any new projects, use our latest models: 3.5 Flash-Lite or 3.8 Flash. This helps us maintain sufficient capacity for both ongoing legacy workflows and new applications."
+          "description": "Gemini 2.5 models access update: To ensure reliable performance for everyone, we are limiting access to the 2.5 models to users who have actively used them in the past. These models are not deprecated and will continue to be served until further notice through the API. For any new projects, use our latest models: 3.5 Flash-Lite or 3.8 Flash. This helps us maintain sufficient capacity for both ongoing legacy workflows and new applications."
         },
         {
           "guid": "gemini_api-99a6859e43ba3f956ca01815",
           "title": "Gemini API update — September 17, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-09-17T00:00:00+00:00",
-          "description": "Antigravity Agent 09-2026 : Released antigravity-preview-09-2026 , which replaces and deprecates antigravity-preview-05-2026 . If you run on a remote sandbox ( environment: \"remote\" ) and read only output_text or model_output steps, update the agent string and nothing else changes. If you run tools locally ( local_environment ) or parse function_call steps, the built-in tools changed. Parameters use PascalCase instead of snake_case, and file edits use line-range replacements instead of full rewrites. Capability 05-2026 09-2026 File creation write_file(path, content) write_to_file(TargetFile, CodeContent, Overwrite, Description) File editing write_file(path, content) , full rewrite replace_file_content(TargetFile, StartLine, EndLine, TargetContent, ReplacementContent) File reading read_file(path, offset, limit) , byte offsets view_file(AbsolutePath, StartLine, EndLine, ContentOffset) Directory listing list_files(path) list_dir(DirectoryPath) File and code search None, agents used shell commands find_by_name(SearchDirectory, Pattern, MaxDepth) and grep_search(SearchPath, Query, IsRegex) Shell execution code_execution(command, timeout_seconds) Unchanged Web search google_search(querie"
+          "description": "Antigravity Agent 09-2026: Released antigravity-preview-09-2026, which replaces and deprecates antigravity-preview-05-2026. If you run on a remote sandbox (environment: \"remote\") and read only output_text or model_output steps, update the agent string and nothing else changes. If you run tools locally (local_environment) or parse function_call steps, the built-in tools changed. Parameters use PascalCase instead of snake_case, and file edits use line-range replacements instead of full rewrites. | Capability | 05-2026 | 09-2026 | | :--- | :--- | :--- | | File creation | write_file(path, content) | write_to_file(TargetFile, CodeContent, Overwrite, Description) | | File editing | write_file(path, content), full rewrite | replace_file_content(TargetFile, StartLine, EndLine, TargetContent, ReplacementContent) | | File reading | read_file(path, offset, limit), byte offsets | view_file(AbsolutePath, StartLine, EndLine, ContentOffset) | | Directory listing | list_files(path) | list_dir(DirectoryPath) | | File and code search | None, agents used shell commands | find_by_name(SearchDirectory, Pattern, MaxDepth) and grep_search(SearchPath, Query, IsRegex) | | Shell execution | code_execution(c"
         },
         {
           "guid": "gemini_api-aaa2e5d643c90586cbb7db3b",
           "title": "Gemini API update — September 15, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-09-15T00:00:00+00:00",
-          "description": "Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking generally available (GA) : Released two new audio-to-audio models for real-time voice applications using the Live API: Gemini 3.8 Live ( gemini-3.8-live ): The default option for most low-latency voice agent experiences and real-time dialogue without reasoning delays. Features interleaved reasoning, default asynchronous function calling, and full session client content updates. Gemini 3.8 Live Extended Thinking ( gemini-3.8-live-extended-thinking ): High-reasoning audio-to-audio model supporting background reasoning during live audio interactions, recommended when higher background reasoning is required. To get started, see the Live API guide , the Capabilities guide , and the Thinking guide . Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking generally available (GA) : Released two new audio-to-audio models for real-time voice applications using the Live API: Gemini 3.8 Live ( gemini-3.8-live ): The default option for most low-latency voice agent experiences and real-time dialogue without reasoning delays. Features interleaved reasoning, default asynchronous function calling, and full session client content updates. Gemini 3"
+          "description": "Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking generally available (GA): Released our next-generation Live API models for real-time multimodal dialogue and agentic tool use: Gemini 3.8 Live (gemini-3.8-live): Engineered for sub-second conversational latency with native audio understanding, affective dialogue, proactive audio, and synchronous/asynchronous function calling. Gemini 3.8 Live Extended Thinking (gemini-3.8-live-extended-thinking): Specialized for complex reasoning, multi-step planning, and long-horizon state tracking with configurable thinking levels (MINIMAL, LOW, MEDIUM, HIGH) and asynchronous function calling. To get started, see the Thinking in the Live API guide and the Live API overview."
         },
         {
           "guid": "gemini_api-8d9660447eaae2560852e14a",
           "title": "Gemini API update — September 3, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-09-03T00:00:00+00:00",
-          "description": "Lyria 3.5 generally available (GA) : Released the next generation of Google's music generation model: lyria-3.5 : Full-length song generation with improved musical coherence, natural vocals, and fine-grained duration and structural control. The model supports text and image inputs and generates high-fidelity 44.1 kHz stereo audio. See the Music generation guide for details and code samples. Lyria 3.5 generally available (GA) : Released the next generation of Google's music generation model: lyria-3.5 : Full-length song generation with improved musical coherence, natural vocals, and fine-grained duration and structural control. The model supports text and image inputs and generates high-fidelity 44.1 kHz stereo audio. See the Music generation guide for details and code samples."
+          "description": "Lyria 3.5 generally available (GA): Released the next generation of Google's music generation model: lyria-3.5: Full-length song generation with improved musical coherence, natural vocals, and fine-grained duration and structural control. The model supports text and image inputs and generates high-fidelity 44.1 kHz stereo audio. See the Music generation guide for details and code samples."
         },
         {
           "guid": "gemini_api-855fdcfb3ef5a20cc28865d0",
           "title": "Gemini API update — September 2, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-09-02T00:00:00+00:00",
-          "description": "Gemini 3.8 Flash generally available (GA) : Released gemini-3.8-flash , our most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows. To get started, see the Gemini 3.8 Flash model page and the Gemini 3.8 Flash guide . Gemini 3.8 Flash generally available (GA) : Released gemini-3.8-flash , our most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows. To get started, see the Gemini 3.8 Flash model page and the Gemini 3.8 Flash guide ."
+          "description": "Gemini 3.8 Flash generally available (GA): Released gemini-3.8-flash, our most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows. To get started, see the Gemini 3.8 Flash model page and the Gemini 3.8 Flash guide."
         },
         {
           "guid": "gemini_api-16ac933ba624976d5998cdb1",
           "title": "Gemini API update — September 1, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-09-01T00:00:00+00:00",
-          "description": "Agentic video understanding : Released agentic video understanding for Gemini 3.7 Flash, 3.6 Flash, and 3.5 Flash-Lite across the Interactions and GenerateContent APIs. The model dynamically navigates video timelines, requesting transcripts, frames, or audio tracks on demand. This approach uses up to 88% fewer tokens for long-form content compared to static processing. To get started, see the Agentic video understanding guide. Agentic video understanding : Released agentic video understanding for Gemini 3.7 Flash, 3.6 Flash, and 3.5 Flash-Lite across the Interactions and GenerateContent APIs. The model dynamically navigates video timelines, requesting transcripts, frames, or audio tracks on demand. This approach uses up to 88% fewer tokens for long-form content compared to static processing. To get started, see the Agentic video understanding guide."
+          "description": "Agentic video understanding: Released agentic video understanding for Gemini 3.7 Flash, 3.6 Flash, and 3.5 Flash-Lite across the Interactions and GenerateContent APIs. The model dynamically navigates video timelines, requesting transcripts, frames, or audio tracks on demand. This approach uses up to 88% fewer tokens for long-form content compared to static processing. To get started, see the Agentic video understanding guide."
         },
         {
           "guid": "gemini_api-b7d4e2f7bf59dd8bcb25a6fe",
           "title": "Gemini API update — August 27, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-08-27T00:00:00+00:00",
-          "description": "Gemini Omni Flash generally available (GA) : Released gemini-omni-1.1-flash , the GA version of our fast, conversational video generation and editing model. This release includes significant new capabilities: Video extension : Seamlessly extend existing videos by generating continuations at the end of a clip using the extend task or directly with a prompt. Interpolation (first + last frame) : Generate a video transitioning between two images using the image_to_video task with up to 2 images. Resolution control : New resolution parameter in video_config supports 360p , 720p (default), 1080p , and 4k outputs. 1080p and 4K outputs are generated using upscaling. The existing gemini-omni-flash-preview endpoint will be deprecated on September 30, 2026. To get started, see the Gemini Omni Flash model page and the omni guide . Gemini Omni Flash generally available (GA) : Released gemini-omni-1.1-flash , the GA version of our fast, conversational video generation and editing model. This release includes significant new capabilities: Video extension : Seamlessly extend existing videos by generating continuations at the end of a clip using the extend task or directly with a prompt. Interpolat"
+          "description": "Gemini Omni Flash generally available (GA): Released gemini-omni-1.1-flash, the GA version of our fast, conversational video generation and editing model. This release includes significant new capabilities: Video extension: Seamlessly extend existing videos by generating continuations at the end of a clip using the extend task or directly with a prompt. Interpolation (first + last frame): Generate a video transitioning between two images using the image_to_video task with up to 2 images. Resolution control: New resolution parameter in video_config supports 360p, 720p (default), 1080p, and 4k outputs. 1080p and 4K outputs are generated using upscaling. The existing gemini-omni-flash-preview endpoint will be deprecated on September 30, 2026. To get started, see the Gemini Omni Flash model page and the omni guide."
         },
         {
           "guid": "gemini_api-2ff975feff3e83a89bea7a53",
           "title": "Gemini API update — August 26, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-08-26T00:00:00+00:00",
-          "description": "Gemini 3.5 Transcribe generally available (GA) : Released two dedicated speech-to-text models based on Gemini's audio understanding: Gemini 3.5 Transcribe ( gemini-3.5-transcribe ): High-accuracy, low-latency non-streaming speech-to-text with utterance-based language detection across 85+ languages, speaker diarization, word-level timestamps, and custom vocabulary biasing (up to 1,000 terms). Gemini 3.5 Transcribe Live ( gemini-3.5-transcribe-live ): Low-latency, bidirectional streaming speech-to-text over WebSockets using the Live API, supporting interim and finalized transcription events, Smart transcription mode, and multiple Voice Activity Detection (VAD) strategies. To get started, see the Audio transcription guide , the Live transcription guide , and the Gemini 3.5 Transcribe model page . Gemini 3.5 Transcribe generally available (GA) : Released two dedicated speech-to-text models based on Gemini's audio understanding: Gemini 3.5 Transcribe ( gemini-3.5-transcribe ): High-accuracy, low-latency non-streaming speech-to-text with utterance-based language detection across 85+ languages, speaker diarization, word-level timestamps, and custom vocabulary biasing (up to 1,000 terms). "
+          "description": "Gemini 3.5 Transcribe generally available (GA): Released two dedicated speech-to-text models based on Gemini's audio understanding: Gemini 3.5 Transcribe (gemini-3.5-transcribe): High-accuracy, low-latency non-streaming speech-to-text with utterance-based language detection across 80+ languages, speaker diarization, word-level timestamps, and custom vocabulary biasing (up to 1,000 terms). Gemini 3.5 Transcribe Live (gemini-3.5-transcribe-live): Low-latency, bidirectional streaming speech-to-text over WebSockets using the Live API, supporting interim and finalized transcription events, Smart transcription mode, and multiple Voice Activity Detection (VAD) strategies. To get started, see the Audio transcription guide, the Live transcription guide, and the Gemini 3.5 Transcribe model page."
         },
         {
           "guid": "gemini_api-dd1bc7465efabb41320c592c",
           "title": "Gemini API update — August 13, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-08-13T00:00:00+00:00",
-          "description": "Gemini 3.7 Flash generally available (GA) : Released our most intelligent workhorse model yet for coding and agents: Gemini 3.7 Flash ( gemini-3.7-flash ): Substantial improvements across software engineering, web development, and agentic workflows, available at an introductory price through December 31, 2026. To get started, see the Gemini 3.7 Flash model page and the Latest model guide . Gemini 3.7 Flash generally available (GA) : Released our most intelligent workhorse model yet for coding and agents: Gemini 3.7 Flash ( gemini-3.7-flash ): Substantial improvements across software engineering, web development, and agentic workflows, available at an introductory price through December 31, 2026. To get started, see the Gemini 3.7 Flash model page and the Latest model guide ."
+          "description": "Gemini 3.7 Flash generally available (GA): Released our most intelligent workhorse model yet for coding and agents: Gemini 3.7 Flash (gemini-3.7-flash): Substantial improvements across software engineering, web development, and agentic workflows, available at an introductory price through December 31, 2026. To get started, see the Gemini 3.7 Flash model page and the Latest model guide."
         },
         {
           "guid": "gemini_api-8070042c847ce066fb8da77f",
           "title": "Gemini API update — July 30, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-07-30T00:00:00+00:00",
-          "description": "Gemini Robotics ER 2 in public preview : Released two new embodied reasoning model endpoints for robotics: gemini-robotics-er-2-preview : Advanced spatial reasoning, agentic code execution, multi-step tool orchestration, video moment finding, progress classification, and multi-robot coordination. gemini-robotics-er-2-streaming-preview : Optimized for real-time text streaming using the Live API, enabling low-latency robot agents with bidirectional audio and video input. Both model endpoints accept text, image, video, and audio inputs and support function calling with blocking behavior for physical robot actions. To get started, see the Gemini Robotics ER overview . For real-time streaming use cases, see Robotics with streaming . Gemini Robotics ER 2 in public preview : Released two new embodied reasoning model endpoints for robotics: gemini-robotics-er-2-preview : Advanced spatial reasoning, agentic code execution, multi-step tool orchestration, video moment finding, progress classification, and multi-robot coordination. gemini-robotics-er-2-streaming-preview : Optimized for real-time text streaming using the Live API, enabling low-latency robot agents with bidirectional audio and v"
+          "description": "Gemini Robotics ER 2 in public preview: Released two new embodied reasoning model endpoints for robotics: gemini-robotics-er-2-preview: Advanced spatial reasoning, agentic code execution, multi-step tool orchestration, video moment finding, progress classification, and multi-robot coordination. gemini-robotics-er-2-streaming-preview: Optimized for real-time text streaming using the Live API, enabling low-latency robot agents with bidirectional audio and video input. Both model endpoints accept text, image, video, and audio inputs and support function calling with blocking behavior for physical robot actions. To get started, see the Gemini Robotics ER overview. For real-time streaming use cases, see Robotics with streaming. Deprecation announcement: The gemini-robotics-er-1.6-preview model will be shut down on August 31, 2026."
         },
         {
           "guid": "gemini_api-7b49c4cb8e8f170d5abdbbaa",
           "title": "Gemini API update — July 21, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-07-21T00:00:00+00:00",
-          "description": "Gemini 3.6 Flash and Gemini 3.5 Flash-Lite generally available (GA) : Released stable, production-ready versions of our latest 3.x Flash models: Gemini 3.6 Flash ( gemini-3.6-flash ): Features improved token efficiency and code/agentic planning capabilities at a lower price point than 3.5 Flash, resolving developer feedback around output verbosity. Gemini 3.5 Flash-Lite ( gemini-3.5-flash-lite ): Offers a low-latency, highly cost-effective subagent option designed for high-volume automation. To learn more, see the Gemini 3.6 Flash guide . Gemini 3.6 Flash and Gemini 3.5 Flash-Lite generally available (GA) : Released stable, production-ready versions of our latest 3.x Flash models: Gemini 3.6 Flash ( gemini-3.6-flash ): Features improved token efficiency and code/agentic planning capabilities at a lower price point than 3.5 Flash, resolving developer feedback around output verbosity. Gemini 3.5 Flash-Lite ( gemini-3.5-flash-lite ): Offers a low-latency, highly cost-effective subagent option designed for high-volume automation. To learn more, see the Gemini 3.6 Flash guide . Deprecated parameters : The sampling parameters temperature , top_p and top_k are now deprecated. See the Gemi"
+          "description": "Gemini 3.6 Flash and Gemini 3.5 Flash-Lite generally available (GA): Released stable, production-ready versions of our latest 3.x Flash models: Gemini 3.6 Flash (gemini-3.6-flash): Features improved token efficiency and code/agentic planning capabilities at a lower price point than 3.5 Flash, resolving developer feedback around output verbosity. Gemini 3.5 Flash-Lite (gemini-3.5-flash-lite): Offers a low-latency, highly cost-effective subagent option designed for high-volume automation. To learn more, see the Gemini 3.6 Flash guide. Deprecated parameters: The sampling parameters temperature, top_p and top_k are now deprecated. See the Gemini 3.6 Flash guide for details."
         },
         {
           "guid": "gemini_api-b7d9920163ac8f6487ec9638",
           "title": "Gemini API update — July 6, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-07-06T00:00:00+00:00",
-          "description": "Developer logs support for the Interactions API: logs for supported Interactions API calls are now viewable in the AI Studio dashboard ."
+          "description": "Developer logs support for the Interactions API: logs for supported Interactions API calls are now viewable in the AI Studio dashboard."
         },
         {
           "guid": "gemini_api-8727b22ac5c664a1e7a79c13",
           "title": "Gemini API update — June 30, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-06-30T00:00:00+00:00",
-          "description": "Gemini Omni Flash in public preview : Released gemini-omni-flash-preview , a high-performance multimodal model designed for high-speed video generation and conversational video editing. Using the Interactions API , you can generate 3–10 second videos at 720p from text descriptions or animate still images, and then conversationally edit and refine the outputs. To get started, see the Gemini Omni Flash guide and the Gemini Omni Flash model card. Released gemini-3.1-flash-lite-image (Nano Banana 2 Lite) to general availability (GA), our built-in multimodal model optimized for ultra-low latency and cost-effective image generation and editing. See the Gemini 3.1 Flash Lite Image model card and the Image generation guide."
+          "description": "Gemini Omni Flash in public preview: Released gemini-omni-flash-preview, a high-performance multimodal model designed for high-speed video generation and conversational video editing. Using the Interactions API, you can generate 3–10 second videos at 720p from text descriptions or animate still images, and then conversationally edit and refine the outputs. To get started, see the Gemini Omni Flash guide and the Gemini Omni Flash model card. Released gemini-3.1-flash-lite-image (Nano Banana 2 Lite) to general availability (GA), our built-in multimodal model optimized for ultra-low latency and cost-effective image generation and editing. See the Gemini 3.1 Flash Lite Image model card and the Image generation guide."
         },
         {
           "guid": "gemini_api-5c01392913d7d7a1e6dc6798",
           "title": "Gemini API update — June 24, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-06-24T00:00:00+00:00",
-          "description": "Computer Use : Launched public preview support for the Computer Use tool in Gemini 3.5 Flash. This release includes simplified actions with intents, built-in support for browser, mobile, and desktop environments, configurable safety policies, and advanced prompt injection detection."
+          "description": "Computer Use: Launched public preview support for the Computer Use tool in Gemini 3.5 Flash. This release includes simplified actions with intents, built-in support for browser, mobile, and desktop environments, configurable safety policies, and advanced prompt injection detection."
         },
         {
           "guid": "gemini_api-bbaf8bf40692b102b8145373",
           "title": "Gemini API update — June 17, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-06-17T00:00:00+00:00",
-          "description": "Streaming support for speech generation : Streaming via streamGenerateContent (and stream: true in the Interactions API) is now supported for the gemini-3.1-flash-tts-preview model. To learn more, see the Text-to-Speech guide."
+          "description": "Streaming support for speech generation: Streaming via streamGenerateContent (and stream: true in the Interactions API) is now supported for the gemini-3.1-flash-tts-preview model. To learn more, see the Text-to-Speech guide."
         },
         {
           "guid": "gemini_api-0a3ba5893ce69fcb3709fde7",
           "title": "Gemini API update — June 15, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-06-15T00:00:00+00:00",
-          "description": "Deprecation announcement : The following image generation models are being deprecated and will be shut down on August 17, 2026 : Imagen 4 and Gemini 3 Image models : imagen-4.0-generate-001 imagen-4.0-ultra-generate-001 imagen-4.0-fast-generate-001 To migrate your code to newer stable or preview endpoints, refer to the Gemini deprecations page. Deprecation announcement : The following image generation models are being deprecated and will be shut down on August 17, 2026 : Imagen 4 and Gemini 3 Image models : imagen-4.0-generate-001 imagen-4.0-ultra-generate-001 imagen-4.0-fast-generate-001 imagen-4.0-generate-001 imagen-4.0-ultra-generate-001 imagen-4.0-fast-generate-001 To migrate your code to newer stable or preview endpoints, refer to the Gemini deprecations page. Deprecation announcement : The following video generation models are being deprecated and will be shut down on June 30, 2026 : Veo models : veo-2.0-generate-001 veo-3.0-generate-001 veo-3.0-fast-generate-001 Update your integration to either use the Veo 3.1 preview model IDs ( veo-3.1-generate-preview , veo-3.1-fast-generate-preview ) or the 3.1 GA models available through the Gemini Enterprise Agent Platform to avoid s"
+          "description": "Deprecation announcement: The following image generation models are being deprecated and will be shut down on August 17, 2026: Imagen 4 and Gemini 3 Image models: imagen-4.0-generate-001 imagen-4.0-ultra-generate-001 imagen-4.0-fast-generate-001 To migrate your code to newer stable or preview endpoints, refer to the Gemini deprecations page. Deprecation announcement: The following video generation models are being deprecated and will be shut down on June 30, 2026: Veo models: veo-2.0-generate-001 veo-3.0-generate-001 veo-3.0-fast-generate-001 Update your integration to either use the Veo 3.1 preview model IDs (veo-3.1-generate-preview, veo-3.1-fast-generate-preview) or the 3.1 GA models available through the Gemini Enterprise Agent Platform to avoid service interruptions. Deprecation announcement: The experimental GMP Contextual View tool (a fixed interface for Grounding with Google Maps outputs) will shut down on June 15, 2026:"
         },
         {
           "guid": "gemini_api-2ee93157ed89c772d92d2df8",
           "title": "Gemini API update — June 1, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-06-01T00:00:00+00:00",
-          "description": "The following Gemini 2.0 models are now shut down : gemini-2.0-flash gemini-2.0-flash-001 gemini-2.0-flash-lite gemini-2.0-flash-lite-001 Use gemini-3.5-flash or gemini-3.1-flash-lite instead. The following Gemini 2.0 models are now shut down : gemini-2.0-flash gemini-2.0-flash-001 gemini-2.0-flash-lite gemini-2.0-flash-lite-001 Use gemini-3.5-flash or gemini-3.1-flash-lite instead."
+          "description": "The following Gemini 2.0 models are now shut down: gemini-2.0-flash gemini-2.0-flash-001 gemini-2.0-flash-lite gemini-2.0-flash-lite-001 Use gemini-3.5-flash or gemini-3.1-flash-lite instead."
         },
         {
           "guid": "gemini_api-d05244f618c0b0082fffd36b",
           "title": "Gemini API update — May 28, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-05-28T00:00:00+00:00",
-          "description": "Released gemini-3.1-flash-image (Nano Banana 2) and gemini-3-pro-image (Nano Banana Pro), the generally available (GA) versions of our native visual models, Gemini 3.1 Flash Image and Gemini 3 Pro Image . Video-to-image generation support : You can now pass a video file (via direct upload or as a public YouTube URL) as multimodal context alongside a text prompt to generate high-quality thumbnails, cinematic movie posters, or summary infographics. This feature is supported exclusively on the gemini-3.1-flash-image model. To learn more, see the Video-to-image generation guide. Deprecation announcement: The gemini-3.1-flash-image-preview and gemini-3-pro-image-preview models are deprecated and will be shut down on June 25, 2026."
+          "description": "Released gemini-3.1-flash-image (Nano Banana 2) and gemini-3-pro-image (Nano Banana Pro), the generally available (GA) versions of our native visual models, Gemini 3.1 Flash Image and Gemini 3 Pro Image. Video-to-image generation support: You can now pass a video file (via direct upload or as a public YouTube URL) as multimodal context alongside a text prompt to generate high-quality thumbnails, cinematic movie posters, or summary infographics. This feature is supported exclusively on the gemini-3.1-flash-image model. To learn more, see the Video-to-image generation guide. Deprecation announcement: The gemini-3.1-flash-image-preview and gemini-3-pro-image-preview models are deprecated and will be shut down on June 25, 2026."
         },
         {
           "guid": "gemini_api-55f97864d3022f69ae0cadfd",
           "title": "Gemini API update — May 25, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-05-25T00:00:00+00:00",
-          "description": "The gemini-3.1-flash-lite-preview model has been shut down . Use gemini-3.1-flash-lite instead."
+          "description": "The gemini-3.1-flash-lite-preview model has been shut down. Use gemini-3.1-flash-lite instead."
         },
         {
           "guid": "gemini_api-ffbe8b078864ccd8f6891ede",
           "title": "Gemini API update — May 19, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-05-19T00:00:00+00:00",
-          "description": "Released gemini-3.5-flash , the generally available (GA) version of Gemini 3.5 Flash , our most intelligent model for sustained frontier performance on agentic and coding tasks. This is now the model behind gemini-flash-latest . Launched the Managed Agents in the Gemini API in public preview. This enables developers to build and deploy autonomous, stateful agents that run in secure, isolated Google-hosted Linux sandbox environments. To learn more, see the Agents overview page and the Quickstart . Released the general-purpose Antigravity Agent managed agent, antigravity-preview-05-2026 , in public preview. The Antigravity agent can autonomously plan, reason, write and execute code, manage files, and browse the web inside its sandbox container. See the Antigravity Agent guide for code samples and specifications."
+          "description": "Released gemini-3.5-flash, the generally available (GA) version of Gemini 3.5 Flash, our most intelligent model for sustained frontier performance on agentic and coding tasks. Launched the Managed Agents in the Gemini API in public preview. This enables developers to build and deploy autonomous, stateful agents that run in secure, isolated Google-hosted Linux sandbox environments. To learn more, see the Agents overview page and the Quickstart. Released the general-purpose Antigravity Agent managed agent, antigravity-preview-05-2026, in public preview. The Antigravity agent can autonomously plan, reason, write and execute code, manage files, and browse the web inside its sandbox container. See the Antigravity Agent guide for code samples and specifications."
         },
         {
           "guid": "gemini_api-ad3f1365251abfc74a21370b",
           "title": "Gemini API update — May 7, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-05-07T00:00:00+00:00",
-          "description": "Released gemini-3.1-flash-lite , the generally available (GA) version of Gemini 3.1 Flash-Lite , optimized for speed, scale, and cost efficiency. Deprecation announcement: The gemini-3.1-flash-lite-preview model is deprecating on 5/11/26 and will be shut down on May 25, 2026."
+          "description": "Released gemini-3.1-flash-lite, the generally available (GA) version of Gemini 3.1 Flash-Lite, optimized for speed, scale, and cost efficiency. Deprecation announcement: The gemini-3.1-flash-lite-preview model is deprecating on 5/11/26 and will be shut down on May 25, 2026."
         },
         {
           "guid": "gemini_api-455cd7ea8fdd12f57d5392db",
           "title": "Gemini API update — May 6, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-05-06T00:00:00+00:00",
-          "description": "Upcoming breaking change : The Interactions API request and response schema ( outputs → steps ) and output format configuration ( response_format ) are changing. The new schema becomes the default on May 26 and the legacy schema will be removed on June 8 . See the migration guide for details."
+          "description": "Upcoming breaking change: The Interactions API request and response schema (outputs → steps) and output format configuration (response_format) are changing. The new schema becomes the default on May 26 and the legacy schema will be removed on June 8. See the migration guide for details."
         },
         {
           "guid": "gemini_api-1a9d5808a3b4c9ff4f1d09a8",
@@ -788,7 +858,7 @@
           "title": "Gemini API update — April 30, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-04-30T00:00:00+00:00",
-          "description": "The gemini-robotics-er-1.5-preview model has been shut down . Use gemini-robotics-er-1.6-preview instead."
+          "description": "The gemini-robotics-er-1.5-preview model has been shut down. Use gemini-robotics-er-1.6-preview instead."
         },
         {
           "guid": "gemini_api-14567cafdd0e934c0a8e6829",
@@ -802,28 +872,28 @@
           "title": "Gemini API update — April 21, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-04-21T00:00:00+00:00",
-          "description": "Released new versions of the Deep Research agent with collaborative planning, visualization support, MCP server integration, and File Search: deep-research-preview-04-2026 : Designed for speed and efficiency, ideal to be streamed back to a client UI. deep-research-max-preview-04-2026 : Maximum comprehensiveness for automated context gathering and synthesis. Released new versions of the Deep Research agent with collaborative planning, visualization support, MCP server integration, and File Search: deep-research-preview-04-2026 : Designed for speed and efficiency, ideal to be streamed back to a client UI. deep-research-max-preview-04-2026 : Maximum comprehensiveness for automated context gathering and synthesis."
+          "description": "Released new versions of the Deep Research agent with collaborative planning, visualization support, MCP server integration, and File Search: deep-research-preview-04-2026: Designed for speed and efficiency, ideal to be streamed back to a client UI. deep-research-max-preview-04-2026: Maximum comprehensiveness for automated context gathering and synthesis."
         },
         {
           "guid": "gemini_api-f607a7df825072e6dc452122",
           "title": "Gemini API update — April 15, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-04-15T00:00:00+00:00",
-          "description": "Launched Gemini 3.1 Flash TTS Preview , our cost-efficient, expressive, and steerable text to speech model. Read the Text-to-Speech docs to learn more."
+          "description": "Launched Gemini 3.1 Flash TTS Preview, our cost-efficient, expressive, and steerable text to speech model. Read the Text-to-Speech docs to learn more."
         },
         {
           "guid": "gemini_api-5defd96b9ee01532ad576d26",
           "title": "Gemini API update — April 14, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-04-14T00:00:00+00:00",
-          "description": "Released gemini-robotics-er-1.6-preview , our updated robotics model. It now has new capabilities like instrument reading, improved spatial and physical reasoning capabilities. To learn more, see Gemini Robotics ER page and the blog . Deprecation announcement: The gemini-robotics-er-1.5-preview model will be shut down on April 30, 2026 at 9AM PST."
+          "description": "Released gemini-robotics-er-1.6-preview, our updated robotics model. It now has new capabilities like instrument reading, improved spatial and physical reasoning capabilities. To learn more, see Gemini Robotics-ER page and the blog. Deprecation announcement: The gemini-robotics-er-1.5-preview model will be shut down on April 30, 2026 at 9AM PST."
         },
         {
           "guid": "gemini_api-39e73954719290256b67efc0",
           "title": "Gemini API update — April 2, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-04-02T00:00:00+00:00",
-          "description": "Released gemma-4-26b-a4b-it and gemma-4-31b-it , available on AI Studio and through the Gemini API, as part of the Gemma 4 launch."
+          "description": "Released gemma-4-26b-a4b-it and gemma-4-31b-it, available on AI Studio and through the Gemini API, as part of the Gemma 4 launch."
         },
         {
           "guid": "gemini_api-67c445676b107e396b433880",
@@ -837,14 +907,14 @@
           "title": "Gemini API update — March 31, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-03-31T00:00:00+00:00",
-          "description": "Launched Veo 3.1 Lite Preview, veo-3.1-lite-generate-preview , our most cost-efficient video generation model, designed for rapid iteration and building high-volume applications. The gemini-2.5-flash-lite-preview-09-2025 model has been shut down. Use gemini-3.1-flash-lite-preview instead."
+          "description": "Launched Veo 3.1 Lite Preview, veo-3.1-lite-generate-preview, our most cost-efficient video generation model, designed for rapid iteration and building high-volume applications. The gemini-2.5-flash-lite-preview-09-2025 model has been shut down. Use gemini-3.1-flash-lite-preview instead."
         },
         {
           "guid": "gemini_api-e30e954950b9e55e063c9096",
           "title": "Gemini API update — March 26, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-03-26T00:00:00+00:00",
-          "description": "Released gemini-3.1-flash-live-preview , the latest audio-to-audio (A2A) model designed for real-time dialogue and voice-first AI applications. Read the Live API docs to get started."
+          "description": "Released gemini-3.1-flash-live-preview, the latest audio-to-audio (A2A) model designed for real-time dialogue and voice-first AI applications. Read the Live API docs to get started."
         },
         {
           "guid": "gemini_api-868e16aafd44e9df67a45fce",
@@ -886,14 +956,14 @@
           "title": "Gemini API update — March 10, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-03-10T00:00:00+00:00",
-          "description": "Released gemini-embedding-2-preview , our first multimodal embedding model. It supports text, image, video, audio, and PDF inputs, mapping all modalities into a unified embedding space. To learn more, see Embeddings . Deprecation announcement: The gemini-2.5-flash-lite-preview-09-2025 model will be shut down on March 31, 2026."
+          "description": "Released gemini-embedding-2-preview, our first multimodal embedding model. It supports text, image, video, audio, and PDF inputs, mapping all modalities into a unified embedding space. To learn more, see Embeddings. Deprecation announcement: The gemini-2.5-flash-lite-preview-09-2025 model will be shut down on March 31, 2026."
         },
         {
           "guid": "gemini_api-3f2a1258cb598a2df91cf240",
           "title": "Gemini API update — March 9, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-03-09T00:00:00+00:00",
-          "description": "The Gemini 3 Pro Preview model has been shut down . The gemini-3-pro-preview now points to gemini-3.1-pro-preview ."
+          "description": "The Gemini 3 Pro Preview model has been shut down. The gemini-3-pro-preview now points to gemini-3.1-pro-preview."
         },
         {
           "guid": "gemini_api-898d82fba182a598cc093f3d",
@@ -907,56 +977,56 @@
           "title": "Gemini API update — February 26, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-02-26T00:00:00+00:00",
-          "description": "Launched Nano Banana 2, Gemini 3.1 Flash Image Preview , a high-efficiency model optimized for speed and high-volume use cases. Deprecation announcement: Gemini 3 Pro Preview ( gemini-3-pro-preview ) will be shut down March 9, 2026."
+          "description": "Launched Nano Banana 2, Gemini 3.1 Flash Image Preview, a high-efficiency model optimized for speed and high-volume use cases. Deprecation announcement: Gemini 3 Pro Preview (gemini-3-pro-preview) will be shut down March 9, 2026."
         },
         {
           "guid": "gemini_api-b584d472f17885b334b7fe98",
           "title": "Gemini API update — February 19, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-02-19T00:00:00+00:00",
-          "description": "Released Gemini 3.1 Pro Preview , our latest iteration in the new Gemini 3 series family. Launched a separate endpoint gemini-3.1-pro-preview-customtools , which is better at prioritizing custom tools, for users building with a mix of bash and tools."
+          "description": "Released Gemini 3.1 Pro Preview, our latest iteration in the new Gemini 3 series family. Launched a separate endpoint gemini-3.1-pro-preview-customtools, which is better at prioritizing custom tools, for users building with a mix of bash and tools."
         },
         {
           "guid": "gemini_api-a9b2f9d87a1227c6ea3b457c",
           "title": "Gemini API update — February 18, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-02-18T00:00:00+00:00",
-          "description": "Deprecation announcement: The following models will be shut down June 1, 2026: gemini-2.0-flash gemini-2.0-flash-001 gemini-2.0-flash-lite gemini-2.0-flash-lite-001 Deprecation announcement: The following models will be shut down June 1, 2026: gemini-2.0-flash gemini-2.0-flash-001 gemini-2.0-flash-lite gemini-2.0-flash-lite-001"
+          "description": "Deprecation announcement: The following models will be shut down June 1, 2026: gemini-2.0-flash gemini-2.0-flash-001 gemini-2.0-flash-lite gemini-2.0-flash-lite-001"
         },
         {
           "guid": "gemini_api-a18f48969067ee224185e80a",
           "title": "Gemini API update — February 17, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-02-17T00:00:00+00:00",
-          "description": "The following models are shut down : gemini-2.5-flash-preview-09-25 imagen-4.0-generate-preview-06-06 imagen-4.0-ultra-generate-preview-06-06 The following models are shut down : gemini-2.5-flash-preview-09-25 imagen-4.0-generate-preview-06-06 imagen-4.0-ultra-generate-preview-06-06"
+          "description": "The following models are shut down: gemini-2.5-flash-preview-09-25 imagen-4.0-generate-preview-06-06 imagen-4.0-ultra-generate-preview-06-06"
         },
         {
           "guid": "gemini_api-75c0f4bbeaab89a97a941eae",
           "title": "Gemini API update — January 29, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-01-29T00:00:00+00:00",
-          "description": "Launched support for the Computer Use tool in gemini-3-pro-preview and gemini-3-flash-preview ."
+          "description": "Launched support for the Computer Use tool in gemini-3-pro-preview and gemini-3-flash-preview."
         },
         {
           "guid": "gemini_api-541d53ba7e777f55f0c94839",
           "title": "Gemini API update — January 21, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-01-21T00:00:00+00:00",
-          "description": "Changed the latest aliases: gemini-pro-latest switched to gemini-3-pro-preview gemini-flash-latest switched to gemini-3-flash-preview Changed the latest aliases: gemini-pro-latest switched to gemini-3-pro-preview gemini-flash-latest switched to gemini-3-flash-preview"
+          "description": "Changed the latest aliases: gemini-pro-latest switched to gemini-3-pro-preview gemini-flash-latest switched to gemini-3-flash-preview"
         },
         {
           "guid": "gemini_api-b3a2ea04b1ff8e314e39d2da",
           "title": "Gemini API update — January 15, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-01-15T00:00:00+00:00",
-          "description": "Deprecation announcement: The following models will be shut down February 17, 2026: gemini-2.5-flash-preview-09-25 imagen-4.0-generate-preview-06-06 imagen-4.0-ultra-generate-preview-06-06 Deprecation announcement: The following models will be shut down February 17, 2026: gemini-2.5-flash-preview-09-25 imagen-4.0-generate-preview-06-06 imagen-4.0-ultra-generate-preview-06-06 The gemini-2.5-flash-image-preview model has been shut down."
+          "description": "Deprecation announcement: The following models will be shut down February 17, 2026: gemini-2.5-flash-preview-09-25 imagen-4.0-generate-preview-06-06 imagen-4.0-ultra-generate-preview-06-06 The gemini-2.5-flash-image-preview model has been shut down."
         },
         {
           "guid": "gemini_api-2b5f90cbc956862c8e0a3a12",
           "title": "Gemini API update — January 14, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-01-14T00:00:00+00:00",
-          "description": "The text-embedding-004 model has been shut down ."
+          "description": "The text-embedding-004 model has been shut down."
         },
         {
           "guid": "gemini_api-9c95a058ab6ef27cb46933b9",
@@ -970,14 +1040,14 @@
           "title": "Gemini API update — January 12, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-01-12T00:00:00+00:00",
-          "description": "Launched model lifecycle feature. Some models will now specify the lifecycle stage and deprecation timeline. See the following documentation for more information: Model stages Launched model lifecycle feature. Some models will now specify the lifecycle stage and deprecation timeline. See the following documentation for more information: Model stages"
+          "description": "Launched model lifecycle feature. Some models will now specify the lifecycle stage and deprecation timeline. See the following documentation for more information: Model stages"
         },
         {
           "guid": "gemini_api-e7af13347982a058b041bf27",
           "title": "Gemini API update — January 8, 2026",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2026-01-08T00:00:00+00:00",
-          "description": "Launched support for Cloud Storage buckets and any public and private DB pre-signed URL as data input source for the Gemini API. The file size limit has also increased from 20MB to 100MB. For details, see File input methods guide ."
+          "description": "Launched support for Cloud Storage buckets and any public and private DB pre-signed URL as data input source for the Gemini API. The file size limit has also increased from 20MB to 100MB. For details, see File input methods guide."
         },
         {
           "guid": "gemini_api-e23f381f6a40ddc376779c3f",
@@ -991,14 +1061,14 @@
           "title": "Gemini API update — December 17, 2025",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2025-12-17T00:00:00+00:00",
-          "description": "Launched Gemini 3 Flash Preview, gemini-3-flash-preview , delivering fast frontier-class performance that rivals larger models at a fraction of the cost. With upgraded visual and spatial reasoning, and agentic coding capabilities. Read the documentation on some new features, including: Multimodal function responses Code execution with images Launched Gemini 3 Flash Preview, gemini-3-flash-preview , delivering fast frontier-class performance that rivals larger models at a fraction of the cost. With upgraded visual and spatial reasoning, and agentic coding capabilities. Read the documentation on some new features, including: Multimodal function responses Code execution with images"
+          "description": "Launched Gemini 3 Flash Preview, gemini-3-flash-preview, delivering fast frontier-class performance that rivals larger models at a fraction of the cost. With upgraded visual and spatial reasoning, and agentic coding capabilities. Read the documentation on some new features, including: Multimodal function responses Code execution with images"
         },
         {
           "guid": "gemini_api-be052c061aa83e1c6b5f609b",
           "title": "Gemini API update — December 12, 2025",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2025-12-12T00:00:00+00:00",
-          "description": "Released gemini-2.5-flash-native-audio-preview-12-2025 , a new native audio model for the Live API. This update improves the model's ability to handle complex workflows. To learn more, see the Live API guide and Gemini 2.5 Flash Native Audio ."
+          "description": "Released gemini-2.5-flash-native-audio-preview-12-2025, a new native audio model for the Live API. This update improves the model's ability to handle complex workflows. To learn more, see the Live API guide and Gemini 2.5 Flash Native Audio."
         },
         {
           "guid": "gemini_api-ac77a5544b74384d7e9e3766",
@@ -1012,14 +1082,14 @@
           "title": "Gemini API update — December 10, 2025",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2025-12-10T00:00:00+00:00",
-          "description": "Launched enhancements to our text-to-speech models , Gemini 2.5 Flash TTS preview (optimized for low latency) and Gemini 2.5 Pro TTS preview (optimized for quality), including enhanced expressivity, precision pacing, and seamless dialogue."
+          "description": "Launched enhancements to our text-to-speech models, Gemini 2.5 Flash TTS preview (optimized for low latency) and Gemini 2.5 Pro TTS preview (optimized for quality), including enhanced expressivity, precision pacing, and seamless dialogue."
         },
         {
           "guid": "gemini_api-f7ff561fc4d9234a6e06b22b",
           "title": "Gemini API update — December 9, 2025",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2025-12-09T00:00:00+00:00",
-          "description": "The following Gemini Live API models are now shut down: gemini-2.0-flash-live-001 gemini-live-2.5-flash-preview gemini-2.0-flash-live-001 gemini-live-2.5-flash-preview"
+          "description": "The following Gemini Live API models are now shut down: - gemini-2.0-flash-live-001 - gemini-live-2.5-flash-preview"
         },
         {
           "guid": "gemini_api-39f774b66f2ce670ffb6b354",
@@ -1047,84 +1117,14 @@
           "title": "Gemini API update — November 20, 2025",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2025-11-20T00:00:00+00:00",
-          "description": "Released Gemini 3 Pro Image Preview, gemini-3-pro-image-preview , the next iteration to the Nano Banana model. Read the Image generation page for more details."
+          "description": "Released Gemini 3 Pro Image Preview, gemini-3-pro-image-preview, the next iteration to the Nano Banana model. Read the Image generation page for more details."
         },
         {
           "guid": "gemini_api-0d056e21d3fbb011986b9c89",
           "title": "Gemini API update — November 18, 2025",
           "link": "https://ai.google.dev/gemini-api/docs/changelog",
           "published": "2025-11-18T00:00:00+00:00",
-          "description": "Launched the first Gemini 3 series model, gemini-3-pro-preview , our state-of-the-art reasoning and multimodal understanding model with powerful agentic and coding capabilities. In addition to improvements in intelligence and performance, Gemini 3 Pro Preview introduces new behavior around: Media resolution Thought signatures Thinking levels Read the Gemini 3 Developer Guide for migration, new features, and specs. Launched the first Gemini 3 series model, gemini-3-pro-preview , our state-of-the-art reasoning and multimodal understanding model with powerful agentic and coding capabilities. In addition to improvements in intelligence and performance, Gemini 3 Pro Preview introduces new behavior around: Media resolution Thought signatures Thinking levels Read the Gemini 3 Developer Guide for migration, new features, and specs."
-        },
-        {
-          "guid": "gemini_api-728887e81868f90a0ff34201",
-          "title": "Gemini API update — November 11, 2025",
-          "link": "https://ai.google.dev/gemini-api/docs/changelog",
-          "published": "2025-11-11T00:00:00+00:00",
-          "description": "Deprecation announcement: The following models will be shut down: November 12: veo-3.0-fast-generate-preview veo-3.0-generate-preview November 14: gemini-2.0-flash-exp-image-generation gemini-2.0-flash-preview-image-generation Deprecation announcement: The following models will be shut down: November 12: veo-3.0-fast-generate-preview veo-3.0-generate-preview November 12: veo-3.0-fast-generate-preview veo-3.0-generate-preview November 14: gemini-2.0-flash-exp-image-generation gemini-2.0-flash-preview-image-generation November 14: gemini-2.0-flash-exp-image-generation gemini-2.0-flash-preview-image-generation"
-        },
-        {
-          "guid": "gemini_api-22657d24ee3a9f980b024d51",
-          "title": "Gemini API update — November 10, 2025",
-          "link": "https://ai.google.dev/gemini-api/docs/changelog",
-          "published": "2025-11-10T00:00:00+00:00",
-          "description": "The following model is shut down: imagen-3.0-generate-002 Use Imagen 4 instead. Refer to the Gemini deprecations table for more details. The following model is shut down: imagen-3.0-generate-002 Use Imagen 4 instead. Refer to the Gemini deprecations table for more details."
-        },
-        {
-          "guid": "gemini_api-15fdd03977d189740ec6505e",
-          "title": "Gemini API update — November 6, 2025",
-          "link": "https://ai.google.dev/gemini-api/docs/changelog",
-          "published": "2025-11-06T00:00:00+00:00",
-          "description": "Launched the File Search API to public preview, enabling developers to ground responses in their own data. Read the new File Search page for more info."
-        },
-        {
-          "guid": "gemini_api-3b26d1ac753c69ba9156073c",
-          "title": "Gemini API update — November 4, 2025",
-          "link": "https://ai.google.dev/gemini-api/docs/changelog",
-          "published": "2025-11-04T00:00:00+00:00",
-          "description": "For Gemini 2.5 Flash Image , the input token count for images has been reduced from 1290 to 258, lowering the cost of image editing. Deprecation announcement: The following models will be shut down: November 18th: gemini-2.5-flash-lite-preview-06-17 gemini-2.5-flash-preview-05-20 December 2nd: gemini-2.0-flash-thinking-exp gemini-2.0-flash-thinking-exp-01-21 gemini-2.0-flash-thinking-exp-1219 gemini-2.5-pro-preview-03-25 gemini-2.5-pro-preview-05-06 gemini-2.5-pro-preview-06-05 December 9th: gemini-2.0-flash-lite-preview gemini-2.0-flash-lite-preview-02-05 gemini-2.0-flash-exp gemini-2.0-pro-exp gemini-2.0-pro-exp-02-05 Deprecation announcement: The following models will be shut down: November 18th: gemini-2.5-flash-lite-preview-06-17 gemini-2.5-flash-preview-05-20 November 18th: gemini-2.5-flash-lite-preview-06-17 gemini-2.5-flash-preview-05-20 December 2nd: gemini-2.0-flash-thinking-exp gemini-2.0-flash-thinking-exp-01-21 gemini-2.0-flash-thinking-exp-1219 gemini-2.5-pro-preview-03-25 gemini-2.5-pro-preview-05-06 gemini-2.5-pro-preview-06-05 December 2nd: gemini-2.0-flash-thinking-exp gemini-2.0-flash-thinking-exp-01-21 gemini-2.0-flash-thinking-exp-1219 gemini-2.5-pro-preview-03"
-        },
-        {
-          "guid": "gemini_api-89317b8f8896a54f6ff2941b",
-          "title": "Gemini API update — October 29, 2025",
-          "link": "https://ai.google.dev/gemini-api/docs/changelog",
-          "published": "2025-10-29T00:00:00+00:00",
-          "description": "Launched the new logging and datasets tool for the Gemini API."
-        },
-        {
-          "guid": "gemini_api-7d874d4e7a55feff70652521",
-          "title": "Gemini API update — October 20, 2025",
-          "link": "https://ai.google.dev/gemini-api/docs/changelog",
-          "published": "2025-10-20T00:00:00+00:00",
-          "description": "The following Gemini Live API models are now shut down: gemini-2.5-flash-preview-native-audio-dialog gemini-2.5-flash-exp-native-audio-thinking-dialog You can use gemini-2.5-flash-native-audio-preview-09-2025 instead. The following Gemini Live API models are now shut down: gemini-2.5-flash-preview-native-audio-dialog gemini-2.5-flash-exp-native-audio-thinking-dialog You can use gemini-2.5-flash-native-audio-preview-09-2025 instead. Deprecation announcement: Shut down for gemini-2.0-flash-live-001 and gemini-live-2.5-flash-preview coming December 09, 2025."
-        },
-        {
-          "guid": "gemini_api-00f96fae4fe1c0da01a74cd7",
-          "title": "Gemini API update — October 17, 2025",
-          "link": "https://ai.google.dev/gemini-api/docs/changelog",
-          "published": "2025-10-17T00:00:00+00:00",
-          "description": "Grounding with Google Maps is now generally available. For more information, see Grounding with Google Maps documentation."
-        },
-        {
-          "guid": "gemini_api-60542f8fe3502dad67c5a2ee",
-          "title": "Gemini API update — October 15, 2025",
-          "link": "https://ai.google.dev/gemini-api/docs/changelog",
-          "published": "2025-10-15T00:00:00+00:00",
-          "description": "Released Veo 3.1 and 3.1 Fast models in public preview, with new features including: Extending Veo-created videos. Referencing up to three images to generate a video. Providing first and last frame images to generate videos from. This launch also added more options for Veo 3 output video durations: 4, 6, and 8 seconds. Released Veo 3.1 and 3.1 Fast models in public preview, with new features including: Extending Veo-created videos. Referencing up to three images to generate a video. Providing first and last frame images to generate videos from. This launch also added more options for Veo 3 output video durations: 4, 6, and 8 seconds. Deprecation announcement: Shut down for veo-3.0-generate-preview and veo-3.0-fast-generate-preview coming November 12, 2025."
-        },
-        {
-          "guid": "gemini_api-e3444895af48daad9905ad03",
-          "title": "Gemini API update — October 7, 2025",
-          "link": "https://ai.google.dev/gemini-api/docs/changelog",
-          "published": "2025-10-07T00:00:00+00:00",
-          "description": "Launched Gemini 2.5 Computer Use Preview"
-        },
-        {
-          "guid": "gemini_api-f6a7d0b9e27d052ce4cb5774",
-          "title": "Gemini API update — October 2, 2025",
-          "link": "https://ai.google.dev/gemini-api/docs/changelog",
-          "published": "2025-10-02T00:00:00+00:00",
-          "description": "Launched Gemini 2.5 Flash Image GA: Image Generation with Gemini"
+          "description": "Launched the first Gemini 3 series model, gemini-3-pro-preview, our state-of-the-art reasoning and multimodal understanding model with powerful agentic and coding capabilities. In addition to improvements in intelligence and performance, Gemini 3 Pro Preview introduces new behavior around: Media resolution Thought signatures Thinking levels Read the Gemini 3 Developer Guide for migration, new features, and specs."
         }
       ]
     },
@@ -2347,6 +2347,1316 @@
           "enclosure_length": "42988620",
           "enclosure_type": "audio/mp4",
           "duration": "44:18"
+        }
+      ]
+    },
+    "zhipu_news": {
+      "items": [
+        {
+          "guid": "zhipu_news-152",
+          "title": "智谱首份业绩报告发布，探索AGI智能上界",
+          "link": "https://www.zhipuai.cn/zh/news/152",
+          "published": "2026-03-31T00:00:00+00:00",
+          "description": "智谱官网新闻中的公司动态、产品发布与官方公告。"
+        },
+        {
+          "guid": "zhipu_news-151",
+          "title": "智谱（02513.HK）公布2025年度业绩发布会安排",
+          "link": "https://www.zhipuai.cn/zh/news/151",
+          "published": "2026-03-30T00:00:00+00:00",
+          "description": "智谱（“公司”；香港联交所股票代码：02513）宣布，将于2026年3月31日（星期二）公布截至2025年12月31日止年度的全年业绩。"
+        },
+        {
+          "guid": "zhipu_news-97",
+          "title": "中关村自主大模型产业联盟第一次会员大会 结果公示",
+          "link": "https://www.zhipuai.cn/zh/news/97",
+          "published": "2025-08-25T00:00:00+00:00",
+          "description": "2025年8月19日，中关村自主大模型产业联盟在北京市海淀区搜狐网络大厦10层图灵会议室召开了第一次会员大会。会议应出席会员（均为单位会员，下同）数32，实到数32，超过会员总数2/3，会议有效。会议由北京智谱华章科技股份有限公司董事长刘德兵主持。会议主要内容和通过的主要决定如下：一、会员以举手方式表决通过了《中关村自主大模型产业联盟筹备工作报告》、《中关村自主大模型产业联盟章程（草案）》、《中关"
+        },
+        {
+          "guid": "zhipu_news-76",
+          "title": "GLM-PC 基座模型，CogAgent-9B 开源",
+          "link": "https://www.zhipuai.cn/zh/news/76",
+          "published": "2024-12-30T00:00:00+00:00",
+          "description": "11 月 29 日，智谱正式提出 GLM-OS 概念，并发布 AutoGLM 和 GLM-PC 两款 Agent 产品。为推动大模型 Agent 生态发展，我们决定将 GLM-PC 的基座模型——CogAgent-9B 开源，供社区进一步开发。CogAgent-9B-20241220是基于 GLM-4V-9B 训练而成的专用 Agent 任务模型。该模型仅需屏幕截图作为输入（无需 HTML 等文本"
+        },
+        {
+          "guid": "zhipu_news-68",
+          "title": "Agent 新进展：跨 app、跨设备、更多玩法｜智谱 Agent OpenDay",
+          "link": "https://www.zhipuai.cn/zh/news/68",
+          "published": "2024-11-28T00:00:00+00:00",
+          "description": "人类与机器的互动方式正在发生范式转变——这是由于只有对话功能的 Chatbot，正在进化为“有手、有脑、有眼睛”的自主 Agent。作为最早探索 Agent 的大模型企业之一，智谱今天带来了多个新进展：AutoGLM 可以自主执行超过 50 步的长步骤操作，也可以跨 app 执行任务AutoGLM开启「全自动」上网新体验，支持等数十个网站的无人驾驶像人一样操作计算机的GLM-PC 启动内测，基于视"
+        },
+        {
+          "guid": "zhipu_news-20",
+          "title": "智谱与英特尔深化智能生态合作，落地端侧智谱清言和CodeGeeX智能编程助手",
+          "link": "https://www.zhipuai.cn/zh/news/20",
+          "published": "2024-11-07T00:00:00+00:00",
+          "description": "10月25日，英特尔 AI PC 生态大会暨英特尔酷睿Ultra处理器（第二代）品鉴会上，智谱作为英特尔的重要合作伙伴受邀出席，分享了智谱和英特尔在AI PC领域联合共创的最新成果：端侧智谱清言和 CodeGeeX 智能编程助手 AIPC 版，携手赋能 AIPC 领域的智能“芯”动力。基于端云一体的模型产品矩阵，智谱和英特尔共同落地多款 AI PC 应用创新成果。智谱副总裁吴玮杰在大会上介绍了端侧"
+        },
+        {
+          "guid": "zhipu_news-4",
+          "title": "智谱与中国三星宣布战略合作",
+          "link": "https://www.zhipuai.cn/zh/news/4",
+          "published": "2024-10-28T00:00:00+00:00",
+          "description": "昨日，中国三星（以下简称“三星”）与智谱华章（以下简称“智谱”）宣布战略合作，双方将携手在AI手机领域展开深度共创，共同打造卓越体验的AI产品。三星电子大中华区用户体验战略副总裁许元默、智谱CEO张鹏出席战略合作发布仪式。现场签约照片许元默表示：“一直以来，中国三星致力于携手国内优秀的合作伙伴，在消费电子领域持续深耕，不断提升用户体验。AI手机是基于强大的硬件算力、先进的模型算法以及用户友好的多样"
+        },
+        {
+          "guid": "zhipu_news-138",
+          "title": "智谱荣耀AI大模型技术联合实验室揭牌",
+          "link": "https://www.zhipuai.cn/zh/news/138",
+          "published": "2024-09-12T00:00:00+00:00",
+          "description": "9月2日，智谱和荣耀在北京正式签署AI大模型技术联合实验室战略合作协议。智谱 COO 张帆、荣耀产品线总裁方飞、研发管理总裁刘洋等代表出席签约仪式。智谱致力于打造新一代认知智能大模型，专注于通用人工智能的基座大模型创新；荣耀则是消费电子领域平台级 AI 技术的先行者和领导者。本次双方深化战略合作，将进一步探索基于用户场景的端侧 AI 智能体验，共同推动智能终端领域大模型技术和应用创新，并通过荣耀折"
+        },
+        {
+          "guid": "zhipu_news-21",
+          "title": "清言向你发起一个视频通话请求…",
+          "link": "https://www.zhipuai.cn/zh/news/21",
+          "published": "2024-09-12T00:00:00+00:00",
+          "description": "智谱官网新闻中的公司动态、产品发布与官方公告。"
+        },
+        {
+          "guid": "zhipu_news-69",
+          "title": "智谱携基座大模型 GLM-4-Plus 亮相 KDD，清言全新升级视频通话功能",
+          "link": "https://www.zhipuai.cn/zh/news/69",
+          "published": "2024-09-12T00:00:00+00:00",
+          "description": "在 KDD 国际数据挖掘与知识发现大会上，智谱 GLM 团队介绍了新一代基座大模型GLM-4-Plus。GLM-4-Plus 是智谱全自研 GLM 大模型的最新版本，它标志着智谱继续瞄准通用人工智能，持续推进大模型技术的独立自主创新。主要更新：语言基座模型 GLM-4-Plus：在语言理解、指令遵循、长文本处理等方面性能得到全面提升，保持了国际领先水平。文生图模型 CogView-3-Plus：具"
+        },
+        {
+          "guid": "zhipu_news-96",
+          "title": "智谱携手英特尔，加速开启未来座舱时代，共同探索AI CAR未来",
+          "link": "https://www.zhipuai.cn/zh/news/96",
+          "published": "2024-09-10T00:00:00+00:00",
+          "description": "8月8日，在“开启未来座舱时代”英特尔 AI 座舱暨车载独立显卡发布会上，英特尔重磅发布首款英特尔锐炫™车载独立显卡，以期帮助汽车厂商开辟技术前沿，带来突破性的机遇。智谱作为英特尔的重要合作伙伴受邀出席，共同探讨汽车智能座舱领域的大模型技术和应用创新。发布会上，智谱 COO 张帆在与英特尔院士、英特尔公司副总裁、汽车事业部总经理 Jack Weast 的交流中表示：基于英特尔的独立显卡 dGPU"
+        },
+        {
+          "guid": "zhipu_news-67",
+          "title": "智谱支持“清华大学人工智能教育赋能项目”捐赠仪式举行",
+          "link": "https://www.zhipuai.cn/zh/news/67",
+          "published": "2024-09-10T00:00:00+00:00",
+          "description": "2024年8月15日，智谱支持“清华大学人工智能教育赋能项目”捐赠仪式在清华大学工字厅举行。清华大学副校长、教务长、教育基金会理事彭刚，1998级校友、北京智谱华章科技有限公司（以下简称“智谱”）CEO张鹏出席仪式。教育基金会秘书长袁桅主持仪式。彭刚致辞彭刚表示，新一波人工智能浪潮正在推动和加速社会领域各行业的全面变革。过去十年，清华大学积极推进“学堂在线”“雨课堂”等为代表的在线教育工作，推动数"
+        },
+        {
+          "guid": "zhipu_news-63",
+          "title": "“SMP-智谱大模型交叉学科基金”第二期启动申报",
+          "link": "https://www.zhipuai.cn/zh/news/63",
+          "published": "2024-09-10T00:00:00+00:00",
+          "description": "随着人工智能和大模型技术的飞速发展，大模型技术在各个学科领域的应用已经展现出巨大的潜力和影响力。中国中文信息学会社会媒体处理专委会（http://www.cips-smp.org）联合北京智谱华章科技有限公司（以下简称“智谱”），共同推出“SMP-智谱大模型交叉学科基金”第二期。SMP-智谱大模型交叉学科基金，是国内首个致力于探索、支持并推动大模型与各领域交叉的研究与创新基金。此基金正旨在促进大模"
+        },
+        {
+          "guid": "zhipu_news-135",
+          "title": "受邀参加了智谱AI Z Demo Day，让我再一次相信 AGI ！",
+          "link": "https://www.zhipuai.cn/zh/news/135",
+          "published": "2024-09-10T00:00:00+00:00",
+          "description": "「Z计划」是智谱 AI面向未上市初创企业与优秀独立开发者/团队，提供 Tokens赞助、投资支持和技术支持等资源的创新加速计划。面向全球，持续招募中！🐋（点击报名）#1.首届！Z计划搞得有点大了智谱 AI Z 计划企业路演日：Z DemoDay（2024·Summer）于 8 月 4 日在智谱 AI 公司举办。现场共有 25 家 Z 计划企业参加路演，近 300 位投资人参会（空间有限，策划预期"
+        },
+        {
+          "guid": "zhipu_news-134",
+          "title": "智谱GLM端侧大模型获得信通院可信AI端侧大模型评估最高评级",
+          "link": "https://www.zhipuai.cn/zh/news/134",
+          "published": "2024-09-10T00:00:00+00:00",
+          "description": "智谱GLM端侧大模型参与中国信通院组织的《端侧大模型技术和应用评估方法》标准首轮评估，最终获得4级评级, 智谱成为国内首家通过该项评估并获得当前最高评级的大模型企业。GLM端侧大模型，是智谱推出的一系列适用于PC、手机、车机等终端场景的大模型，包括1.5B、6B、9B等多个规格，灵活适配各类终端应用场景和算力条件，赋能智能终端AI应用，革新用户体验。基于先进的预训练技术和大量优质数据，GLM端侧大"
+        }
+      ]
+    },
+    "kimi_research": {
+      "items": [
+        {
+          "guid": "kimi_research-kimi-k3-1-pro",
+          "title": "Kimi K3.1 Pro",
+          "link": "https://www.kimi.ai/zh-hans/blog/kimi-k3-1-pro",
+          "published": "2026-10-24T00:00:00+00:00",
+          "description": "Kimi 官方研究与技术博客文章。"
+        },
+        {
+          "guid": "kimi_research-kimi-k3",
+          "title": "Kimi K3",
+          "link": "https://www.kimi.ai/zh-hans/blog/kimi-k3",
+          "published": "2026-07-16T00:00:00+00:00",
+          "description": "Kimi 官方研究与技术博客文章。"
+        },
+        {
+          "guid": "kimi_research-perception-bench",
+          "title": "PerceptionBench",
+          "link": "https://www.kimi.ai/zh-hans/blog/perception-bench",
+          "published": "2026-07-16T00:00:00+00:00",
+          "description": "Kimi 官方研究与技术博客文章。"
+        },
+        {
+          "guid": "kimi_research-kimi-k2-6",
+          "title": "Kimi K2.6",
+          "link": "https://www.kimi.ai/zh-hans/blog/kimi-k2-6",
+          "published": "2026-04-20T00:00:00+00:00",
+          "description": "Kimi 官方研究与技术博客文章。"
+        },
+        {
+          "guid": "kimi_research-agent-swarm",
+          "title": "Agent Swarm",
+          "link": "https://www.kimi.ai/zh-hans/blog/agent-swarm",
+          "published": "2026-02-09T00:00:00+00:00",
+          "description": "Kimi 官方研究与技术博客文章。"
+        },
+        {
+          "guid": "kimi_research-worldvqa",
+          "title": "WorldVQA",
+          "link": "https://www.kimi.ai/zh-hans/blog/worldvqa",
+          "published": "2026-02-03T00:00:00+00:00",
+          "description": "Kimi 官方研究与技术博客文章。"
+        },
+        {
+          "guid": "kimi_research-kimi-k2-5",
+          "title": "Kimi K2.5",
+          "link": "https://www.kimi.ai/zh-hans/blog/kimi-k2-5",
+          "published": "2026-01-27T00:00:00+00:00",
+          "description": "Kimi 官方研究与技术博客文章。"
+        },
+        {
+          "guid": "kimi_research-kimi-vendor-verifier",
+          "title": "Kimi Vendor Verifier",
+          "link": "https://www.kimi.ai/zh-hans/blog/kimi-vendor-verifier",
+          "published": "2026-01-22T00:00:00+00:00",
+          "description": "Kimi 官方研究与技术博客文章。"
+        },
+        {
+          "guid": "kimi_research-kimi-k2-thinking",
+          "title": "Kimi K2 Thinking",
+          "link": "https://www.kimi.ai/zh-hans/blog/kimi-k2-thinking",
+          "published": "2025-11-06T00:00:00+00:00",
+          "description": "Kimi 官方研究与技术博客文章。"
+        },
+        {
+          "guid": "kimi_research-Kimi-K2-Instruct-0905",
+          "title": "Kimi-K2-Instruct-0905",
+          "link": "https://www.kimi.ai/zh-hans/blog/Kimi-K2-Instruct-0905",
+          "published": "2025-09-05T00:00:00+00:00",
+          "description": "Kimi 官方研究与技术博客文章。"
+        },
+        {
+          "guid": "kimi_research-kimi-k2",
+          "title": "Kimi K2",
+          "link": "https://www.kimi.ai/zh-hans/blog/kimi-k2",
+          "published": "2025-07-11T00:00:00+00:00",
+          "description": "Kimi 官方研究与技术博客文章。"
+        },
+        {
+          "guid": "kimi_research-Kimi-Researcher",
+          "title": "Kimi-Researcher",
+          "link": "https://www.kimi.ai/zh-hans/blog/Kimi-Researcher",
+          "published": "2025-06-20T00:00:00+00:00",
+          "description": "Kimi 官方研究与技术博客文章。"
+        },
+        {
+          "guid": "kimi_research-Kimi-Dev",
+          "title": "Kimi-Dev",
+          "link": "https://www.kimi.ai/zh-hans/blog/Kimi-Dev",
+          "published": "2025-06-17T00:00:00+00:00",
+          "description": "Kimi 官方研究与技术博客文章。"
+        },
+        {
+          "guid": "kimi_research-Kimi-Audio",
+          "title": "Kimi-Audio",
+          "link": "https://www.kimi.ai/zh-hans/blog/Kimi-Audio",
+          "published": "2025-04-26T00:00:00+00:00",
+          "description": "Kimi 官方研究与技术博客文章。"
+        },
+        {
+          "guid": "kimi_research-Kimina-Prover-Preview",
+          "title": "Kimina-Prover Preview",
+          "link": "https://www.kimi.ai/zh-hans/blog/Kimina-Prover-Preview",
+          "published": "2025-04-15T00:00:00+00:00",
+          "description": "Kimi 官方研究与技术博客文章。"
+        },
+        {
+          "guid": "kimi_research-Kimi-VL",
+          "title": "Kimi-VL",
+          "link": "https://www.kimi.ai/zh-hans/blog/Kimi-VL",
+          "published": "2025-04-10T00:00:00+00:00",
+          "description": "Kimi 官方研究与技术博客文章。"
+        },
+        {
+          "guid": "kimi_research-Moonlight",
+          "title": "Muon is Scalable for LLM Training",
+          "link": "https://www.kimi.ai/zh-hans/blog/Moonlight",
+          "published": "2025-02-23T00:00:00+00:00",
+          "description": "Kimi 官方研究与技术博客文章。"
+        },
+        {
+          "guid": "kimi_research-MoBA",
+          "title": "MoBA: Mixture of Block Attention for Long-Context LLMs",
+          "link": "https://www.kimi.ai/zh-hans/blog/MoBA",
+          "published": "2025-02-18T00:00:00+00:00",
+          "description": "Kimi 官方研究与技术博客文章。"
+        },
+        {
+          "guid": "kimi_research-Kimi-k1.5",
+          "title": "Kimi K1.5: Scaling Reinforcement Learning with LLMs",
+          "link": "https://www.kimi.ai/zh-hans/blog/Kimi-k1.5",
+          "published": "2025-01-20T00:00:00+00:00",
+          "description": "Kimi 官方研究与技术博客文章。"
+        },
+        {
+          "guid": "kimi_research-Mooncake",
+          "title": "Mooncake: A KVCache-centric Disaggregated Architecture for LLM Serving",
+          "link": "https://www.kimi.ai/zh-hans/blog/Mooncake",
+          "published": "2024-06-26T00:00:00+00:00",
+          "description": "Kimi 官方研究与技术博客文章。"
+        }
+      ]
+    },
+    "deepseek_research_news": {
+      "items": [
+        {
+          "guid": "deepseek_research_news-deepseek-v4-1-flash",
+          "title": "DeepSeek V4.1 Flash：更强、更快、更普惠",
+          "link": "https://www.deepseek.com/news/deepseek-v4-1-flash/",
+          "published": "2026-09-10T00:00:00+00:00",
+          "description": "DeepSeek V4.1 Flash 正式发布，具备原生多模态视觉理解能力。全新非对称模型结构，能力更强、速度更快、成本更低。"
+        },
+        {
+          "guid": "deepseek_research_news-2606.19348",
+          "title": "DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence",
+          "link": "https://arxiv.org/abs/2606.19348",
+          "published": "2026-06-24T00:00:00+00:00",
+          "description": "DeepSeek 官网研究索引列出的论文或项目。"
+        },
+        {
+          "guid": "deepseek_research_news-v4-preview",
+          "title": "DeepSeek-V4 预览版：迈入百万上下文普惠时代",
+          "link": "https://www.deepseek.com/news/v4-preview/",
+          "published": "2026-04-24T00:00:00+00:00",
+          "description": "DeepSeek 全新系列模型 V4 预览版正式上线并同步开源，拥有百万字超长上下文。"
+        },
+        {
+          "guid": "deepseek_research_news-2602.21548",
+          "title": "DualPath: Breaking the Storage Bandwidth Bottleneck in Agentic LLM Inference",
+          "link": "https://arxiv.org/abs/2602.21548",
+          "published": "2026-02-25T00:00:00+00:00",
+          "description": "DeepSeek 官网研究索引列出的论文或项目。"
+        },
+        {
+          "guid": "deepseek_research_news-2601.20552",
+          "title": "DeepSeek-OCR 2: Visual Causal Flow",
+          "link": "https://arxiv.org/abs/2601.20552",
+          "published": "2026-01-28T00:00:00+00:00",
+          "description": "DeepSeek 官网研究索引列出的论文或项目。"
+        },
+        {
+          "guid": "deepseek_research_news-2601.07372",
+          "title": "Engram: Conditional Memory via Scalable Lookup",
+          "link": "https://arxiv.org/abs/2601.07372",
+          "published": "2026-01-12T00:00:00+00:00",
+          "description": "DeepSeek 官网研究索引列出的论文或项目。"
+        },
+        {
+          "guid": "deepseek_research_news-2512.24880",
+          "title": "mHC: Manifold-Constrained Hyper-Connections",
+          "link": "https://arxiv.org/abs/2512.24880",
+          "published": "2025-12-31T00:00:00+00:00",
+          "description": "DeepSeek 官网研究索引列出的论文或项目。"
+        },
+        {
+          "guid": "deepseek_research_news-2512.02556",
+          "title": "DeepSeek-V3.2: Pushing the Frontier of Open LLMs",
+          "link": "https://arxiv.org/abs/2512.02556",
+          "published": "2025-12-02T00:00:00+00:00",
+          "description": "DeepSeek 官网研究索引列出的论文或项目。"
+        },
+        {
+          "guid": "deepseek_research_news-deepseek-v3-2",
+          "title": "DeepSeek V3.2 正式版：强化 Agent 能力，融入思考推理",
+          "link": "https://www.deepseek.com/news/deepseek-v3-2/",
+          "published": "2025-12-01T00:00:00+00:00",
+          "description": "DeepSeek-V3.2 和 V3.2-Speciale 正式发布，推理能力全球领先，首个将思考融入工具使用的模型，斩获 IMO、CMO、ICPC、IOI 金牌。"
+        },
+        {
+          "guid": "deepseek_research_news-2511.22570",
+          "title": "DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning",
+          "link": "https://arxiv.org/abs/2511.22570",
+          "published": "2025-11-27T00:00:00+00:00",
+          "description": "DeepSeek 官网研究索引列出的论文或项目。"
+        },
+        {
+          "guid": "deepseek_research_news-LPLB",
+          "title": "Linear-Programming-Based Load Balancer (LPLB)",
+          "link": "https://github.com/deepseek-ai/LPLB",
+          "published": "2025-11-01T00:00:00+00:00",
+          "description": "DeepSeek 官网研究索引列出的论文或项目。"
+        },
+        {
+          "guid": "deepseek_research_news-2510.18234",
+          "title": "DeepSeek-OCR: Contexts Optical Compression",
+          "link": "https://arxiv.org/abs/2510.18234",
+          "published": "2025-10-21T00:00:00+00:00",
+          "description": "DeepSeek 官网研究索引列出的论文或项目。"
+        },
+        {
+          "guid": "deepseek_research_news-v3-2-exp",
+          "title": "DeepSeek-V3.2-Exp 发布，训练推理提效，API 同步降价",
+          "link": "https://www.deepseek.com/news/v3-2-exp/",
+          "published": "2025-09-29T00:00:00+00:00",
+          "description": "DeepSeek-V3.2-Exp 正式发布，引入 DeepSeek Sparse Attention 稀疏注意力机制，API 价格降低 50% 以上。"
+        },
+        {
+          "guid": "deepseek_research_news-v3-1-terminus",
+          "title": "DeepSeek-V3.1 版本更新",
+          "link": "https://www.deepseek.com/news/v3-1-terminus/",
+          "published": "2025-09-22T00:00:00+00:00",
+          "description": "DeepSeek-V3.1 更新至 Terminus 版本，缓解中英文混杂问题，优化 Code Agent 与 Search Agent 表现。"
+        },
+        {
+          "guid": "deepseek_research_news-2505.09343",
+          "title": "Insights into DeepSeek-V3: Scaling Challenges & Hardware Reflections",
+          "link": "https://arxiv.org/abs/2505.09343",
+          "published": "2025-05-14T00:00:00+00:00",
+          "description": "DeepSeek 官网研究索引列出的论文或项目。"
+        }
+      ]
+    },
+    "minimax_research": {
+      "items": [
+        {
+          "guid": "minimax_research-minimax-h3-family",
+          "title": "一个起点，无限创造：从 H3 到 H3 Family，1472 个模型，1.48 亿次下载",
+          "link": "https://www.minimax.cn/blog/minimax-h3-family",
+          "published": "2026-11-24T00:00:00+00:00",
+          "description": "MiniMax 中文官网研究博客中的技术文章与产品更新。"
+        },
+        {
+          "guid": "minimax_research-practical-cryptanalysis-with-minimaxs-latest-internal-model",
+          "title": "评估 MiniMax 内部模型的密码分析能力",
+          "link": "https://www.minimax.cn/blog/practical-cryptanalysis-with-minimaxs-latest-internal-model",
+          "published": "2026-11-20T00:00:00+00:00",
+          "description": "MiniMax 中文官网研究博客中的技术文章与产品更新。"
+        },
+        {
+          "guid": "minimax_research-minimax-h3-image",
+          "title": "MiniMax H3-Image 开源：让 4K 图像生成进入 10 秒时代",
+          "link": "https://www.minimax.cn/blog/minimax-h3-image",
+          "published": "2026-11-10T00:00:00+00:00",
+          "description": "MiniMax 中文官网研究博客中的技术文章与产品更新。"
+        },
+        {
+          "guid": "minimax_research-minimax-code-mini-app-1792650729",
+          "title": "插件即应用：MiniMax Code Mini App 正式发布",
+          "link": "https://www.minimax.cn/blog/minimax-code-mini-app-1792650729",
+          "published": "2026-10-22T00:00:00+00:00",
+          "description": "MiniMax 中文官网研究博客中的技术文章与产品更新。"
+        },
+        {
+          "guid": "minimax_research-minimax-m31f",
+          "title": "MiniMax M3.1 Flash：重新定义 Agent 的性能与成本",
+          "link": "https://www.minimax.cn/blog/minimax-m31f",
+          "published": "2026-10-19T00:00:00+00:00",
+          "description": "MiniMax 中文官网研究博客中的技术文章与产品更新。"
+        },
+        {
+          "guid": "minimax_research-minimax-music-3-0-cn",
+          "title": "MiniMax Music 3.0：新一代开放权重、生产级全能音乐模型",
+          "link": "https://www.minimax.cn/blog/minimax-music-3-0-cn",
+          "published": "2026-08-13T00:00:00+00:00",
+          "description": "MiniMax 中文官网研究博客中的技术文章与产品更新。"
+        },
+        {
+          "guid": "minimax_research-minimax-h3",
+          "title": "MiniMax H3：打破任务和模态的边界",
+          "link": "https://www.minimax.cn/blog/minimax-h3",
+          "published": "2026-07-31T00:00:00+00:00",
+          "description": "MiniMax 中文官网研究博客中的技术文章与产品更新。"
+        },
+        {
+          "guid": "minimax_research-minimax-maxproof-math-proof-evolution",
+          "title": "MaxProof: 生成式验证强化学习驱动的数学证明进化系统",
+          "link": "https://www.minimax.cn/blog/minimax-maxproof-math-proof-evolution",
+          "published": "2026-06-09T00:00:00+00:00",
+          "description": "MiniMax 中文官网研究博客中的技术文章与产品更新。"
+        },
+        {
+          "guid": "minimax_research-minimax-m3",
+          "title": "MiniMax M3：前沿 Coding 能力，1M上下文，原生多模态，一个模型全给你",
+          "link": "https://www.minimax.cn/blog/minimax-m3",
+          "published": "2026-06-01T00:00:00+00:00",
+          "description": "MiniMax 中文官网研究博客中的技术文章与产品更新。"
+        },
+        {
+          "guid": "minimax_research-minimax-agent-team-long-running-1779893521",
+          "title": "MiniMax Agent Team: 为长程任务，持续进化而生",
+          "link": "https://www.minimax.cn/blog/minimax-agent-team-long-running-1779893521",
+          "published": "2026-05-27T00:00:00+00:00",
+          "description": "MiniMax 中文官网研究博客中的技术文章与产品更新。"
+        },
+        {
+          "guid": "minimax_research-sparse-token-forgetting-investigation",
+          "title": "为什么MiniMax大模型不认识\"马嘉祺\"？MiniMax内部排查稀疏 Token 遗忘问题的记录",
+          "link": "https://www.minimax.cn/blog/sparse-token-forgetting-investigation",
+          "published": "2026-05-25T00:00:00+00:00",
+          "description": "MiniMax 中文官网研究博客中的技术文章与产品更新。"
+        },
+        {
+          "guid": "minimax_research-minimax-m27",
+          "title": "MiniMax M2.7: 开启模型的自我进化",
+          "link": "https://www.minimax.cn/blog/minimax-m27",
+          "published": "2026-03-18T00:00:00+00:00",
+          "description": "MiniMax 中文官网研究博客中的技术文章与产品更新。"
+        },
+        {
+          "guid": "minimax_research-forge-scalable-agent-rl",
+          "title": "Forge: 可扩展的 Agent 强化学习框架与算法",
+          "link": "https://www.minimax.cn/blog/forge-scalable-agent-rl",
+          "published": "2026-02-12T00:00:00+00:00",
+          "description": "MiniMax 中文官网研究博客中的技术文章与产品更新。"
+        },
+        {
+          "guid": "minimax_research-minimax-m25",
+          "title": "MiniMax M2.5: 更快更强更智能，为真实世界生产力而生",
+          "link": "https://www.minimax.cn/blog/minimax-m25",
+          "published": "2026-02-12T00:00:00+00:00",
+          "description": "MiniMax 中文官网研究博客中的技术文章与产品更新。"
+        },
+        {
+          "guid": "minimax_research-minimax-m2-her",
+          "title": "MiniMax-M2-her 技术深度解析",
+          "link": "https://www.minimax.cn/blog/minimax-m2-her",
+          "published": "2026-01-28T00:00:00+00:00",
+          "description": "MiniMax 中文官网研究博客中的技术文章与产品更新。"
+        },
+        {
+          "guid": "minimax_research-minimax-m21",
+          "title": "MiniMax M2.1: 大幅提升多语言编程，为真实世界复杂任务而生",
+          "link": "https://www.minimax.cn/blog/minimax-m21",
+          "published": "2025-12-23T00:00:00+00:00",
+          "description": "MiniMax 中文官网研究博客中的技术文章与产品更新。"
+        },
+        {
+          "guid": "minimax_research-minimax-m2",
+          "title": "MiniMax M2 & Agent，大巧若拙",
+          "link": "https://www.minimax.cn/blog/minimax-m2",
+          "published": "2025-10-27T00:00:00+00:00",
+          "description": "MiniMax 中文官网研究博客中的技术文章与产品更新。"
+        },
+        {
+          "guid": "minimax_research-minimax-01-%E7%B3%BB%E5%88%97",
+          "title": "MiniMax-01开源：新架构开启Agent时代",
+          "link": "https://www.minimax.cn/blog/minimax-01-%E7%B3%BB%E5%88%97",
+          "published": "2025-01-15T00:00:00+00:00",
+          "description": "MiniMax 中文官网研究博客中的技术文章与产品更新。"
+        }
+      ]
+    },
+    "bytedance_seed": {
+      "items": [
+        {
+          "guid": "bytedance_seed-1794791950696",
+          "title": "Seed STEM 计划｜分子逆合成挑战赛启动",
+          "link": "https://seed.bytedance.com/zh/blog/seed-stem-%E8%AE%A1%E5%88%92-%E5%88%86%E5%AD%90%E9%80%86%E5%90%88%E6%88%90%E6%8C%91%E6%88%98%E8%B5%9B%E5%90%AF%E5%8A%A8",
+          "published": "2026-11-15T16:00:00+00:00",
+          "description": "字节跳动 Seed 官网公开的技术博客与官方动态。"
+        },
+        {
+          "guid": "bytedance_seed-1794186749126",
+          "title": "生成更真实，百轮编辑更稳定｜Seedream 5.5 发布",
+          "link": "https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5",
+          "published": "2026-11-08T16:00:00+00:00",
+          "description": "非编辑区域像素级保持，真实感与小字渲染显著提升"
+        },
+        {
+          "guid": "bytedance_seed-1791946231297",
+          "title": "Seed Alignment & Preparedness 全球顶尖人才招募启动",
+          "link": "https://seed.bytedance.com/zh/blog/seed-alignment-preparedness-team-looking-for-global-talents",
+          "published": "2026-10-13T16:00:00+00:00",
+          "description": "字节跳动 Seed 官网公开的技术博客与官方动态。"
+        },
+        {
+          "guid": "bytedance_seed-1785893583524",
+          "title": "SeedRealtime 音视频全双工大模型发布：走向全模态自然交互",
+          "link": "https://seed.bytedance.com/zh/blog/seedrealtime-audio-visual-full-duplex-llm-released-toward-omni-modal-natural-interaction",
+          "published": "2026-08-04T16:00:00+00:00",
+          "description": "作为原生音视频全双工大模型，联合理解声音、画面与时序信息，带来边看、边听、边说的自然交互体验"
+        },
+        {
+          "guid": "bytedance_seed-1785461671473",
+          "title": "一镜成片，随心参考｜Seedance 2.5 正式发布",
+          "link": "https://seed.bytedance.com/zh/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5",
+          "published": "2026-07-30T16:00:00+00:00",
+          "description": "30 秒长叙事，多模态参考能力、编辑能力全面升级"
+        },
+        {
+          "guid": "bytedance_seed-1784511163128",
+          "title": "从“会说”走向“会创作”｜ Seed Audio 1.0 音频创作模型发布",
+          "link": "https://seed.bytedance.com/zh/blog/from-speech-to-audio-creation-introducing-the-seed-audio-1-0-audio-creation-model",
+          "published": "2026-07-19T16:00:00+00:00",
+          "description": "统一框架下联合建模人声、音效和环境声等音频要素"
+        },
+        {
+          "guid": "bytedance_seed-1783417209913",
+          "title": "不止“生成”，更懂“设计”｜Seedream 5.0 Pro 发布",
+          "link": "https://seed.bytedance.com/zh/blog/beyond-generation-it-understands-design-introducing-seedream-5-0-pro",
+          "published": "2026-07-07T16:00:00+00:00",
+          "description": "具备智能思考、高效创作和生产的多模态图像生成模型"
+        },
+        {
+          "guid": "bytedance_seed-1783331213945",
+          "title": "EdgeBench：衡量真实世界环境学习，发现新 Scaling Law",
+          "link": "https://seed.bytedance.com/zh/blog/edgebench-measuring-real-world-environment-learning-and-discovering-a-new-scaling-law",
+          "published": "2026-07-06T16:00:00+00:00",
+          "description": "Agent 在环境学习中表现出明显的 log-sigmoid 规律"
+        },
+        {
+          "guid": "bytedance_seed-1782171469778",
+          "title": "Seed2.1 正式发布，深入 AI 生产力",
+          "link": "https://seed.bytedance.com/zh/blog/seed2-1-officially-released-advancing-ai-productivity",
+          "published": "2026-06-23T00:02:42+00:00",
+          "description": "Agent & Coding 能力全面提升，复杂场景交付稳定"
+        },
+        {
+          "guid": "bytedance_seed-1776683179376",
+          "title": "Seed3D 2.0 发布，更高精度、更强可用性",
+          "link": "https://seed.bytedance.com/zh/blog/seed3d-2-0-released-higher-precision-and-greater-usability",
+          "published": "2026-04-22T16:00:00+00:00",
+          "description": "几何及纹理材质生成均达 SOTA 表现"
+        },
+        {
+          "guid": "bytedance_seed-1775551487993",
+          "title": "Seed 全双工语音大模型发布：懂倾听、抗干扰，走向更自然的交互",
+          "link": "https://seed.bytedance.com/zh/blog/introducing-seed-full-duplex-speech-llm-attentive-listening-robust-interference-suppression-enabling-more-natural-interaction",
+          "published": "2026-04-08T16:00:00+00:00",
+          "description": "作为原生全双工语音大模型，实现精准抗干扰与动态判停，交互更自然"
+        },
+        {
+          "guid": "bytedance_seed-1774486528568",
+          "title": "字节跳动 Seed 2027 届大模型人才校招启动（含实习）",
+          "link": "https://seed.bytedance.com/zh/blog/bytedance-seed-2027-foundation-model-campus-recruitment-is-now-open-internships-included",
+          "published": "2026-03-31T16:00:00+00:00",
+          "description": "字节跳动 Seed 官网公开的技术博客与官方动态。"
+        },
+        {
+          "guid": "bytedance_seed-1771041810188",
+          "title": "Seed2.0 正式发布",
+          "link": "https://seed.bytedance.com/zh/blog/seed-2-0-official-launch",
+          "published": "2026-02-13T16:00:00+00:00",
+          "description": "突破真实世界复杂任务"
+        },
+        {
+          "guid": "bytedance_seed-1770948788161",
+          "title": "“思考”更深，生成更准｜Seedream 5.0 Lite 发布",
+          "link": "https://seed.bytedance.com/zh/blog/deeper-thinking-more-accurate-generation-introducing-seedream-5-0-lite",
+          "published": "2026-02-12T16:00:00+00:00",
+          "description": "理解、推理和生成全面提升"
+        },
+        {
+          "guid": "bytedance_seed-1770879949203",
+          "title": "Seedance 2.0 正式发布",
+          "link": "https://seed.bytedance.com/zh/blog/seedance-2-0-official-launch",
+          "published": "2026-02-11T16:00:00+00:00",
+          "description": "统一多模态音视频联合生成，复杂运动表现 SOTA"
+        },
+        {
+          "guid": "bytedance_seed-1766549460878",
+          "title": "Seed Prover 1.5：全新 Agentic 架构，更强数学推理表现",
+          "link": "https://seed.bytedance.com/zh/blog/seed-prover-1-5-advanced-mathematical-reasoning-through-a-novel-agentic-architecture",
+          "published": "2025-12-23T16:00:00+00:00",
+          "description": "9 小时解决 11 道 2025 普特南竞赛题"
+        },
+        {
+          "guid": "bytedance_seed-1766032379596",
+          "title": "通用 Agent 模型 Seed1.8 正式发布",
+          "link": "https://seed.bytedance.com/zh/blog/official-release-of-seed1-8-a-generalized-agentic-model",
+          "published": "2025-12-17T16:00:00+00:00",
+          "description": "集搜索、代码与 GUI Agent 能力与一体"
+        },
+        {
+          "guid": "bytedance_seed-1765883631909",
+          "title": "声画俱全，一镜入戏 | Seedance 1.5 pro 音视频创作模型正式发布",
+          "link": "https://seed.bytedance.com/zh/blog/sound-and-vision-all-in-one-take-the-official-release-of-seedance-1-5-pro",
+          "published": "2025-12-16T10:47:38+00:00",
+          "description": "开启视听新体验"
+        },
+        {
+          "guid": "bytedance_seed-1764650289938",
+          "title": "GR-RL 发布：突破 VLA 精细操作瓶颈，首次实现真机强化学习穿鞋带",
+          "link": "https://seed.bytedance.com/zh/blog/gr-rl-a-breakthrough-in-dexterous-manipulation-achieving-the-first-real-robot-shoe-lacing-with-reinforcement-learning",
+          "published": "2025-12-01T16:00:00+00:00",
+          "description": "让 VLA 在真实环境中交互学习"
+        },
+        {
+          "guid": "bytedance_seed-1764215765565",
+          "title": "Depth Anything 3：单一 Transformer 架构实现任意视角空间重建",
+          "link": "https://seed.bytedance.com/zh/blog/depth-anything-3-a-single-transformer-architecture-for-space-reconstruction-from-any-views",
+          "published": "2025-11-26T16:00:00+00:00",
+          "description": "突破单目深度估计和多视角重建的技术瓶颈"
+        },
+        {
+          "guid": "bytedance_seed-1761634922701",
+          "title": "Seed3D 1.0 发布，一张图生成高精度 3D 模型，纹理生成能力 SOTA",
+          "link": "https://seed.bytedance.com/zh/blog/seed3d-1-0-released-generate-high-fidelity-3d-models-from-single-images-featuring-sota-texturing",
+          "published": "2025-10-22T16:00:00+00:00",
+          "description": "可拓展至场景生成，为世界模拟器提供支撑"
+        },
+        {
+          "guid": "bytedance_seed-1764227642774",
+          "title": "不止会“画”，更会“想”｜Seedream 4.0 图像创作模型正式发布",
+          "link": "https://seed.bytedance.com/zh/blog/seedream-4-0-officially-released-beyond-drawing-into-imagination",
+          "published": "2025-09-08T16:00:00+00:00",
+          "description": "多模态生成全面升级"
+        },
+        {
+          "guid": "bytedance_seed-1769777435866",
+          "title": "字节跳动 Seed 开源语言模型 Seed-OSS 系列",
+          "link": "https://seed.bytedance.com/zh/blog/seed-oss-open-source-models-release",
+          "published": "2025-08-20T16:00:00+00:00",
+          "description": "支持原生 512K 上下文，灵活控制推理预算"
+        },
+        {
+          "guid": "bytedance_seed-1788420302787",
+          "title": "解锁任意模态模型训练，字节跳动 Seed 开源 VeOmni 框架",
+          "link": "https://seed.bytedance.com/zh/blog/bytedance-seed-open-sources-veomni-unlocking-any-modality-model-training",
+          "published": "2025-08-13T16:00:00+00:00",
+          "description": "可将数周的工程开发时间缩短至几天"
+        },
+        {
+          "guid": "bytedance_seed-303",
+          "title": "字节跳动 Seed 助力清华获机器人足球世界杯冠军",
+          "link": "https://seed.bytedance.com/zh/blog/bytedance-seed-helps-tsinghua-win-robocup-championship",
+          "published": "2025-07-31T16:00:00+00:00",
+          "description": "实现了中国团队在人形成人组别上的首次夺冠"
+        },
+        {
+          "guid": "bytedance_seed-1788419759074",
+          "title": "Seed Research￨每秒推理速度 2146 Tokens，扩散语言模型 Seed Diffusion Preview 发布",
+          "link": "https://seed.bytedance.com/zh/blog/seed-research-seed-diffusion-preview-released-a-diffusion-language-model-delivering-breakthrough-2-146-tokens-s-inference-speed",
+          "published": "2025-07-30T16:00:00+00:00",
+          "description": "1 秒可生成超百行代码"
+        },
+        {
+          "guid": "bytedance_seed-1788419581050",
+          "title": "Seed 端到端同声传译大模型发布：准确率接近真人，3s 延迟，实时声音复刻",
+          "link": "https://seed.bytedance.com/zh/blog/seed-liveinterpret-2-0-released-an-end-to-end-simultaneous-interpretation-model-featuring-ultra-high-accuracy-close-to-human-interpreters-low-latency-of-3-seconds-and-real-time-voice-cloning",
+          "published": "2025-07-23T16:00:00+00:00",
+          "description": "中英同传翻译质量达到业界 SOTA，同时实现了极低的语音延迟水平"
+        },
+        {
+          "guid": "bytedance_seed-298",
+          "title": "字节跳动 Seed Prover 取得 IMO 2025 银牌分数",
+          "link": "https://seed.bytedance.com/zh/blog/bytedance-seed-prover-achieves-silver-medal-score-in-imo-2025",
+          "published": "2025-07-22T16:00:00+00:00",
+          "description": "形式化验证+测算时算力拓展，提升数学思考深度"
+        },
+        {
+          "guid": "bytedance_seed-1788419707282",
+          "title": "Seed Research ￨通用机器人模型 GR-3 发布！支持高泛化、长程任务、柔性物体双臂操作",
+          "link": "https://seed.bytedance.com/zh/blog/seed-research-gr-3-released-a-generalist-robot-model-for-generalization-long-horizon-tasks-and-bi-manual-deformable-object-manipulation",
+          "published": "2025-07-21T16:00:00+00:00",
+          "description": "一个可泛化、支持长程以及复杂任务的机器人操作大模型"
+        },
+        {
+          "guid": "bytedance_seed-1788418022926",
+          "title": "Seed Research｜4B 模型数学推理接近 235B 表现，Seed 最新强化学习配方全面开源",
+          "link": "https://seed.bytedance.com/zh/blog/seed-s-open-source-rl-recipe-makes-4b-model-rival-235b-on-math-reasoning",
+          "published": "2025-07-14T16:00:00+00:00",
+          "description": "700 步 RL 训练，大幅提升小模型数学推理能力"
+        },
+        {
+          "guid": "bytedance_seed-295",
+          "title": "25 篇成果入选，字节跳动 Seed 与你共赴 ICML 2025",
+          "link": "https://seed.bytedance.com/zh/blog/meet-seed-at-icml-2025-25-papers-accepted",
+          "published": "2025-07-13T16:00:00+00:00",
+          "description": "3 篇论文获评 Spotlight 论文"
+        },
+        {
+          "guid": "bytedance_seed-1788493128340",
+          "title": "Seed-1.6-Embedding：基于 Seed1.6-Flash 构建的多模态向量化模型",
+          "link": "https://seed.bytedance.com/zh/blog/built-on-seed1-6-flash-seed-1-6-embedding-launched",
+          "published": "2025-06-27T16:00:00+00:00",
+          "description": "支持多模态混合检索"
+        },
+        {
+          "guid": "bytedance_seed-1788417741632",
+          "title": "Seed1.6 系列模型技术介绍",
+          "link": "https://seed.bytedance.com/zh/blog/introduction-to-techniques-used-in-seed1-6",
+          "published": "2025-06-24T16:00:00+00:00",
+          "description": "融合多模态，可“自适应思考”（含高考分数）"
+        },
+        {
+          "guid": "bytedance_seed-261",
+          "title": "字节跳动 Seed 与比亚迪锂电池深化合作：将成立 AI 联合实验室加速电池研发",
+          "link": "https://seed.bytedance.com/zh/blog/bytedance-seed-and-byd-lithium-battery-partner-to-launch-ai-lab-for-battery-r-d",
+          "published": "2025-06-17T16:00:00+00:00",
+          "description": "AI for Science + 高通量实验，攻关动力电池关键问题"
+        },
+        {
+          "guid": "bytedance_seed-1763521443927",
+          "title": "Seedance 1.0 视频生成模型技术报告公开",
+          "link": "https://seed.bytedance.com/zh/blog/tech-report-of-seedance-1-0-is-now-publicly-available",
+          "published": "2025-06-10T16:00:00+00:00",
+          "description": "原生支持 2-3 个以上镜头生成，一分钟快速出片"
+        },
+        {
+          "guid": "bytedance_seed-260",
+          "title": "12 篇成果入选，2 场 Talk，字节跳动 Seed 邀你相聚 CVPR 2025",
+          "link": "https://seed.bytedance.com/zh/blog/meet-seed-at-cvpr-2025-12-papers-accepted-and-2-talks",
+          "published": "2025-06-09T16:00:00+00:00",
+          "description": "4 篇论文获评 Highlight 论文"
+        },
+        {
+          "guid": "bytedance_seed-1763521760161",
+          "title": "图像编辑模型 SeedEdit 3.0 发布！更强保持力，更高可用率",
+          "link": "https://seed.bytedance.com/zh/blog/bytedance-released-image-editing-model-seededit-3-0-enhanced-image-consistency-and-usability-rate",
+          "published": "2025-06-05T16:00:00+00:00",
+          "description": "已在即梦网页端开启测试，豆包 App 即将上线"
+        },
+        {
+          "guid": "bytedance_seed-1763522006448",
+          "title": "Seed Research｜理解与生成统一模型 BAGEL 开源，All-in-One Model！",
+          "link": "https://seed.bytedance.com/zh/blog/seed-research-bagel-the-open-source-unified-multimodal-model-an-all-in-one-model",
+          "published": "2025-05-27T16:00:00+00:00",
+          "description": "支持文本、图像、视频及多模态交错"
+        },
+        {
+          "guid": "bytedance_seed-1788415728232",
+          "title": "Seed-Coder 开源代码模型发布，依托 LLM 构建代码数据",
+          "link": "https://seed.bytedance.com/zh/blog/seed-coder-open-sourced-llm-based-code-data-building-method-validated",
+          "published": "2025-05-18T16:00:00+00:00",
+          "description": "数据流实现方法公开，BF16 精度版本开放下载"
+        },
+        {
+          "guid": "bytedance_seed-1763522077334",
+          "title": "Seed VLM 技术报告首次公开：图像、视频、GUI、Game 完全体",
+          "link": "https://seed.bytedance.com/zh/blog/first-release-of-seed-vlm-tech-report-comprehensive-solutions-for-image-video-gui-and-game",
+          "published": "2025-05-12T16:00:00+00:00",
+          "description": "在 38 个公开评测基准中达到 SOTA"
+        },
+        {
+          "guid": "bytedance_seed-1763522137128",
+          "title": "向量检索能力 SOTA，字节 Seed1.5-Embedding 模型训练细节公开",
+          "link": "https://seed.bytedance.com/zh/blog/bytedance-s-seed1-5-embedding-model-achieves-sota-in-retrieval-training-details-unveiled",
+          "published": "2025-05-11T16:00:00+00:00",
+          "description": "API 接口已经开放"
+        },
+        {
+          "guid": "bytedance_seed-1763620972618",
+          "title": "23篇成果入选，2场交流活动，字节跳动Seed邀你相聚ICLR 2025",
+          "link": "https://seed.bytedance.com/zh/blog/23-papers-featured-2-interactive-sessions-bytedance-seed-invites-you-to-iclr-2025",
+          "published": "2025-04-22T16:00:00+00:00",
+          "description": "共有23篇成果被接收或邀请分享。"
+        },
+        {
+          "guid": "bytedance_seed-1763620943502",
+          "title": "字节跳动 Seed Edge 研究计划启动招聘",
+          "link": "https://seed.bytedance.com/zh/blog/%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8-seed-edge-%E7%A0%94%E7%A9%B6%E8%AE%A1%E5%88%92%E5%90%AF%E5%8A%A8%E6%8B%9B%E8%81%98",
+          "published": "2025-04-21T16:00:00+00:00",
+          "description": "一起探索智能的无尽边界"
+        },
+        {
+          "guid": "bytedance_seed-1763521951994",
+          "title": "字节 Seed 智能体模型 UI-TARS-1.5 开源！多项 Benchmark 取得 SOTA 表现",
+          "link": "https://seed.bytedance.com/zh/blog/bytedance-seed-agent-model-ui-tars-1-5-open-source-achieving-sota-performance-in-various-benchmarks",
+          "published": "2025-04-16T16:00:00+00:00",
+          "description": "新增游戏场景，交互可达 1000 步"
+        },
+        {
+          "guid": "bytedance_seed-1763522182532",
+          "title": "Seedream 3.0 文生图模型技术报告发布",
+          "link": "https://seed.bytedance.com/zh/blog/seedream-3-0-text-to-image-model-technical-report-released",
+          "published": "2025-04-15T16:00:00+00:00",
+          "description": "支持 2K 高清直出，小字更准"
+        },
+        {
+          "guid": "bytedance_seed-1763522215224",
+          "title": "字节跳动最新思考模型，Seed-Thinking-v1.5 技术细节公开",
+          "link": "https://seed.bytedance.com/zh/blog/bytedance-s-latest-thinking-model-seed-thinking-v1-5-technical-details-disclosed",
+          "published": "2025-04-13T16:00:00+00:00",
+          "description": "4 月 17 日 API 正式上线"
+        },
+        {
+          "guid": "bytedance_seed-1763522274426",
+          "title": "Multi-SWE-bench：首个多语言代码修复基准开源",
+          "link": "https://seed.bytedance.com/zh/blog/multi-swe-bench-first-multilingual-code-fix-benchmark-open-source",
+          "published": "2025-04-13T16:00:00+00:00",
+          "description": "数据均来自 GitHub issue，历时近一年构建"
+        },
+        {
+          "guid": "bytedance_seed-1763522369096",
+          "title": "Seedream 2.0 技术报告发布！数据处理、预训练、RLHF全流程公开",
+          "link": "https://seed.bytedance.com/zh/blog/doubao-text-to-image-technical-report-released-full-disclosure-of-data-processing-pre-training-and-rlhf-workflow",
+          "published": "2025-03-11T16:00:00+00:00",
+          "description": "文字渲染与国风出色，综合能力领先"
+        },
+        {
+          "guid": "bytedance_seed-1763522401617",
+          "title": "万卡集群真实部署，已节省数百万 GPU 小时！MoE 通信优化技术 COMET 开源",
+          "link": "https://seed.bytedance.com/zh/blog/comet-has-been-deployed-in-large-scale-clusters-saving-millions-of-gpu-hours-moe-communication-optimization-technology-comet-is-now-open-source",
+          "published": "2025-03-09T16:00:00+00:00",
+          "description": "已开源！主流大模型均可接入，MLSys 2025 高分接收"
+        },
+        {
+          "guid": "bytedance_seed-1763522447835",
+          "title": "285 学科全覆盖！豆包大模型团队开源基准测试集 SuperGPQA",
+          "link": "https://seed.bytedance.com/zh/blog/doubao-seed-team-launched-supergpqa-an-open-source-benchmark-test-set-covering-285-disciplines",
+          "published": "2025-03-03T16:00:00+00:00",
+          "description": "历时半年，填补长尾知识评估空白"
+        },
+        {
+          "guid": "bytedance_seed-1763522622733",
+          "title": "Seed Research | 形式化数学推理新 SOTA！BFS-Prover 模型最新开源",
+          "link": "https://seed.bytedance.com/zh/blog/seed-research-%E5%BD%A2%E5%BC%8F%E5%8C%96%E6%95%B0%E5%AD%A6%E6%8E%A8%E7%90%86%E6%96%B0-sota-bfs-prover-%E6%A8%A1%E5%9E%8B%E6%9C%80%E6%96%B0%E5%BC%80%E6%BA%90",
+          "published": "2025-02-24T16:00:00+00:00",
+          "description": "化繁为简，鼓励机器深度思考"
+        },
+        {
+          "guid": "bytedance_seed-1763522793930",
+          "title": "Seed Research | 全新超稀疏架构，推理成本较 MoE 最高可降 83%！",
+          "link": "https://seed.bytedance.com/zh/blog/seed-research-new-ultra-sparse-architecture-reduces-inference-costs-by-up-to-83-compared-to-moe",
+          "published": "2025-02-11T16:00:00+00:00",
+          "description": "推理速度较 MoE 提升 2-6 倍，论文已被 ICLR 2025 接收"
+        },
+        {
+          "guid": "bytedance_seed-1763522830668",
+          "title": "Seed Research | 视频生成模型最新成果，可仅靠视觉认知世界！现已开源",
+          "link": "https://seed.bytedance.com/zh/blog/seed-research-latest-breakthrough-in-video-generation-learning-to-understand-the-world-through-vision-alone-now-open-source",
+          "published": "2025-02-09T16:00:00+00:00",
+          "description": "去掉语言模型，让 AI 仅靠“视觉”认知世界学习知识"
+        },
+        {
+          "guid": "bytedance_seed-1763523245655",
+          "title": "向 AI 未知之境出发，字节跳动启动 Seed Edge 研究计划！",
+          "link": "https://seed.bytedance.com/zh/blog/%E5%90%91-ai-%E6%9C%AA%E7%9F%A5%E4%B9%8B%E5%A2%83%E5%87%BA%E5%8F%91-%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8%E5%90%AF%E5%8A%A8-seed-edge-%E7%A0%94%E7%A9%B6%E8%AE%A1%E5%88%92",
+          "published": "2025-01-22T16:00:00+00:00",
+          "description": "探索智能的无尽边界"
+        },
+        {
+          "guid": "bytedance_seed-1763522969234",
+          "title": "豆包实时语音大模型上线即开放！情商智商双高",
+          "link": "https://seed.bytedance.com/zh/blog/%E8%B1%86%E5%8C%85%E5%AE%9E%E6%97%B6%E8%AF%AD%E9%9F%B3%E5%A4%A7%E6%A8%A1%E5%9E%8B%E4%B8%8A%E7%BA%BF%E5%8D%B3%E5%BC%80%E6%94%BE-%E6%83%85%E5%95%86%E6%99%BA%E5%95%86%E5%8F%8C%E9%AB%98",
+          "published": "2025-01-19T16:00:00+00:00",
+          "description": "使用原生方法深度融合语音与文本模态，实现真正意义上的端到端语音对话模型"
+        },
+        {
+          "guid": "bytedance_seed-1763523912357",
+          "title": "ICLR 2025 Workshop 征稿：推动基础模型的开源、开放、可复现",
+          "link": "https://seed.bytedance.com/zh/blog/iclr-2025-workshop-%E5%BE%81%E7%A8%BF-%E6%8E%A8%E5%8A%A8%E5%9F%BA%E7%A1%80%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%BC%80%E6%BA%90-%E5%BC%80%E6%94%BE-%E5%8F%AF%E5%A4%8D%E7%8E%B0",
+          "published": "2025-01-05T16:00:00+00:00",
+          "description": "投稿通道现已开放，欢迎投递！"
+        },
+        {
+          "guid": "bytedance_seed-1763524411309",
+          "title": "北京大学-字节跳动“豆包大模型系统软件联合实验室”成立，聚焦AI系统软件关键问题",
+          "link": "https://seed.bytedance.com/zh/blog/%E5%8C%97%E4%BA%AC%E5%A4%A7%E5%AD%A6-%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8-%E8%B1%86%E5%8C%85%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%B3%BB%E7%BB%9F%E8%BD%AF%E4%BB%B6%E8%81%94%E5%90%88%E5%AE%9E%E9%AA%8C%E5%AE%A4-%E6%88%90%E7%AB%8B-%E8%81%9A%E7%84%A6ai%E7%B3%BB%E7%BB%9F%E8%BD%AF%E4%BB%B6%E5%85%B3%E9%94%AE%E9%97%AE%E9%A2%98",
+          "published": "2024-12-11T16:00:00+00:00",
+          "description": "依托双方优势，共同推进大模型系统软件的技术创新与应用发展。"
+        },
+        {
+          "guid": "bytedance_seed-1763530704765",
+          "title": "字节跳动与清华 AIR 成立联合研究中心，推动大模型产学研合作",
+          "link": "https://seed.bytedance.com/zh/blog/%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8%E4%B8%8E%E6%B8%85%E5%8D%8E-air-%E6%88%90%E7%AB%8B%E8%81%94%E5%90%88%E7%A0%94%E7%A9%B6%E4%B8%AD%E5%BF%83-%E6%8E%A8%E5%8A%A8%E5%A4%A7%E6%A8%A1%E5%9E%8B%E4%BA%A7%E5%AD%A6%E7%A0%94%E5%90%88%E4%BD%9C",
+          "published": "2024-10-11T10:04:28+00:00",
+          "description": "SIA Lab 旨在通过有效的产学研合作，实现大模型底层技术突破与产业应用构建。"
+        }
+      ]
+    },
+    "sand_research": {
+      "items": [
+        {
+          "guid": "sand_research-magi-2",
+          "title": "MAGI-2：480B 旗舰视频生成模型",
+          "link": "https://sand.ai/blog/magi-2/",
+          "published": "2026-11-24T00:00:00+00:00",
+          "description": "Sand.ai 中文官网研究页中的论文、模型发布与技术文章，包括 MAGI-2。"
+        },
+        {
+          "guid": "sand_research-magi-2-preview",
+          "title": "MAGI-2 Preview：高效扩展视频生成模型",
+          "link": "https://sandai.cn/blog/magi-2-preview",
+          "published": "2026-08-05T00:00:00+00:00",
+          "description": "Sand.ai 中文官网研究页中的论文、模型发布与技术文章，包括 MAGI-2。"
+        },
+        {
+          "guid": "sand_research-scaling-video-diffusion-models-with-moe",
+          "title": "用 MoE 扩展视频扩散模型",
+          "link": "https://sandai.cn/blog/scaling-video-diffusion-models-with-moe",
+          "published": "2026-06-10T00:00:00+00:00",
+          "description": "Sand.ai 中文官网研究页中的论文、模型发布与技术文章，包括 MAGI-2。"
+        },
+        {
+          "guid": "sand_research-magi-compiler-blog",
+          "title": "MAGICompiler：突破大模型局部编译的边界",
+          "link": "https://sandai.cn/blog/magi-compiler-blog",
+          "published": "2026-03-30T00:00:00+00:00",
+          "description": "Sand.ai 中文官网研究页中的论文、模型发布与技术文章，包括 MAGI-2。"
+        },
+        {
+          "guid": "sand_research-magi-attention-code",
+          "title": "MAGIAttention 技术博客",
+          "link": "https://sandai.cn/blog/magi-attention-code",
+          "published": "2026-03-30T00:00:00+00:00",
+          "description": "Sand.ai 中文官网研究页中的论文、模型发布与技术文章，包括 MAGI-2。"
+        },
+        {
+          "guid": "sand_research-2603.21986",
+          "title": "daVinci-MAGIHuman 技术报告",
+          "link": "https://arxiv.org/abs/2603.21986",
+          "published": "2026-03-23T00:00:00+00:00",
+          "description": "Sand.ai 中文官网研究页中的论文、模型发布与技术文章，包括 MAGI-2。"
+        },
+        {
+          "guid": "sand_research-2505.13211",
+          "title": "MAGI-1 技术报告",
+          "link": "https://arxiv.org/abs/2505.13211",
+          "published": "2025-04-21T00:00:00+00:00",
+          "description": "Sand.ai 中文官网研究页中的论文、模型发布与技术文章，包括 MAGI-2。"
+        },
+        {
+          "guid": "sand_research-MAGI-1",
+          "title": "MAGI-1 推理代码与模型权重",
+          "link": "https://github.com/SandAI-org/MAGI-1",
+          "published": "2025-04-21T00:00:00+00:00",
+          "description": "Sand.ai 中文官网研究页中的论文、模型发布与技术文章，包括 MAGI-2。"
+        },
+        {
+          "guid": "sand_research-MagiAttention",
+          "title": "MAGIAttention 代码",
+          "link": "https://github.com/SandAI-org/MagiAttention",
+          "published": "2025-04-21T00:00:00+00:00",
+          "description": "Sand.ai 中文官网研究页中的论文、模型发布与技术文章，包括 MAGI-2。"
+        }
+      ]
+    },
+    "kling_blog": {
+      "items": [
+        {
+          "guid": "kling_blog-ai-upscaling",
+          "title": "AI Upscaling: How It Works and When to Use It",
+          "link": "https://kling.ai/blog/ai-upscaling",
+          "published": "2026-11-27T00:00:00+00:00",
+          "description": "Kling AI 官网博客文章与产品发布。"
+        },
+        {
+          "guid": "kling_blog-how-to-make-storyboards",
+          "title": "What Is Storyboarding? How to Create Storyboards and Turn Them Into Videos With A",
+          "link": "https://kling.ai/blog/how-to-make-storyboards",
+          "published": "2026-11-27T00:00:00+00:00",
+          "description": "Kling AI 官网博客文章与产品发布。"
+        },
+        {
+          "guid": "kling_blog-ugc-videos",
+          "title": "UGC Videos: 7 Types, Examples , and How to Create Them",
+          "link": "https://kling.ai/blog/ugc-videos",
+          "published": "2026-11-27T00:00:00+00:00",
+          "description": "Kling AI 官网博客文章与产品发布。"
+        },
+        {
+          "guid": "kling_blog-creative-automation",
+          "title": "Creative Automation: What It Is and How to Use It",
+          "link": "https://kling.ai/blog/creative-automation",
+          "published": "2026-11-27T00:00:00+00:00",
+          "description": "Kling AI 官网博客文章与产品发布。"
+        },
+        {
+          "guid": "kling_blog-hero-shot",
+          "title": "What Is a Hero Shot? Types, Examples, and Tips",
+          "link": "https://kling.ai/blog/hero-shot",
+          "published": "2026-11-27T00:00:00+00:00",
+          "description": "Kling AI 官网博客文章与产品发布。"
+        },
+        {
+          "guid": "kling_blog-how-to-make-a-comic-book",
+          "title": "How to Make a Comic Book from Your First Idea to Finished Pages",
+          "link": "https://kling.ai/blog/how-to-make-a-comic-book",
+          "published": "2026-11-26T00:00:00+00:00",
+          "description": "Kling AI 官网博客文章与产品发布。"
+        },
+        {
+          "guid": "kling_blog-ai-video-ads",
+          "title": "AI Video Ads: Examples and How to Create Them",
+          "link": "https://kling.ai/blog/ai-video-ads",
+          "published": "2026-11-26T00:00:00+00:00",
+          "description": "Kling AI 官网博客文章与产品发布。"
+        },
+        {
+          "guid": "kling_blog-product-photography",
+          "title": "Product Photography for Beginners: Types, Setup, and Shooting Tips",
+          "link": "https://kling.ai/blog/product-photography",
+          "published": "2026-11-26T00:00:00+00:00",
+          "description": "Kling AI 官网博客文章与产品发布。"
+        },
+        {
+          "guid": "kling_blog-short-form-video",
+          "title": "Short Form Video: Examples, Strategy, and How to Make One",
+          "link": "https://kling.ai/blog/short-form-video",
+          "published": "2026-11-26T00:00:00+00:00",
+          "description": "Kling AI 官网博客文章与产品发布。"
+        },
+        {
+          "guid": "kling_blog-runway-reviews",
+          "title": "Runway Reviews 2026: Is Runway AI Worth It?",
+          "link": "https://kling.ai/blog/runway-reviews",
+          "published": "2026-11-26T00:00:00+00:00",
+          "description": "Kling AI 官网博客文章与产品发布。"
+        },
+        {
+          "guid": "kling_blog-micro-drama",
+          "title": "What Is a Micro Drama? Format and AI Video Creation",
+          "link": "https://kling.ai/blog/micro-drama",
+          "published": "2026-11-25T00:00:00+00:00",
+          "description": "Kling AI 官网博客文章与产品发布。"
+        },
+        {
+          "guid": "kling_blog-ad-creative",
+          "title": "What Is Ad Creative? Examples and Tips for Better Ads",
+          "link": "https://kling.ai/blog/ad-creative",
+          "published": "2026-11-24T00:00:00+00:00",
+          "description": "Kling AI 官网博客文章与产品发布。"
+        },
+        {
+          "guid": "kling_blog-best-video-upscaler",
+          "title": "Best Video Upscaler for Clearer and Higher-Resolution Footage",
+          "link": "https://kling.ai/blog/best-video-upscaler",
+          "published": "2026-11-23T00:00:00+00:00",
+          "description": "Kling AI 官网博客文章与产品发布。"
+        },
+        {
+          "guid": "kling_blog-hitting-redline-make-cinematic-racing-kling4",
+          "title": "Hitting REDLINE: How to Make a Cinematic Racing Film with Kling 4.0",
+          "link": "https://kling.ai/blog/hitting-redline-make-cinematic-racing-kling4",
+          "published": "2026-11-20T00:00:00+00:00",
+          "description": "Kling AI 官网博客文章与产品发布。"
+        },
+        {
+          "guid": "kling_blog-camera-movement",
+          "title": "Camera Movement: 10 Types and When to Use Them",
+          "link": "https://kling.ai/blog/camera-movement",
+          "published": "2026-11-20T00:00:00+00:00",
+          "description": "Kling AI 官网博客文章与产品发布。"
+        },
+        {
+          "guid": "kling_blog-b-roll",
+          "title": "B-Roll: What It Is, Why It Matters, and How to Create It",
+          "link": "https://kling.ai/blog/b-roll",
+          "published": "2026-11-20T00:00:00+00:00",
+          "description": "Kling AI 官网博客文章与产品发布。"
+        },
+        {
+          "guid": "kling_blog-how-to-video",
+          "title": "How-To Video: What It Is and How to Make One",
+          "link": "https://kling.ai/blog/how-to-video",
+          "published": "2026-11-20T00:00:00+00:00",
+          "description": "Kling AI 官网博客文章与产品发布。"
+        },
+        {
+          "guid": "kling_blog-shot-sizes-guide",
+          "title": "Shot Sizes Explained: 8 Types and When to Use Them",
+          "link": "https://kling.ai/blog/shot-sizes-guide",
+          "published": "2026-11-20T00:00:00+00:00",
+          "description": "Kling AI 官网博客文章与产品发布。"
+        },
+        {
+          "guid": "kling_blog-2d-vs-3d-animation",
+          "title": "2D vs 3D Animation: Key Differences, Costs, and Best Uses",
+          "link": "https://kling.ai/blog/2d-vs-3d-animation",
+          "published": "2026-11-20T00:00:00+00:00",
+          "description": "Kling AI 官网博客文章与产品发布。"
+        },
+        {
+          "guid": "kling_blog-cutaway-shot",
+          "title": "Cutaway Shot: Definition, Examples, and Uses",
+          "link": "https://kling.ai/blog/cutaway-shot",
+          "published": "2026-11-20T00:00:00+00:00",
+          "description": "Kling AI 官网博客文章与产品发布。"
+        },
+        {
+          "guid": "kling_blog-How-Kling-Powered-LUltimoUomoReale",
+          "title": "Kling-Powered L'Ultimo Uomo Reale",
+          "link": "https://kling.ai/blog/How-Kling-Powered-LUltimoUomoReale",
+          "published": "2026-08-20T12:55:49.400000+00:00",
+          "description": "Realism is no longer the finish line for AI filmmaking. Discover how Kling AI powered Cannes Lions-winning film L'Ultimo Uomo Reale, delivering nuanced performances, consistent characters, and cinematic storytelling."
+        },
+        {
+          "guid": "kling_blog-BehindVai-Dar-PortugalHow-Kling-Helped-Bring-Portugals-World-Cup-Film-to-Life",
+          "title": "Inside Portugal's AI World Cup Film",
+          "link": "https://kling.ai/blog/BehindVai-Dar-PortugalHow-Kling-Helped-Bring-Portugals-World-Cup-Film-to-Life",
+          "published": "2026-07-13T15:12:03.160000+00:00",
+          "description": "Go behind the scenes of Vai Dar Portugal with Hybrid Director & AI Lead João Seiça, and discover how Kling AI helped turn an ambitious creative vision into cinematic reality."
+        },
+        {
+          "guid": "kling_blog-kling-ai-introduces-native-4k-video-model",
+          "title": "World’s First Native 4K Video Model",
+          "link": "https://kling.ai/blog/kling-ai-introduces-native-4k-video-model",
+          "published": "2026-05-20T11:06:59.998000+00:00",
+          "description": "Kling AI rolled out the world’s first native 4K video generation function via its Kling 3.0 model on April 23. It supports one-click true 4K video creation with superior visual effects and higher efficiency, and has been widely applied in film, advertising and various creative fields by professional teams and individual creators."
+        }
+      ]
+    },
+    "tongyi_wanxiang": {
+      "items": [
+        {
+          "guid": "tongyi_wanxiang-391b965e-0cad-406b-8ac3-a026b869b23a",
+          "title": "万相2.2-Animate：替身出演，形神境随",
+          "link": "https://tongyi.aliyun.com/wan/blog/wan2.2-animate",
+          "published": "2025-09-19T00:00:00+00:00",
+          "description": "影视级视频动作复刻和视频换人。"
+        },
+        {
+          "guid": "tongyi_wanxiang-dc5079b8-ac4d-412c-ba28-270992d5b882",
+          "title": "万相2.2-S2V：音画传情 声启万相",
+          "link": "https://tongyi.aliyun.com/wan/blog/wan2.2-S2V",
+          "published": "2025-08-26T00:00:00+00:00",
+          "description": "影视级音频驱动生视频模型。"
+        },
+        {
+          "guid": "tongyi_wanxiang-2faf4841-ef2e-41a8-8998-02463b2c3986",
+          "title": "万相2.2：能力更强，画面更美",
+          "link": "https://tongyi.aliyun.com/wan/blog/wan2.2",
+          "published": "2025-07-28T00:00:00+00:00",
+          "description": "万相2.2引入高效的MoE架构，带来更强大的模型能力并显著提升视频美感，将开源视频生成技术推向全新前沿。"
+        },
+        {
+          "guid": "tongyi_wanxiang-b42899ad-5b00-46cf-bf80-c65fe1ff1249",
+          "title": "万相2.1-VACE：一应俱全 万相皆宜",
+          "link": "https://tongyi.aliyun.com/wan/blog/wan2.1-VACE",
+          "published": "2025-05-14T00:00:00+00:00",
+          "description": "万相VACE是一个视频生成与编辑统一模型。该模型支持多种任务，包括参考生成视频（R2V）、视频编辑（V2V）以及遮罩区域局部编辑（MV2V），用户可自由组合各项功能。"
+        },
+        {
+          "guid": "tongyi_wanxiang-635939a5-5a7d-44c1-9c15-1e1269f3feca",
+          "title": "万相2.1-首尾帧：开始，结束，其余交给万相",
+          "link": "https://tongyi.aliyun.com/wan/blog/wan2.1-flf2v",
+          "published": "2025-04-17T00:00:00+00:00",
+          "description": "用户仅需首尾帧即可生成时序连贯、运动流畅的高质量视频，为创作者在动态内容制作中提供前所未有的控制力与高效体验。"
+        },
+        {
+          "guid": "tongyi_wanxiang-fea38d2d-864e-4bf5-bcdc-24cf766f3b5a",
+          "title": "万相2.1",
+          "link": "https://tongyi.aliyun.com/wan/blog/wan2.1",
+          "published": "2025-02-25T00:00:00+00:00",
+          "description": "Wan2.1 是一系列开源视频基础大模型，依托前沿的扩散Transformer架构，在性能、效率与应用广度上实现全面突破，引领视频生成技术新高度。"
+        }
+      ]
+    },
+    "runway_research": {
+      "items": [
+        {
+          "guid": "runway_research-praxis-1-video-pretraining-to-robot-control",
+          "title": "Praxis-1: From Video Pretraining to Robot Control",
+          "link": "https://runway.com/research/praxis-1-video-pretraining-to-robot-control",
+          "published": "2026-11-11T00:00:00+00:00",
+          "description": "With Praxis-1, we turn a 27B-parameter video foundation model into an open weight world model that predicts the future in short chunks. A small action expert reads the video model’s internal state as it imagines what comes next. Each time the robot acts, Praxis-1 predicts both what the scene will look like and the motion that will get it there. Praxis-1 fine-tuned on DROID is the top world action model and the top open-source robot foundation model on the RoboLab-120 leaderboard. On a real…"
+        },
+        {
+          "guid": "runway_research-introducing-gwm-worlds-2",
+          "title": "GWM Worlds 2",
+          "link": "https://runway.com/research/introducing-gwm-worlds-2",
+          "published": "2026-09-03T00:00:00+00:00",
+          "description": "GWM Worlds 2 turns high-fidelity video and audio generation into real-time interactive simulation. You define a world — its environment, subjects, visual style, physical rules and ambience — then steer it with free-form text actions and continuous camera motion, generating continuous 720p video at 24 fps and audio at 48,000 Hz that responds to your inputs as you explore. A research preview extending GWM Worlds with generated audio and rich subject and scene control."
+        },
+        {
+          "guid": "runway_research-2609.00776",
+          "title": "Solaris: Towards Interfaces That Are Generated, Not Coded",
+          "link": "https://arxiv.org/abs/2609.00776",
+          "published": "2026-09-01T00:00:00+00:00",
+          "description": "Digital interfaces are traditionally implemented through intermediate representations such as code, requiring their appearance and behavior to be specified in advance. We introduce Solaris, an interface world model that instead generates an interactive UI directly, frame by frame, in response to user actions. Solaris treats mouse interactions as conditioning signals and autoregressively synthesizes the resulting visual state at interactive speeds. To enable real-time generation while…"
+        },
+        {
+          "guid": "runway_research-3799821.3820914",
+          "title": "Runway Characters: Real-Time Expressive AI Characters from a Single Image",
+          "link": "https://dl.acm.org/doi/10.1145/3799821.3820914",
+          "published": "2026-07-19T00:00:00+00:00",
+          "description": "Runway Characters transforms a single reference image of any style, from photorealistic human to cartoon mascot, to a real-time conversational video agent. The system produces audio-synchronized facial animation — including lip-sync, gaze dynamics, head movement and secondary motion — from the conditioned audio and the reference image at 24fps in HD resolution. Runway Characters generates the frames autoregressively and has an effective 37 milliseconds of model time per frame. The server-side…"
+        },
+        {
+          "guid": "runway_research-autoregressive-to-diffusion-vlms",
+          "title": "Autoregressive-to-Diffusion Vision Language Models",
+          "link": "https://runway.com/research/autoregressive-to-diffusion-vlms",
+          "published": "2025-09-24T00:00:00+00:00",
+          "description": "We develop a state-of-the-art diffusion vision language model, Autoregressive-to-Diffusion (A2D), by adapting an existing autoregressive vision language model for parallel diffusion decoding. Our approach makes it easy to unlock the speed-quality trade-off of diffusion language models without training from scratch, by leveraging existing pretrained autoregressive models."
+        },
+        {
+          "guid": "runway_research-runway-game-worlds",
+          "title": "Runway Game Worlds",
+          "link": "https://runway.com/research/runway-game-worlds",
+          "published": "2025-08-21T00:00:00+00:00",
+          "description": "Over the last few months, we have been working on research and products that are moving us closer toward a future where you will be able to explore any character, story or world in real time. The Runway Game Worlds Beta is an early exploration of this research that employs novel uses of AI for non-linear narrative experiences, all generated in real time with personalized stories, characters and multi-modal media generation. At launch, you can play from a series of preset Game Worlds or create a…"
+        },
+        {
+          "guid": "runway_research-2506.01955",
+          "title": "Dual-Process Image Generation",
+          "link": "https://arxiv.org/abs/2506.01955",
+          "published": "2025-06-02T00:00:00+00:00",
+          "description": "Prior methods for controlling image generation are limited in their ability to be taught new tasks. In contrast, vision-language models, or VLMs, can learn tasks in-context and produce the correct outputs for a given input. We propose a dual-process distillation scheme that allows feed-forward image generators to learn new tasks from deliberative VLMs. Our scheme uses a VLM to rate the generated images and backpropagates this gradient to update the weights of the image generator. Our general…"
+        },
+        {
+          "guid": "runway_research-2503.24366",
+          "title": "StochasticSplats: Stochastic Rasterization for Sorting-Free 3D Gaussian Splatting",
+          "link": "https://arxiv.org/abs/2503.24366",
+          "published": "2025-03-31T00:00:00+00:00",
+          "description": "3D Gaussian splatting (3DGS) is a popular radiance field method, with many application-specific extensions. Most variants rely on the same core algorithm: depth-sorting of Gaussian splats then rasterizing in primitive order. This ensures correct alpha compositing, but can cause rendering artifacts due to built-in approximations. Moreover, for a fixed representation, sorted rendering offers little control over render cost and visual fidelity. For example, and counter-intuitively, rendering a…"
+        },
+        {
+          "guid": "runway_research-2503.17794",
+          "title": "Progressive Prompt Detailing for Improved Alignment in Text-to-Image Generative Models",
+          "link": "https://arxiv.org/abs/2503.17794",
+          "published": "2025-03-22T00:00:00+00:00",
+          "description": "Text-to-image generative models often struggle with long prompts detailing complex scenes, diverse objects with distinct visual characteristics and spatial relationships. In this work, we propose SCoPE (Scheduled interpolation of Coarse-to-fine Prompt Embeddings), a training-free method to improve text-to-image alignment by progressively refining the input prompt in a coarse-to-fine-grained manner. Given a detailed input prompt, we first decompose it into multiple sub-prompts which evolve from…"
+        },
+        {
+          "guid": "runway_research-2503.06698",
+          "title": "What's in a Latent? Leveraging Diffusion Latent Space for Domain Generalization",
+          "link": "https://arxiv.org/abs/2503.06698",
+          "published": "2025-03-09T00:00:00+00:00",
+          "description": "Domain Generalization aims to develop models that can generalize to novel and unseen data distributions. In this work, we study how model architectures and pre-training objectives impact feature richness and propose a method to effectively leverage them for domain generalization. Specifically, given a pre-trained feature space, we first discover latent domain structures, referred to as pseudo-domains, that capture domain-specific variations in an unsupervised manner. Next, we augment existing…"
+        },
+        {
+          "guid": "runway_research-2501.19066",
+          "title": "Concept Steerers: Leveraging K-Sparse Autoencoders for Controllable Generations",
+          "link": "https://arxiv.org/abs/2501.19066",
+          "published": "2025-01-31T00:00:00+00:00",
+          "description": "Despite the remarkable progress in text-to-image generative models, they are prone to adversarial attacks and inadvertently generate unsafe, unethical content. Existing approaches often rely on fine-tuning models to remove specific concepts, which is computationally expensive, lack scalability, and/or compromise generation quality. In this work, we propose a novel framework leveraging k-sparse autoencoders (k-SAEs) to enable efficient and interpretable concept manipulation in diffusion models.…"
+        },
+        {
+          "guid": "runway_research-2411.16725",
+          "title": "Revelio: Interpreting and leveraging semantic information in diffusion models",
+          "link": "https://arxiv.org/abs/2411.16725",
+          "published": "2024-11-23T00:00:00+00:00",
+          "description": "We study rich visual semantic information is represented within various layers and denoising timesteps of different diffusion architectures. We uncover monosemantic interpretable features by leveraging k-sparse autoencoders (k-SAE). We substantiate our mechanistic interpretations via transfer learning using light-weight classifiers on off-the-shelf diffusion models' features. On datasets, we demonstrate the effectiveness of diffusion features for representation learning. We provide in-depth…"
+        },
+        {
+          "guid": "runway_research-introducing-general-world-models",
+          "title": "General World Models",
+          "link": "https://runway.com/research/introducing-general-world-models",
+          "published": "2023-12-11T00:00:00+00:00",
+          "description": "We believe the next major advancement in AI will come from systems that understand the visual world and its dynamics, which is why we're starting a new long-term research effort around what we call general world models. A world model is an AI system that builds an internal representation of an environment, and uses it to simulate future events within that environment. Research in world models has so far been focused on very limited and controlled settings, either in toy simulated worlds or…"
+        },
+        {
+          "guid": "runway_research-2310.06904",
+          "title": "Mitigating stereotypical biases in text to image generative systems",
+          "link": "https://arxiv.org/abs/2310.06904",
+          "published": "2023-10-10T00:00:00+00:00",
+          "description": "State-of-the-art generative text-to-image models are known to exhibit social biases and over-represent certain groups like people of perceived lighter skin tones and men in their outcomes. In this work, we propose a method to mitigate such biases and ensure that the outcomes are fair across different groups of people. We do this by finetuning text-to-image models on synthetic data that varies in perceived skin tones and genders constructed from diverse text prompts. These text prompts are…"
+        },
+        {
+          "guid": "runway_research-2302.03011",
+          "title": "Structure and Content-Guided Video Synthesis with Diffusion Models",
+          "link": "https://arxiv.org/abs/2302.03011",
+          "published": "2023-02-06T00:00:00+00:00",
+          "description": "Text-guided generative diffusion models unlock powerful image creation and editing tools. While these have been extended to video generation, current approaches that edit the content of existing footage while retaining structure require expensive re-training for every input or rely on error-prone propagation of image edits across frames. In this work, we present a structure and content-guided video diffusion model that edits videos based on visual or textual descriptions of the desired output.…"
+        },
+        {
+          "guid": "runway_research-2205.09731",
+          "title": "Towards unified keyframe propagation models",
+          "link": "https://arxiv.org/abs/2205.09731",
+          "published": "2022-05-19T00:00:00+00:00",
+          "description": "Many video editing tasks such as rotoscoping or object removal require the propagation of context across frames. While transformers and other attention-based approaches that aggregate features globally have demonstrated great success at propagating object masks from keyframes to the whole video, they struggle to propagate high-frequency details such as textures faithfully. We hypothesize that this is due to an inherent bias of global attention towards low-frequency features. To overcome this…"
+        },
+        {
+          "guid": "runway_research-2112.10752",
+          "title": "High-Resolution Image Synthesis with Latent Diffusion Models",
+          "link": "https://arxiv.org/abs/2112.10752",
+          "published": "2021-12-20T00:00:00+00:00",
+          "description": "By decomposing the image formation process into a sequential application of denoising autoencoders, diffusion models (DMs) achieve state-of-the-art synthesis results on image data and beyond. Additionally, their formulation allows for a guiding mechanism to control the image generation process without retraining. However, since these models typically operate directly in pixel space, optimization of powerful DMs often consumes hundreds of GPU days and inference is expensive due to sequential…"
+        },
+        {
+          "guid": "runway_research-2112.09726",
+          "title": "Soundify: Matching sound effects to video",
+          "link": "https://arxiv.org/abs/2112.09726",
+          "published": "2021-12-17T00:00:00+00:00",
+          "description": "In the art of video editing, sound helps add character to an object and immerse the viewer within a space. Through formative interviews with professional editors (N=10), we found that the task of adding sounds to video can be challenging. This paper presents Soundify, a system that assists editors in matching sounds to video. Given a video, Soundify identifies matching sounds, synchronizes the sounds to the video, and dynamically adjusts panning and volume to create spatial audio. In a human…"
         }
       ]
     }
