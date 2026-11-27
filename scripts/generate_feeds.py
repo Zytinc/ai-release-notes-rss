@@ -119,6 +119,12 @@ SOURCES = {
         "feed_file": "runway-research.xml",
         "description": "Runway Research 官方 Publications 列表中的论文与研究发布。",
     },
+    "heygen_research": {
+        "name": "HeyGen Research",
+        "url": "https://www.heygen.com/research",
+        "feed_file": "heygen-research.xml",
+        "description": "HeyGen Research 官方研究页中的技术文章与研究发布。",
+    },
 }
 
 DATE_PATTERNS = (
@@ -1074,6 +1080,119 @@ def extract_runway_research() -> list[dict[str, str]]:
     return deduplicate(entries)
 
 
+def _next_flight_payloads(html: str) -> list[str]:
+    """Decode Next.js flight chunks embedded in a server-rendered page."""
+    payloads: list[str] = []
+    for match in re.finditer(r'self\.__next_f\.push\(\[1,"((?:\\.|[^"\\])*)"\]\)', html):
+        try:
+            payloads.append(json.loads(f'"{match.group(1)}"'))
+        except json.JSONDecodeError:
+            continue
+    return payloads
+
+
+def _walk_objects(node: Any, found: list[dict[str, Any]]) -> None:
+    if isinstance(node, dict):
+        found.append(node)
+        for value in node.values():
+            _walk_objects(value, found)
+    elif isinstance(node, list):
+        for value in node:
+            _walk_objects(value, found)
+
+
+def _heygen_page_summary(url: str) -> str:
+    """Use the article page's short meta description when the listing has none."""
+    if not url.startswith("https://www.heygen.com/research/"):
+        return ""
+    try:
+        soup = fetch_soup(url)
+    except requests.RequestException:
+        return ""
+    meta = soup.find("meta", attrs={"property": "og:description"}) or soup.find(
+        "meta", attrs={"name": "description"}
+    )
+    if not meta or not meta.get("content"):
+        return ""
+    return clip_summary(str(meta["content"]))
+
+
+def extract_heygen_research() -> list[dict[str, str]]:
+    """Read the article index embedded in HeyGen's public research listing.
+
+    https://www.heygen.com/research has no RSS feed. The Next.js page already
+    ships every research card, including items behind "Load more", with title,
+    date, slug, and the short card description. Article bodies are not copied.
+    """
+    source = SOURCES["heygen_research"]
+    response = requests.get(
+        source["url"],
+        headers={"User-Agent": USER_AGENT, "Accept": "text/html", "Accept-Language": "en-US,en;q=0.9"},
+        timeout=40,
+    )
+    response.raise_for_status()
+    html = decode_response(response)
+    decoder = json.JSONDecoder()
+    found: list[dict[str, Any]] = []
+    for payload in _next_flight_payloads(html):
+        index = 0
+        while True:
+            start = payload.find("{", index)
+            if start < 0:
+                break
+            try:
+                obj, end = decoder.raw_decode(payload[start:])
+            except json.JSONDecodeError:
+                index = start + 1
+                continue
+            _walk_objects(obj, found)
+            index = start + end
+    if not found:
+        raise RuntimeError("HeyGen research page no longer exposes its public article index")
+
+    best: dict[str, dict[str, Any]] = {}
+    for article in found:
+        slug = article.get("slug")
+        title = article.get("title")
+        published_raw = article.get("publishedDate")
+        if not isinstance(slug, str) or not isinstance(title, str) or not isinstance(published_raw, str):
+            continue
+        if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_-]{0,160}", slug):
+            continue
+        if not clean_text(title) or not parse_date(published_raw):
+            continue
+        current = best.get(slug)
+        if current is None or (not current.get("description") and article.get("description")):
+            best[slug] = article
+    if not best:
+        raise RuntimeError("HeyGen research page no longer exposes its public article index")
+
+    entries: list[dict[str, str]] = []
+    for slug, article in best.items():
+        published = parse_date(str(article.get("publishedDate") or ""))
+        assert published is not None
+        external = article.get("externalUrl")
+        if isinstance(external, str) and external.startswith("https://"):
+            link = external
+        else:
+            link = "https://www.heygen.com/research/" + quote(slug, safe="-._~")
+        description = article.get("description")
+        summary = clip_summary(description) if isinstance(description, str) else ""
+        if not summary:
+            summary = _heygen_page_summary(link)
+        entries.append(
+            make_direct_item(
+                "heygen_research",
+                quote(slug, safe="-._~"),
+                clean_text(str(article.get("title") or "")),
+                published,
+                summary,
+                link,
+            )
+        )
+    return deduplicate(entries)
+
+
 def deduplicate(entries: list[dict[str, str]]) -> list[dict[str, str]]:
     by_guid = {entry["guid"]: entry for entry in entries}
     return sorted(by_guid.values(), key=lambda item: item["published"], reverse=True)
@@ -1168,6 +1287,7 @@ def main() -> int:
         "kling_blog": extract_kling_blog,
         "tongyi_wanxiang": extract_tongyi_wanxiang,
         "runway_research": extract_runway_research,
+        "heygen_research": extract_heygen_research,
     }
     successful = 0
     failures: list[str] = []
