@@ -19,6 +19,7 @@
 - Kling AI 官方博客：`feeds/kling-blog.xml`
 - 通义万相官网博客：`feeds/tongyi-wanxiang.xml`
 - Runway Research：`feeds/runway-research.xml`
+- HeyGen Research：`feeds/heygen-research.xml`
 
 ## 运行方式
 
@@ -43,5 +44,6 @@ GitHub Actions 每 6 小时执行 `scripts/generate_feeds.py`。脚本仅抓取�
 - [Kling AI 官方博客](https://kling.ai/blog)
 - [通义万相](https://tongyi.aliyun.com/wan/)
 - [Runway Research](https://runway.com/research)
+- [HeyGen Research](https://www.heygen.com/research)
 
 本仓库不包含账号凭证、Cookie、私有数据或对官方内容的全文镜像。

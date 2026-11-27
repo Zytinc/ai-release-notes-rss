@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>HeyGen Research</title>
+    <link>https://www.heygen.com/research</link>
+    <description>HeyGen Research 官方研究页中的技术文章与研究发布。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 19 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <generator>ai-release-notes-rss</generator>
+    <item>
+      <title>HeyGen Decision 1: Fast, Calibrated Judgments for all Your Decisions</title>
+      <link>https://www.heygen.com/research/heygen-decision-1</link>
+      <guid isPermaLink="false">heygen_research-heygen-decision-1</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Decisions happen all throughout our product. Is this frame clean? Is this audio clear? Is this input usable? Is this content safe? What is the user trying to do? What kind of request just came in? These questions sit at product entry points and boundaries, where thousands of requests pass through every hour.</description>
+    </item>
+    <item>
+      <title>Avatar 6: Talking Avatars That Are More Like You</title>
+      <link>https://www.heygen.com/research/avatar-6-model</link>
+      <guid isPermaLink="false">heygen_research-avatar-6-model</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Talking avatars that are more like you. From a single photo — and, optionally, a short recording as an identity reference — Avatar 6 reproduces how a person looks, speaks, and moves, up to 2K, with no length limit.</description>
+    </item>
+    <item>
+      <title>How a Video Company Built the #1 Voice Model</title>
+      <link>https://www.heygen.com/research/how-a-video-company-built-the-no-1-voice-model</link>
+      <guid isPermaLink="false">heygen_research-how-a-video-company-built-the-no-1-voice-model</guid>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+      <description>HeyGen let users choose between leading voice engines. By using real-world feedback and blind preference testing, HeyGen built a voice model that surpassed competitors in quality while reducing costs by millions.</description>
+    </item>
+    <item>
+      <title>HeyGen Voice: Scene-Aware Voice Cloning for Talking Videos</title>
+      <link>https://www.heygen.com/research/heygen-voice-scene-aware-voice-cloning</link>
+      <guid isPermaLink="false">heygen_research-heygen-voice-scene-aware-voice-cloning</guid>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <description>An open beach. A moving car. A busy factory floor. HeyGen Voice brings your voice into the picture, shaping the delivery and sound to fit the scene.</description>
+    </item>
+    <item>
+      <title>Benchmarking Code-to-Video: Evaluating AI Agents on the Art of Motion Design</title>
+      <link>https://www.heygen.com/research/introducing-code2video-benchmark</link>
+      <guid isPermaLink="false">heygen_research-introducing-code2video-benchmark</guid>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 GMT</pubDate>
+      <description>HeyGen Research releases the Code2Video Benchmark and a pairwise Judge model to measure how well LLM agents turn prompts into motion graphics code. Leaderboard, failure modes and dataset on Kaggle.</description>
+    </item>
+    <item>
+      <title>Video Podcast: Enforcing Continuity Across Independently Rendered Turns</title>
+      <link>https://www.heygen.com/research/video-podcast-enforcing-continuity-across-independently-rendered-turns</link>
+      <guid isPermaLink="false">heygen_research-video-podcast-enforcing-continuity-across-independently-rendered-turns</guid>
+      <pubDate>Mon, 24 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Each speaker’s stretch of dialogue in a Video Podcast is rendered independently. The challenge is making those clips behave as though they came from the same recording.</description>
+    </item>
+    <item>
+      <title>HeyGen x Google Cloud: Bringing Avatar IV to TPUs</title>
+      <link>https://www.heygen.com/research/heygen-x-google-cloud-bringing-avatar-iv-to-tpus</link>
+      <guid isPermaLink="false">heygen_research-heygen-x-google-cloud-bringing-avatar-iv-to-tpus</guid>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 GMT</pubDate>
+      <description>HeyGen is an AI video generation platform with industry-leading avatar models. Avatar IV, the diffusion stack behind our talking-head videos, runs on more than 18B parameters and is available via Web and API. Working with the Google Cloud AI-Ninja team, we brought Avatar IV to an eight-chip Trillium (v6e) host and made it 1.86× faster than our first working version. It now matches the performance of our 8×H100 production setup while being up to 25% more cost-efficient per minute of generated…</description>
+    </item>
+    <item>
+      <title>How Temporal Powers Workflows at HeyGen</title>
+      <link>https://www.heygen.com/research/how-temporal-powers-workflows-at-heygen</link>
+      <guid isPermaLink="false">heygen_research-how-temporal-powers-workflows-at-heygen</guid>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
+      <description>How we moved from a custom job system to durable execution across a multi-cloud GPU fleet.</description>
+    </item>
+    <item>
+      <title>Reframe Context Engineering - Lessons from Building Video Agent(s) - Part 1</title>
+      <link>https://www.heygen.com/research/context-engineering-lessons-from-building-ai-video-agents-part-1</link>
+      <guid isPermaLink="false">heygen_research-context-engineering-lessons-from-building-ai-video-agents-part-1</guid>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Context engineering is very different when your agent's goal is multi-modal (e.g. videos). Here's what we learned shipping one.</description>
+    </item>
+    <item>
+      <title>One Model, Multiple Controllability: Composable Behavior LoRAs for Video Avatars</title>
+      <link>https://www.heygen.com/research/composable-behavior-loras-for-video-avatars</link>
+      <guid isPermaLink="false">heygen_research-composable-behavior-loras-for-video-avatars</guid>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate>
+      <description>The expensive part of multi-behavior avatar control is a dataset where every behavior co-occurs, labeled, at studio quality — it barely exists. We skip it: train each behavior as a separate LoRA on cheap single-attribute data, compose them at inference, and close the gap with a short fine-tune on only a little real overlap.</description>
+    </item>
+    <item>
+      <title>Driving Real-Time Actions from Avatar Speech: A Word-Clock Architecture for the HeyGen Realtime API</title>
+      <link>https://www.heygen.com/research/driving-real-time-actions-from-avatar-speech</link>
+      <guid isPermaLink="false">heygen_research-driving-real-time-actions-from-avatar-speech</guid>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 GMT</pubDate>
+      <description>We synchronize AI avatar speech with live browser actions using per-word timestamps emitted by the Avatar Realtime API. By anchoring clicks, highlights, and scrolling to the exact word being spoken, the system keeps actions aligned with natural speech instead of unreliable timers. The approach powers interactive AI agents that can browse the web, teach, review code, and respond live while maintaining accurate audiovisual synchronization.</description>
+    </item>
+    <item>
+      <title>Auto-Optim: A Blind Agent Matched Our Hard-Won 3x, With No human in the Loop</title>
+      <link>https://www.heygen.com/research/auto-optim-ai-model-inference-speedup</link>
+      <guid isPermaLink="false">heygen_research-auto-optim-ai-model-inference-speedup</guid>
+      <pubDate>Mon, 29 Jun 2026 00:00:00 GMT</pubDate>
+      <description>We handed Claude Code a benchmark, a tamper-proof quality gate, and one rule file, then walked away. On a single H100 it made the Wan 2.2 video decoder 3× faster on its own. The same speedup cost us 105 hand-steered experiments the first time; this run took 18, blind.</description>
+    </item>
+    <item>
+      <title>HTML to Video Was Not Easy: Here’s How We Solved It</title>
+      <link>https://www.heygen.com/research/html-to-video</link>
+      <guid isPermaLink="false">heygen_research-html-to-video</guid>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+      <description>HyperFrames makes it possible for AI agents to create videos with HTML. Learn how HeyGen solved deterministic rendering, frame capture, video playback, and preview parity.</description>
+    </item>
+    <item>
+      <title>HeyGen × Stripe Projects: The Missing Piece for Autonomous Product Launches</title>
+      <link>https://www.heygen.com/research/stripe-projects</link>
+      <guid isPermaLink="false">heygen_research-stripe-projects</guid>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
+      <description>Agents can build a product in a day but not launch it. With Stripe Projects and the HeyGen API, an agent can now provision, pay, and produce its own launch video.</description>
+    </item>
+    <item>
+      <title>Avatar Real-time: The Technical Report Behind Low-Latency, Unlimited-Duration Generation</title>
+      <link>https://www.heygen.com/research/avatar-inference-at-scale</link>
+      <guid isPermaLink="false">heygen_research-avatar-inference-at-scale</guid>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 GMT</pubDate>
+      <description>The inference framework transforms avatar generation from fixed-length rendering into open-ended streaming video synthesis. A chunk-based pipeline maintains identity, motion, and lip-sync consistency across arbitrarily long videos while operating with constant memory usage. Combined with model-sharding, asynchronous offloading, and streaming decode, the system achieves sub-5-second time-to-first-frame and faster-than-realtime generation speeds.</description>
+    </item>
+    <item>
+      <title>Avatar V: Scaling Video-Reference Avatar Generation</title>
+      <link>https://www.heygen.com/research/avatar-v-model</link>
+      <guid isPermaLink="false">heygen_research-avatar-v-model</guid>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 GMT</pubDate>
+      <description>Avatar V is built on a Diffusion Transformer with flow matching that conditions directly on the full token sequence of a user’s reference video—no bottleneck embeddings. Sparse Reference Attention keeps cost almost linear with reference length. A five-stage training curriculum progresses from general video pre-training through identity-preserving fine-tuning, distillation, and RLHF alignment.</description>
+    </item>
+    <item>
+      <title>Curating Millions of Videos: The Data Engine Behind Avatar V</title>
+      <link>https://www.heygen.com/research/avatar-v-data</link>
+      <guid isPermaLink="false">heygen_research-avatar-v-data</guid>
+      <pubDate>Fri, 03 Apr 2026 00:00:00 GMT</pubDate>
+      <description>A distributed data engine orchestrating 25+ processing stages and 20+ specialized AI models transforms 50M raw videos into 100M+ pretraining clips and 10M+ avatar fine-tuning clips. A 10-stage segment-level curation cascade, 13 parallel feature extraction stages, 10 fine-grained avatar quality signals, and a cross-clip identity connectivity graph produce the training data that makes Avatar V possible.</description>
+    </item>
+    <item>
+      <title>From Model to Production: Optimizing Avatar V Inference at Scale</title>
+      <link>https://www.heygen.com/research/avatar-v-inference</link>
+      <guid isPermaLink="false">heygen_research-avatar-v-inference</guid>
+      <pubDate>Thu, 02 Apr 2026 00:00:00 GMT</pubDate>
+      <description>Avatar V generates 1080p video at 25 fps across 8 GPUs per request. A custom compiler with LLM-based agentic kernel synthesis achieves 3× latency reduction over the unoptimized baseline and 33% improvement over torch.compile. Chunk-based autoregressive generation enables arbitrary-length output, while NVSHMEM-based sequence parallelism, two-level context caching, and streaming VAE decode keep memory bounded and throughput high.</description>
+    </item>
+    <item>
+      <title>HELIOS: Unified GPU Infrastructure for Training, Inference, and Data at Scale</title>
+      <link>https://www.heygen.com/research/avatar-v-infrastructure</link>
+      <guid isPermaLink="false">heygen_research-avatar-v-infrastructure</guid>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+      <description>HELIOS is a unified GPU infrastructure platform managing 5,000+ GPUs across 5+ cloud providers and 15+ standardized cells. A two-stage QoS-aware scheduler improved GPU utilization by 15% and reduced non-productive GPU time by 20%. A custom declarative data processing engine replaced Ray, scaling to 200K+ concurrent tasks with 95%+ GPU utilization and node failure detection under 30 seconds.</description>
+    </item>
+    <item>
+      <title>TAVR: Generate Your Talking Avatar from Video Reference</title>
+      <link>https://www.heygen.com/research/tavr</link>
+      <guid isPermaLink="false">heygen_research-tavr</guid>
+      <pubDate>Tue, 03 Mar 2026 00:00:00 GMT</pubDate>
+      <description>TAVR replaces single-image avatar references with short video clips, enabling cross-scene generation with significantly better identity preservation. A three-stage training strategy bridges the domain gap between reference and target scenes. On a new cross-scene benchmark, TAVR yields the best identity similarity and achieves an overall quality score of 16.42 vs 14.13 for the next best method.</description>
+    </item>
+    <item>
+      <title>TransVLM: Detecting Any Shot Transition with Vision-Language Models</title>
+      <link>https://www.heygen.com/research/transvlm</link>
+      <guid isPermaLink="false">heygen_research-transvlm</guid>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 GMT</pubDate>
+      <description>We reformulate shot boundary detection as Shot Transition Detection (STD)—finding complete transition segments, not just cut points. TransVLM fuses optical flow with color frames in a vision-language model to detect all transition types: cuts, dissolves, and special effects. It achieves 78.3% segment F1 on public data and 89.5% on synthetic data, outperforming all existing methods.</description>
+    </item>
+  </channel>
+</rss>
