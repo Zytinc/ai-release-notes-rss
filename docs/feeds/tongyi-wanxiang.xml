@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>通义万相官网博客</title>
+    <link>https://tongyi.aliyun.com/wan/</link>
+    <description>通义万相（万相）官网博客中的模型发布与研究说明。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 19 Sep 2025 00:00:00 GMT</lastBuildDate>
+    <generator>ai-release-notes-rss</generator>
+    <item>
+      <title>万相2.2-Animate：替身出演，形神境随</title>
+      <link>https://tongyi.aliyun.com/wan/blog/wan2.2-animate</link>
+      <guid isPermaLink="false">tongyi_wanxiang-391b965e-0cad-406b-8ac3-a026b869b23a</guid>
+      <pubDate>Fri, 19 Sep 2025 00:00:00 GMT</pubDate>
+      <description>影视级视频动作复刻和视频换人。</description>
+    </item>
+    <item>
+      <title>万相2.2-S2V：音画传情 声启万相</title>
+      <link>https://tongyi.aliyun.com/wan/blog/wan2.2-S2V</link>
+      <guid isPermaLink="false">tongyi_wanxiang-dc5079b8-ac4d-412c-ba28-270992d5b882</guid>
+      <pubDate>Tue, 26 Aug 2025 00:00:00 GMT</pubDate>
+      <description>影视级音频驱动生视频模型。</description>
+    </item>
+    <item>
+      <title>万相2.2：能力更强，画面更美</title>
+      <link>https://tongyi.aliyun.com/wan/blog/wan2.2</link>
+      <guid isPermaLink="false">tongyi_wanxiang-2faf4841-ef2e-41a8-8998-02463b2c3986</guid>
+      <pubDate>Mon, 28 Jul 2025 00:00:00 GMT</pubDate>
+      <description>万相2.2引入高效的MoE架构，带来更强大的模型能力并显著提升视频美感，将开源视频生成技术推向全新前沿。</description>
+    </item>
+    <item>
+      <title>万相2.1-VACE：一应俱全 万相皆宜</title>
+      <link>https://tongyi.aliyun.com/wan/blog/wan2.1-VACE</link>
+      <guid isPermaLink="false">tongyi_wanxiang-b42899ad-5b00-46cf-bf80-c65fe1ff1249</guid>
+      <pubDate>Wed, 14 May 2025 00:00:00 GMT</pubDate>
+      <description>万相VACE是一个视频生成与编辑统一模型。该模型支持多种任务，包括参考生成视频（R2V）、视频编辑（V2V）以及遮罩区域局部编辑（MV2V），用户可自由组合各项功能。</description>
+    </item>
+    <item>
+      <title>万相2.1-首尾帧：开始，结束，其余交给万相</title>
+      <link>https://tongyi.aliyun.com/wan/blog/wan2.1-flf2v</link>
+      <guid isPermaLink="false">tongyi_wanxiang-635939a5-5a7d-44c1-9c15-1e1269f3feca</guid>
+      <pubDate>Thu, 17 Apr 2025 00:00:00 GMT</pubDate>
+      <description>用户仅需首尾帧即可生成时序连贯、运动流畅的高质量视频，为创作者在动态内容制作中提供前所未有的控制力与高效体验。</description>
+    </item>
+    <item>
+      <title>万相2.1</title>
+      <link>https://tongyi.aliyun.com/wan/blog/wan2.1</link>
+      <guid isPermaLink="false">tongyi_wanxiang-fea38d2d-864e-4bf5-bcdc-24cf766f3b5a</guid>
+      <pubDate>Tue, 25 Feb 2025 00:00:00 GMT</pubDate>
+      <description>Wan2.1 是一系列开源视频基础大模型，依托前沿的扩散Transformer架构，在性能、效率与应用广度上实现全面突破，引领视频生成技术新高度。</description>
+    </item>
+  </channel>
+</rss>

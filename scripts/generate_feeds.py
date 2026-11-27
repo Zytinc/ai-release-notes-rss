@@ -10,6 +10,7 @@ from datetime import UTC, datetime
 from email.utils import format_datetime, parsedate_to_datetime
 from pathlib import Path
 from typing import Any
+from urllib.parse import quote, urljoin
 from xml.etree import ElementTree as ET
 
 import requests
@@ -64,15 +65,74 @@ SOURCES = {
         "author": "张小吉要多思考、JaredLiu",
         "image": "https://image.xyzcdn.net/FlktqFSAbDvPWzqF_P_o_6hXqPZx.jpg",
     },
+    "zhipu_news": {
+        "name": "智谱官网新闻",
+        "url": "https://www.zhipuai.cn/zh/news",
+        "feed_file": "zhipu-news.xml",
+        "description": "智谱官网新闻中的公司动态、产品发布与官方公告。",
+    },
+    "kimi_research": {
+        "name": "Kimi 研究博客",
+        "url": "https://www.kimi.ai/zh-hans/blog/",
+        "feed_file": "kimi-research-blog.xml",
+        "description": "Kimi 官方研究与技术博客文章。",
+    },
+    "deepseek_research_news": {
+        "name": "DeepSeek 研究与动态",
+        "url": "https://www.deepseek.com/news/",
+        "feed_file": "deepseek-research-news.xml",
+        "description": "DeepSeek 官网「研究与动态」中的产品动态，以及同页研究索引列出的论文与项目。",
+    },
+    "minimax_research": {
+        "name": "MiniMax 研究博客",
+        "url": "https://www.minimax.cn/blog",
+        "feed_file": "minimax-research-blog.xml",
+        "description": "MiniMax 中文官网研究博客中的技术文章与产品更新。",
+    },
+    "bytedance_seed": {
+        "name": "字节跳动 Seed 官方动态",
+        "url": "https://seed.bytedance.com/zh/",
+        "feed_file": "bytedance-seed-updates.xml",
+        "description": "字节跳动 Seed 官网公开的技术博客与官方动态。",
+    },
+    "sand_research": {
+        "name": "Sand.ai 研究博客",
+        "url": "https://sandai.cn/research/",
+        "feed_file": "sand-research.xml",
+        "description": "Sand.ai 中文官网研究页中的论文、模型发布与技术文章，包括 MAGI-2。",
+    },
+    "kling_blog": {
+        "name": "Kling AI 官方博客",
+        "url": "https://kling.ai/blog",
+        "feed_file": "kling-blog.xml",
+        "description": "Kling AI 官网博客文章与产品发布。",
+    },
+    "tongyi_wanxiang": {
+        "name": "通义万相官网博客",
+        "url": "https://tongyi.aliyun.com/wan/",
+        "feed_file": "tongyi-wanxiang.xml",
+        "description": "通义万相（万相）官网博客中的模型发布与研究说明。",
+    },
+    "runway_research": {
+        "name": "Runway Research",
+        "url": "https://runway.com/research",
+        "feed_file": "runway-research.xml",
+        "description": "Runway Research 官方 Publications 列表中的论文与研究发布。",
+    },
 }
 
 DATE_PATTERNS = (
+    "%Y-%m-%d",
+    "%Y/%m/%d",
+    "%Y.%m.%d",
     "%Y年%m月%d日",
     "%B %d, %Y",
     "%b %d, %Y",
     "%B %Y",
     "%b %Y",
 )
+SUMMARY_LIMIT = 500
+ZH_LANGUAGE = "zh-CN,zh;q=0.9,en;q=0.8"
 
 
 def utcnow() -> datetime:
@@ -86,6 +146,7 @@ def clean_text(value: str) -> str:
 def parse_date(value: str) -> datetime | None:
     value = clean_text(value)
     value = re.sub(r"(\d{1,2})(st|nd|rd|th)", r"\1", value, flags=re.I)
+    value = re.sub(r"\s*([年月日])\s*", r"\1", value)
     for pattern in DATE_PATTERNS:
         try:
             parsed = datetime.strptime(value, pattern)
@@ -97,14 +158,25 @@ def parse_date(value: str) -> datetime | None:
     return None
 
 
-def fetch_soup(url: str) -> BeautifulSoup:
+def decode_response(response: requests.Response) -> str:
+    """Honor an explicit charset, and recover UTF-8 pages that omit one.
+
+    requests otherwise falls back to ISO-8859-1, which corrupts pages such as
+    DeepSeek's news listing.
+    """
+    if not response.encoding or response.encoding.lower() in {"iso-8859-1", "latin-1"}:
+        response.encoding = response.apparent_encoding or "utf-8"
+    return response.text
+
+
+def fetch_soup(url: str, *, language: str = "en-US,en;q=0.9") -> BeautifulSoup:
     response = requests.get(
         url,
-        headers={"User-Agent": USER_AGENT, "Accept-Language": "en-US,en;q=0.9"},
+        headers={"User-Agent": USER_AGENT, "Accept-Language": language},
         timeout=40,
     )
     response.raise_for_status()
-    return BeautifulSoup(response.text, "html.parser")
+    return BeautifulSoup(decode_response(response), "html.parser")
 
 
 def fetch_text(url: str) -> str:
@@ -118,7 +190,28 @@ def fetch_text(url: str) -> str:
         timeout=60,
     )
     response.raise_for_status()
-    return response.text
+    return decode_response(response)
+
+
+def clip_summary(value: str, limit: int = SUMMARY_LIMIT) -> str:
+    text = clean_text(value)
+    if len(text) <= limit:
+        return text
+    clipped = text[:limit].rsplit(" ", 1)[0].rstrip("，,;；。")
+    return f"{clipped}…"
+
+
+def normalized_link(base: str, href: str) -> str:
+    link = urljoin(base, href.strip())
+    if link.startswith("http://"):
+        link = "https://" + link[len("http://") :]
+    return link
+
+
+def link_slug(link: str) -> str:
+    path = link.split("?", 1)[0].rstrip("/")
+    slug = path.rsplit("/", 1)[-1]
+    return slug or hashlib.sha256(link.encode("utf-8")).hexdigest()[:16]
 
 
 def text_until_next_heading(heading: Tag, limit: int = 1200) -> str:
@@ -209,6 +302,38 @@ def extract_claude_apps() -> list[dict[str, str]]:
     return deduplicate(entries)
 
 
+def _gemini_markdown_entries(markdown: str) -> list[dict[str, str]]:
+    """Parse the changelog markdown Google now embeds for non-JavaScript clients."""
+    entries: list[dict[str, str]] = []
+    published: datetime | None = None
+    body: list[str] = []
+
+    def flush() -> None:
+        nonlocal published, body
+        if published and body:
+            description = clean_text(" ".join(body))
+            description = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", description)
+            description = re.sub(r"`([^`]+)`", r"\1", description)
+            description = re.sub(r"\*\*([^*]+)\*\*", r"\1", description)
+            description = description.replace("* ", "").strip()[:1200]
+            if description:
+                title = f"Gemini API update — {published:%B %-d, %Y}"
+                entries.append(make_item("gemini_api", title, published, description))
+        published, body = None, []
+
+    for line in markdown.splitlines():
+        heading = re.match(r"^##\s+(.+?)\s*$", line.strip())
+        if heading:
+            flush()
+            heading_text = re.sub(r"\s*\{%.*?%\}\s*$", "", heading.group(1))
+            published = parse_date(heading_text)
+            continue
+        if published and line.strip():
+            body.append(line.strip())
+    flush()
+    return entries
+
+
 def extract_gemini_api() -> list[dict[str, str]]:
     soup = fetch_soup(SOURCES["gemini_api"]["url"])
     entries: list[dict[str, str]] = []
@@ -220,6 +345,10 @@ def extract_gemini_api() -> list[dict[str, str]]:
         if description:
             title = f"Gemini API update — {published:%B %-d, %Y}"
             entries.append(make_item("gemini_api", title, published, description))
+    if not entries:
+        noscript = soup.find("noscript")
+        if noscript:
+            entries.extend(_gemini_markdown_entries(noscript.get_text("\n", strip=False)))
     return deduplicate(entries)
 
 
@@ -464,6 +593,487 @@ def extract_xiaoyuzhou_lemon_latte() -> list[dict[str, str]]:
     return deduplicate(entries)
 
 
+def extract_zhipu_news() -> list[dict[str, str]]:
+    """Read news cards from the public Chinese Zhipu news listing."""
+    source = SOURCES["zhipu_news"]
+    soup = fetch_soup(source["url"], language=ZH_LANGUAGE)
+    entries: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for anchor in soup.find_all("a", href=True):
+        match = re.fullmatch(r"/zh/news/(\d+)", anchor["href"].split("?", 1)[0])
+        if not match or match.group(1) in seen:
+            continue
+        title_node = anchor.find("h3")
+        title = clean_text(title_node.get_text(" ", strip=True)) if title_node else ""
+        published = next(
+            (
+                parsed
+                for node in anchor.find_all("p")
+                if (parsed := parse_date(node.get_text(" ", strip=True)))
+            ),
+            None,
+        )
+        if not title or not published:
+            continue
+        summary_node = anchor.find("span")
+        summary = clean_text(summary_node.get_text(" ", strip=True)) if summary_node else ""
+        news_id = match.group(1)
+        entries.append(
+            make_direct_item(
+                "zhipu_news",
+                news_id,
+                title,
+                published,
+                clip_summary(summary),
+                f"https://www.zhipuai.cn/zh/news/{news_id}",
+            )
+        )
+        seen.add(news_id)
+    return deduplicate(entries)
+
+
+def _json_array_after(html: str, marker: str) -> list[Any]:
+    """Decode a JSON array that follows a JavaScript-escaped marker."""
+    start = html.find(marker)
+    if start < 0:
+        raise RuntimeError(f"Missing embedded data marker {marker!r}")
+    index = start + len(marker)
+    if index >= len(html) or html[index] != "[":
+        raise RuntimeError(f"Embedded data after {marker!r} is not an array")
+    depth = 0
+    end = None
+    for position in range(index, len(html)):
+        char = html[position]
+        if char == "[":
+            depth += 1
+        elif char == "]":
+            depth -= 1
+            if depth == 0:
+                end = position + 1
+                break
+    if end is None:
+        raise RuntimeError(f"Unterminated embedded array after {marker!r}")
+    return json.loads(html[index:end].replace('\\"', '"'))
+
+
+def extract_kimi_research() -> list[dict[str, str]]:
+    """Read the article list embedded in Kimi's public Chinese research blog."""
+    source = SOURCES["kimi_research"]
+    response = requests.get(
+        source["url"],
+        headers={"User-Agent": USER_AGENT, "Accept-Language": ZH_LANGUAGE},
+        timeout=40,
+    )
+    response.raise_for_status()
+    html = decode_response(response)
+    list_at = html.find('\\"articleList\\":')
+    if list_at < 0:
+        raise RuntimeError("Kimi research blog no longer exposes its public article list")
+    articles = _json_array_after(html[list_at:], '\\"items\\":')
+    entries: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for article in articles:
+        if not isinstance(article, dict) or "date" not in article:
+            continue
+        slug = str(article.get("href") or "").split("?", 1)[0].rstrip("/").rsplit("/", 1)[-1]
+        title = clean_text(str(article.get("title") or ""))
+        published = parse_date(str(article.get("date") or ""))
+        if not slug or not title or not published or slug in seen:
+            continue
+        entries.append(
+            make_direct_item(
+                "kimi_research",
+                quote(slug, safe="-._~"),
+                title,
+                published,
+                clip_summary(str(article.get("description") or "")),
+                f"https://www.kimi.ai/zh-hans/blog/{quote(slug, safe='-._~')}",
+            )
+        )
+        seen.add(slug)
+    return deduplicate(entries)
+
+
+def extract_deepseek_research_news() -> list[dict[str, str]]:
+    """Read product posts and the research index from DeepSeek's public news page."""
+    source = SOURCES["deepseek_research_news"]
+    soup = fetch_soup(source["url"], language=ZH_LANGUAGE)
+    entries: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for anchor in soup.find_all("a", href=True):
+        path = anchor["href"].split("?", 1)[0]
+        if not re.fullmatch(r"/news/[^/]+/?", path):
+            continue
+        heading = anchor.find(["h2", "h3"])
+        title = clean_text(heading.get_text(" ", strip=True)) if heading else ""
+        published = next(
+            (
+                parsed
+                for node in anchor.find_all(["span", "p"])
+                if (parsed := parse_date(node.get_text(" ", strip=True)))
+            ),
+            None,
+        )
+        if not title or not published:
+            continue
+        slug = path.strip("/").rsplit("/", 1)[-1]
+        if slug in seen:
+            continue
+        summary = ""
+        for paragraph in anchor.find_all("p"):
+            text = clean_text(paragraph.get_text(" ", strip=True))
+            if text and text != title and not parse_date(text) and not text.startswith("动态"):
+                summary = text
+                break
+        entries.append(
+            make_direct_item(
+                "deepseek_research_news",
+                slug,
+                title,
+                published,
+                clip_summary(summary),
+                normalized_link("https://www.deepseek.com", path if path.endswith("/") else f"{path}/"),
+            )
+        )
+        seen.add(slug)
+
+    for anchor in soup.select("a.ds-research-item"):
+        link = normalized_link("https://www.deepseek.com", anchor.get("href") or "")
+        title_node = anchor.find(class_="ds-research-title")
+        date_node = anchor.find(class_="ds-research-date")
+        title = clean_text(title_node.get_text(" ", strip=True)) if title_node else ""
+        published = parse_date(date_node.get_text(" ", strip=True)) if date_node else None
+        slug = link_slug(link)
+        if not title or not published or not link.startswith("https://") or slug in seen:
+            continue
+        entries.append(
+            make_direct_item(
+                "deepseek_research_news",
+                slug,
+                title,
+                published,
+                "DeepSeek 官网研究索引列出的论文或项目。",
+                link,
+            )
+        )
+        seen.add(slug)
+    return deduplicate(entries)
+
+
+def extract_minimax_research() -> list[dict[str, str]]:
+    """Read dated article cards from the public Chinese MiniMax research blog."""
+    source = SOURCES["minimax_research"]
+    soup = fetch_soup(source["url"], language=ZH_LANGUAGE)
+    entries: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for anchor in soup.find_all("a", href=True):
+        href = str(anchor.get("href") or "").split("?", 1)[0]
+        if not re.search(r"/blog/[^/]+$", href):
+            continue
+        title_node = anchor.find(["h2", "h3"])
+        time_node = anchor.find("time")
+        title = clean_text(title_node.get_text(" ", strip=True)) if title_node else ""
+        published = parse_date(time_node.get_text(" ", strip=True)) if time_node else None
+        slug = link_slug(href)
+        if not title or not published or slug in seen:
+            continue
+        entries.append(
+            make_direct_item(
+                "minimax_research",
+                quote(slug, safe="-._~%"),
+                title,
+                published,
+                "",
+                normalized_link("https://www.minimax.cn", href),
+            )
+        )
+        seen.add(slug)
+    return deduplicate(entries)
+
+
+def extract_bytedance_seed() -> list[dict[str, str]]:
+    """Read Seed's public article list, the same API used by its official blog pages."""
+    source = SOURCES["bytedance_seed"]
+    entries: list[dict[str, str]] = []
+    seen: set[str] = set()
+    page_token: Any = None
+    for _ in range(8):
+        params: dict[str, Any] = {"article_type": 2, "count": 20, "order_desc": 1}
+        if page_token not in (None, ""):
+            params["page_token"] = page_token
+        response = requests.get(
+            "https://seed.bytedance.com/api/get_article_list_v2",
+            params=params,
+            headers={
+                "User-Agent": USER_AGENT,
+                "Accept": "application/json",
+                "Accept-Language": ZH_LANGUAGE,
+                "Referer": source["url"],
+            },
+            timeout=40,
+        )
+        response.raise_for_status()
+        payload = response.json()
+        articles = payload.get("sub_article_list")
+        if not isinstance(articles, list):
+            if entries and not payload.get("has_more"):
+                break
+            raise RuntimeError("Seed public article API returned an unexpected response")
+        if not articles:
+            break
+        for article in articles:
+            meta = article.get("ArticleMeta") or {}
+            chinese = article.get("ArticleSubContentZh") or {}
+            english = article.get("ArticleSubContentEn") or {}
+            if meta.get("StatusZh") != 2:
+                continue
+            title = clean_text(str(chinese.get("Title") or ""))
+            slug = clean_text(str(english.get("TitleKey") or chinese.get("TitleKey") or ""))
+            published_raw = meta.get("PublishDate")
+            article_id = str(meta.get("ArticleID") or "")
+            if not title or not slug or not published_raw or not article_id or article_id in seen:
+                continue
+            timestamp = int(published_raw)
+            if timestamp < 10_000_000_000:
+                timestamp *= 1000
+            published = datetime.fromtimestamp(timestamp / 1000, UTC)
+            link = "https://seed.bytedance.com/zh/blog/" + quote(slug, safe="-._~")
+            entries.append(
+                make_direct_item(
+                    "bytedance_seed",
+                    article_id,
+                    title,
+                    published,
+                    clip_summary(str(chinese.get("Abstract") or "")),
+                    link,
+                )
+            )
+            seen.add(article_id)
+        if not payload.get("has_more"):
+            break
+        page_token = payload.get("next_page_token")
+    return deduplicate(entries)
+
+
+def extract_sand_research() -> list[dict[str, str]]:
+    """Read research cards from Sand.ai's public Chinese research page."""
+    source = SOURCES["sand_research"]
+    soup = fetch_soup(source["url"], language=ZH_LANGUAGE)
+    entries: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for anchor in soup.find_all("a", href=True):
+        href = str(anchor.get("href") or "")
+        if not any(token in href for token in ("/blog/", "arxiv.org", "github.com")):
+            continue
+        title_node = anchor.find(["h2", "h3"]) or anchor.find(
+            class_=lambda value: isinstance(value, str) and value.endswith("Title")
+        )
+        date_node = anchor.find(
+            class_=lambda value: isinstance(value, str) and value.endswith("Date")
+        )
+        title = clean_text(title_node.get_text(" ", strip=True)) if title_node else ""
+        date_text = clean_text(date_node.get_text(" ", strip=True)).split("·", 1)[0] if date_node else ""
+        if not date_text:
+            date_match = re.search(r"20\d{2}年\d{1,2}月\d{1,2}日", anchor.get_text(" ", strip=True))
+            date_text = date_match.group(0) if date_match else ""
+        published = parse_date(date_text)
+        link = normalized_link(source["url"], href)
+        slug = link_slug(link)
+        if not title or not published or slug in seen:
+            continue
+        entries.append(
+            make_direct_item(
+                "sand_research",
+                quote(slug, safe="-._~"),
+                title,
+                published,
+                "",
+                link,
+            )
+        )
+        seen.add(slug)
+    return deduplicate(entries)
+
+
+def _kling_article_meta(url: str) -> tuple[datetime | None, str]:
+    try:
+        soup = fetch_soup(url)
+    except requests.RequestException:
+        return None, ""
+    published = None
+    meta = soup.find("meta", attrs={"property": "article:published_time"})
+    if meta and meta.get("content"):
+        try:
+            published = datetime.fromisoformat(str(meta["content"]).replace("Z", "+00:00")).astimezone(UTC)
+        except ValueError:
+            published = None
+    description = ""
+    summary = soup.find("meta", attrs={"property": "og:description"})
+    if summary and summary.get("content"):
+        description = clip_summary(str(summary["content"]))
+    return published, description
+
+
+def extract_kling_blog() -> list[dict[str, str]]:
+    """Read article cards from the public Kling AI blog listing."""
+    source = SOURCES["kling_blog"]
+    soup = fetch_soup(source["url"])
+    entries: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for anchor in soup.select("a.blog-card"):
+        path = str(anchor.get("href") or "").split("?", 1)[0]
+        if not re.fullmatch(r"/blog/[^/]+", path):
+            continue
+        title_node = anchor.find(class_="card-title")
+        date_node = anchor.find(class_="card-meta")
+        title = clean_text(title_node.get_text(" ", strip=True)) if title_node else ""
+        published = parse_date(date_node.get_text(" ", strip=True)) if date_node else None
+        slug = link_slug(path)
+        if not title or not published or slug in seen:
+            continue
+        entries.append(
+            make_direct_item(
+                "kling_blog",
+                quote(slug, safe="-._~"),
+                title,
+                published,
+                "",
+                f"https://kling.ai{path}",
+            )
+        )
+        seen.add(slug)
+
+    for anchor in soup.select("a.resource-link"):
+        path = str(anchor.get("href") or "").split("?", 1)[0]
+        slug = link_slug(path)
+        title = clean_text(anchor.get_text(" ", strip=True))
+        if not re.fullmatch(r"/blog/[^/]+", path) or not title or slug in seen:
+            continue
+        link = f"https://kling.ai{path}"
+        published, description = _kling_article_meta(link)
+        if not published:
+            continue
+        entries.append(
+            make_direct_item(
+                "kling_blog",
+                quote(slug, safe="-._~"),
+                title,
+                published,
+                description,
+                link,
+            )
+        )
+        seen.add(slug)
+    return deduplicate(entries)
+
+
+def _js_string_field(blob: str, name: str) -> str:
+    match = re.search(rf'{re.escape(name)}:"((?:\\.|[^"\\])*)"', blob)
+    if not match:
+        return ""
+    value = match.group(1)
+    value = re.sub(r"\\u([0-9a-fA-F]{4})", lambda item: chr(int(item.group(1), 16)), value)
+    return value.replace(r"\"", '"').replace(r"\n", " ").replace(r"\/", "/")
+
+
+def extract_tongyi_wanxiang() -> list[dict[str, str]]:
+    """Read Wan's official blog index shipped with the public Chinese site.
+
+    https://tongyi.aliyun.com/wan/ is a client-rendered shell and does not list
+    posts in the document. The site's own blog route loads a public article
+    index; only title, date, and the one-line description are kept.
+    """
+    source = SOURCES["tongyi_wanxiang"]
+    shell = fetch_soup(source["url"], language=ZH_LANGUAGE)
+    html = str(shell)
+    main_match = re.search(r"https://g\.alicdn\.com/tongyi-lab-fe/wan/[^\"']+/js/main\.js", html)
+    if not main_match:
+        raise RuntimeError("Tongyi Wanxiang page no longer points at its public blog bundle")
+    main_js = fetch_text(main_match.group(0))
+    chunk_match = re.search(
+        r'articles/cn/blogArticles\.json":t\(\(\)=>tt\(\(\)=>import\("\./(blogArticles-[^"]+\.js)"\)',
+        main_js,
+    )
+    if not chunk_match:
+        raise RuntimeError("Tongyi Wanxiang no longer publishes its Chinese blog article index")
+    chunk_url = main_match.group(0).rsplit("/", 1)[0] + "/" + chunk_match.group(1)
+    bundle = fetch_text(chunk_url)
+    entries: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for match in re.finditer(r'\{id:"([^"]+)"', bundle):
+        head = bundle[match.start() : match.start() + 4000].split(",content:", 1)[0]
+        article_id = match.group(1)
+        title = clean_text(_js_string_field(head, "title"))
+        article_key = _js_string_field(head, "articleKey")
+        published = parse_date(_js_string_field(head, "subTitle").split("·", 1)[0])
+        if not title or not article_key or not published or article_id in seen:
+            continue
+        entries.append(
+            make_direct_item(
+                "tongyi_wanxiang",
+                article_id,
+                title,
+                published,
+                clip_summary(_js_string_field(head, "description")),
+                "https://tongyi.aliyun.com/wan/blog/" + quote(article_key, safe="-._~"),
+            )
+        )
+        seen.add(article_id)
+    return deduplicate(entries)
+
+
+def extract_runway_research() -> list[dict[str, str]]:
+    """Read the dated publication rows linked from Runway's public research hub."""
+    soup = fetch_soup("https://runway.com/research/publications")
+    entries: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for date_node in soup.find_all("div", class_=lambda value: value == "rw-bodycopy3"):
+        date_text = clean_text(date_node.get_text(" ", strip=True))
+        if len(date_text) > 32:
+            continue
+        published = parse_date(date_text)
+        if not published:
+            continue
+        row = date_node
+        title_node = None
+        anchor = None
+        summary_node = None
+        for _ in range(4):
+            row = row.parent
+            if row is None:
+                break
+            title_node = row.find(class_=lambda value: value == "rw-h5")
+            anchor = row.find("a", href=True)
+            summary_node = row.find(class_=lambda value: value == "lg:w-7/16")
+            heading_count = len(row.find_all(class_=lambda value: value == "rw-h5"))
+            if title_node and anchor and heading_count == 1:
+                break
+        else:
+            row = None
+        if row is None or title_node is None or anchor is None:
+            continue
+        if len(row.find_all(class_=lambda value: value == "rw-h5")) != 1:
+            continue
+        title = clean_text(title_node.get_text(" ", strip=True)) if title_node else ""
+        link = normalized_link("https://runway.com", str(anchor.get("href") or "")) if anchor else ""
+        slug = link_slug(link)
+        if not title or not link.startswith("https://") or slug in seen:
+            continue
+        summary = clean_text(summary_node.get_text(" ", strip=True)) if summary_node else ""
+        entries.append(
+            make_direct_item(
+                "runway_research",
+                quote(slug, safe="-._~"),
+                title,
+                published,
+                clip_summary(summary),
+                link,
+            )
+        )
+        seen.add(slug)
+    return deduplicate(entries)
+
+
 def deduplicate(entries: list[dict[str, str]]) -> list[dict[str, str]]:
     by_guid = {entry["guid"]: entry for entry in entries}
     return sorted(by_guid.values(), key=lambda item: item["published"], reverse=True)
@@ -549,6 +1159,15 @@ def main() -> int:
         "manus_updates": extract_manus_updates,
         "manus_blog": extract_manus_blog,
         "xiaoyuzhou_lemon_latte": extract_xiaoyuzhou_lemon_latte,
+        "zhipu_news": extract_zhipu_news,
+        "kimi_research": extract_kimi_research,
+        "deepseek_research_news": extract_deepseek_research_news,
+        "minimax_research": extract_minimax_research,
+        "bytedance_seed": extract_bytedance_seed,
+        "sand_research": extract_sand_research,
+        "kling_blog": extract_kling_blog,
+        "tongyi_wanxiang": extract_tongyi_wanxiang,
+        "runway_research": extract_runway_research,
     }
     successful = 0
     failures: list[str] = []

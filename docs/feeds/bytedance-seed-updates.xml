@@ -2,45 +2,416 @@
 <rss version="2.0">
   <channel>
     <title>字节跳动 Seed 官方动态</title>
-    <link>https://seed.bytedance.com/en/</link>
-    <description>字节跳动 Seed 官网 Latest Updates 中的官方团队、研究与产品动态。</description>
+    <link>https://seed.bytedance.com/zh/</link>
+    <description>字节跳动 Seed 官网公开的技术博客与官方动态。</description>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 16 Nov 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 16:00:00 GMT</lastBuildDate>
     <generator>ai-release-notes-rss</generator>
     <item>
-      <title>One-take Creation, Flexible Referencing: Introducing Seedance 2.5</title>
-      <link>https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5</link>
-      <guid isPermaLink="false">bytedance_seed-9554f68b948ec485b57b9b77</guid>
-      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-      <description>字节跳动 Seed 官网 Latest Updates 中的官方团队、研究与产品动态。</description>
+      <title>Seed STEM 计划｜分子逆合成挑战赛启动</title>
+      <link>https://seed.bytedance.com/zh/blog/seed-stem-%E8%AE%A1%E5%88%92-%E5%88%86%E5%AD%90%E9%80%86%E5%90%88%E6%88%90%E6%8C%91%E6%88%98%E8%B5%9B%E5%90%AF%E5%8A%A8</link>
+      <guid isPermaLink="false">bytedance_seed-1794791950696</guid>
+      <pubDate>Sun, 15 Nov 2026 16:00:00 GMT</pubDate>
+      <description>字节跳动 Seed 官网公开的技术博客与官方动态。</description>
     </item>
     <item>
-      <title>From Speech to Audio Creation | Introducing the Seed Audio 1.0 Audio Creation Model</title>
-      <link>https://seed.bytedance.com/en/blog/from-speech-to-audio-creation-introducing-the-seed-audio-1-0-audio-creation-model</link>
-      <guid isPermaLink="false">bytedance_seed-90503872159ece90ad4e38a5</guid>
-      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
-      <description>字节跳动 Seed 官网 Latest Updates 中的官方团队、研究与产品动态。</description>
+      <title>生成更真实，百轮编辑更稳定｜Seedream 5.5 发布</title>
+      <link>https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5</link>
+      <guid isPermaLink="false">bytedance_seed-1794186749126</guid>
+      <pubDate>Sun, 08 Nov 2026 16:00:00 GMT</pubDate>
+      <description>非编辑区域像素级保持，真实感与小字渲染显著提升</description>
     </item>
     <item>
-      <title>More Realistic Images, More Stable Editing Across 100 Rounds | Introducing Seedream 5.5</title>
-      <link>https://seed.bytedance.com/en/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5</link>
-      <guid isPermaLink="false">bytedance_seed-04ea9ceeba6283ec9b0c956b</guid>
-      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
-      <description>字节跳动 Seed 官网 Latest Updates 中的官方团队、研究与产品动态。</description>
+      <title>Seed Alignment &amp; Preparedness 全球顶尖人才招募启动</title>
+      <link>https://seed.bytedance.com/zh/blog/seed-alignment-preparedness-team-looking-for-global-talents</link>
+      <guid isPermaLink="false">bytedance_seed-1791946231297</guid>
+      <pubDate>Tue, 13 Oct 2026 16:00:00 GMT</pubDate>
+      <description>字节跳动 Seed 官网公开的技术博客与官方动态。</description>
     </item>
     <item>
-      <title>Seed Alignment &amp; Preparedness team looking for global talents</title>
-      <link>https://seed.bytedance.com/en/blog/seed-alignment-preparedness-team-looking-for-global-talents</link>
-      <guid isPermaLink="false">bytedance_seed-a509f77b0fde1ecc2dcde426</guid>
-      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
-      <description>字节跳动 Seed 官网 Latest Updates 中的官方团队、研究与产品动态。</description>
+      <title>SeedRealtime 音视频全双工大模型发布：走向全模态自然交互</title>
+      <link>https://seed.bytedance.com/zh/blog/seedrealtime-audio-visual-full-duplex-llm-released-toward-omni-modal-natural-interaction</link>
+      <guid isPermaLink="false">bytedance_seed-1785893583524</guid>
+      <pubDate>Tue, 04 Aug 2026 16:00:00 GMT</pubDate>
+      <description>作为原生音视频全双工大模型，联合理解声音、画面与时序信息，带来边看、边听、边说的自然交互体验</description>
     </item>
     <item>
-      <title>Seed Audio-Visual Full-Duplex LLM Released: Toward Fully Multimodal Natural Interaction</title>
-      <link>https://seed.bytedance.com/en/blog/seedrealtime-audio-visual-full-duplex-llm-released-toward-omni-modal-natural-interaction</link>
-      <guid isPermaLink="false">bytedance_seed-58206ef74b5543ffa296a343</guid>
-      <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
-      <description>字节跳动 Seed 官网 Latest Updates 中的官方团队、研究与产品动态。</description>
+      <title>一镜成片，随心参考｜Seedance 2.5 正式发布</title>
+      <link>https://seed.bytedance.com/zh/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5</link>
+      <guid isPermaLink="false">bytedance_seed-1785461671473</guid>
+      <pubDate>Thu, 30 Jul 2026 16:00:00 GMT</pubDate>
+      <description>30 秒长叙事，多模态参考能力、编辑能力全面升级</description>
+    </item>
+    <item>
+      <title>从“会说”走向“会创作”｜ Seed Audio 1.0 音频创作模型发布</title>
+      <link>https://seed.bytedance.com/zh/blog/from-speech-to-audio-creation-introducing-the-seed-audio-1-0-audio-creation-model</link>
+      <guid isPermaLink="false">bytedance_seed-1784511163128</guid>
+      <pubDate>Sun, 19 Jul 2026 16:00:00 GMT</pubDate>
+      <description>统一框架下联合建模人声、音效和环境声等音频要素</description>
+    </item>
+    <item>
+      <title>不止“生成”，更懂“设计”｜Seedream 5.0 Pro 发布</title>
+      <link>https://seed.bytedance.com/zh/blog/beyond-generation-it-understands-design-introducing-seedream-5-0-pro</link>
+      <guid isPermaLink="false">bytedance_seed-1783417209913</guid>
+      <pubDate>Tue, 07 Jul 2026 16:00:00 GMT</pubDate>
+      <description>具备智能思考、高效创作和生产的多模态图像生成模型</description>
+    </item>
+    <item>
+      <title>EdgeBench：衡量真实世界环境学习，发现新 Scaling Law</title>
+      <link>https://seed.bytedance.com/zh/blog/edgebench-measuring-real-world-environment-learning-and-discovering-a-new-scaling-law</link>
+      <guid isPermaLink="false">bytedance_seed-1783331213945</guid>
+      <pubDate>Mon, 06 Jul 2026 16:00:00 GMT</pubDate>
+      <description>Agent 在环境学习中表现出明显的 log-sigmoid 规律</description>
+    </item>
+    <item>
+      <title>Seed2.1 正式发布，深入 AI 生产力</title>
+      <link>https://seed.bytedance.com/zh/blog/seed2-1-officially-released-advancing-ai-productivity</link>
+      <guid isPermaLink="false">bytedance_seed-1782171469778</guid>
+      <pubDate>Tue, 23 Jun 2026 00:02:42 GMT</pubDate>
+      <description>Agent &amp; Coding 能力全面提升，复杂场景交付稳定</description>
+    </item>
+    <item>
+      <title>Seed3D 2.0 发布，更高精度、更强可用性</title>
+      <link>https://seed.bytedance.com/zh/blog/seed3d-2-0-released-higher-precision-and-greater-usability</link>
+      <guid isPermaLink="false">bytedance_seed-1776683179376</guid>
+      <pubDate>Wed, 22 Apr 2026 16:00:00 GMT</pubDate>
+      <description>几何及纹理材质生成均达 SOTA 表现</description>
+    </item>
+    <item>
+      <title>Seed 全双工语音大模型发布：懂倾听、抗干扰，走向更自然的交互</title>
+      <link>https://seed.bytedance.com/zh/blog/introducing-seed-full-duplex-speech-llm-attentive-listening-robust-interference-suppression-enabling-more-natural-interaction</link>
+      <guid isPermaLink="false">bytedance_seed-1775551487993</guid>
+      <pubDate>Wed, 08 Apr 2026 16:00:00 GMT</pubDate>
+      <description>作为原生全双工语音大模型，实现精准抗干扰与动态判停，交互更自然</description>
+    </item>
+    <item>
+      <title>字节跳动 Seed 2027 届大模型人才校招启动（含实习）</title>
+      <link>https://seed.bytedance.com/zh/blog/bytedance-seed-2027-foundation-model-campus-recruitment-is-now-open-internships-included</link>
+      <guid isPermaLink="false">bytedance_seed-1774486528568</guid>
+      <pubDate>Tue, 31 Mar 2026 16:00:00 GMT</pubDate>
+      <description>字节跳动 Seed 官网公开的技术博客与官方动态。</description>
+    </item>
+    <item>
+      <title>Seed2.0 正式发布</title>
+      <link>https://seed.bytedance.com/zh/blog/seed-2-0-official-launch</link>
+      <guid isPermaLink="false">bytedance_seed-1771041810188</guid>
+      <pubDate>Fri, 13 Feb 2026 16:00:00 GMT</pubDate>
+      <description>突破真实世界复杂任务</description>
+    </item>
+    <item>
+      <title>“思考”更深，生成更准｜Seedream 5.0 Lite 发布</title>
+      <link>https://seed.bytedance.com/zh/blog/deeper-thinking-more-accurate-generation-introducing-seedream-5-0-lite</link>
+      <guid isPermaLink="false">bytedance_seed-1770948788161</guid>
+      <pubDate>Thu, 12 Feb 2026 16:00:00 GMT</pubDate>
+      <description>理解、推理和生成全面提升</description>
+    </item>
+    <item>
+      <title>Seedance 2.0 正式发布</title>
+      <link>https://seed.bytedance.com/zh/blog/seedance-2-0-official-launch</link>
+      <guid isPermaLink="false">bytedance_seed-1770879949203</guid>
+      <pubDate>Wed, 11 Feb 2026 16:00:00 GMT</pubDate>
+      <description>统一多模态音视频联合生成，复杂运动表现 SOTA</description>
+    </item>
+    <item>
+      <title>Seed Prover 1.5：全新 Agentic 架构，更强数学推理表现</title>
+      <link>https://seed.bytedance.com/zh/blog/seed-prover-1-5-advanced-mathematical-reasoning-through-a-novel-agentic-architecture</link>
+      <guid isPermaLink="false">bytedance_seed-1766549460878</guid>
+      <pubDate>Tue, 23 Dec 2025 16:00:00 GMT</pubDate>
+      <description>9 小时解决 11 道 2025 普特南竞赛题</description>
+    </item>
+    <item>
+      <title>通用 Agent 模型 Seed1.8 正式发布</title>
+      <link>https://seed.bytedance.com/zh/blog/official-release-of-seed1-8-a-generalized-agentic-model</link>
+      <guid isPermaLink="false">bytedance_seed-1766032379596</guid>
+      <pubDate>Wed, 17 Dec 2025 16:00:00 GMT</pubDate>
+      <description>集搜索、代码与 GUI Agent 能力与一体</description>
+    </item>
+    <item>
+      <title>声画俱全，一镜入戏 | Seedance 1.5 pro 音视频创作模型正式发布</title>
+      <link>https://seed.bytedance.com/zh/blog/sound-and-vision-all-in-one-take-the-official-release-of-seedance-1-5-pro</link>
+      <guid isPermaLink="false">bytedance_seed-1765883631909</guid>
+      <pubDate>Tue, 16 Dec 2025 10:47:38 GMT</pubDate>
+      <description>开启视听新体验</description>
+    </item>
+    <item>
+      <title>GR-RL 发布：突破 VLA 精细操作瓶颈，首次实现真机强化学习穿鞋带</title>
+      <link>https://seed.bytedance.com/zh/blog/gr-rl-a-breakthrough-in-dexterous-manipulation-achieving-the-first-real-robot-shoe-lacing-with-reinforcement-learning</link>
+      <guid isPermaLink="false">bytedance_seed-1764650289938</guid>
+      <pubDate>Mon, 01 Dec 2025 16:00:00 GMT</pubDate>
+      <description>让 VLA 在真实环境中交互学习</description>
+    </item>
+    <item>
+      <title>Depth Anything 3：单一 Transformer 架构实现任意视角空间重建</title>
+      <link>https://seed.bytedance.com/zh/blog/depth-anything-3-a-single-transformer-architecture-for-space-reconstruction-from-any-views</link>
+      <guid isPermaLink="false">bytedance_seed-1764215765565</guid>
+      <pubDate>Wed, 26 Nov 2025 16:00:00 GMT</pubDate>
+      <description>突破单目深度估计和多视角重建的技术瓶颈</description>
+    </item>
+    <item>
+      <title>Seed3D 1.0 发布，一张图生成高精度 3D 模型，纹理生成能力 SOTA</title>
+      <link>https://seed.bytedance.com/zh/blog/seed3d-1-0-released-generate-high-fidelity-3d-models-from-single-images-featuring-sota-texturing</link>
+      <guid isPermaLink="false">bytedance_seed-1761634922701</guid>
+      <pubDate>Wed, 22 Oct 2025 16:00:00 GMT</pubDate>
+      <description>可拓展至场景生成，为世界模拟器提供支撑</description>
+    </item>
+    <item>
+      <title>不止会“画”，更会“想”｜Seedream 4.0 图像创作模型正式发布</title>
+      <link>https://seed.bytedance.com/zh/blog/seedream-4-0-officially-released-beyond-drawing-into-imagination</link>
+      <guid isPermaLink="false">bytedance_seed-1764227642774</guid>
+      <pubDate>Mon, 08 Sep 2025 16:00:00 GMT</pubDate>
+      <description>多模态生成全面升级</description>
+    </item>
+    <item>
+      <title>字节跳动 Seed 开源语言模型 Seed-OSS 系列</title>
+      <link>https://seed.bytedance.com/zh/blog/seed-oss-open-source-models-release</link>
+      <guid isPermaLink="false">bytedance_seed-1769777435866</guid>
+      <pubDate>Wed, 20 Aug 2025 16:00:00 GMT</pubDate>
+      <description>支持原生 512K 上下文，灵活控制推理预算</description>
+    </item>
+    <item>
+      <title>解锁任意模态模型训练，字节跳动 Seed 开源 VeOmni 框架</title>
+      <link>https://seed.bytedance.com/zh/blog/bytedance-seed-open-sources-veomni-unlocking-any-modality-model-training</link>
+      <guid isPermaLink="false">bytedance_seed-1788420302787</guid>
+      <pubDate>Wed, 13 Aug 2025 16:00:00 GMT</pubDate>
+      <description>可将数周的工程开发时间缩短至几天</description>
+    </item>
+    <item>
+      <title>字节跳动 Seed 助力清华获机器人足球世界杯冠军</title>
+      <link>https://seed.bytedance.com/zh/blog/bytedance-seed-helps-tsinghua-win-robocup-championship</link>
+      <guid isPermaLink="false">bytedance_seed-303</guid>
+      <pubDate>Thu, 31 Jul 2025 16:00:00 GMT</pubDate>
+      <description>实现了中国团队在人形成人组别上的首次夺冠</description>
+    </item>
+    <item>
+      <title>Seed Research￨每秒推理速度 2146 Tokens，扩散语言模型 Seed Diffusion Preview 发布</title>
+      <link>https://seed.bytedance.com/zh/blog/seed-research-seed-diffusion-preview-released-a-diffusion-language-model-delivering-breakthrough-2-146-tokens-s-inference-speed</link>
+      <guid isPermaLink="false">bytedance_seed-1788419759074</guid>
+      <pubDate>Wed, 30 Jul 2025 16:00:00 GMT</pubDate>
+      <description>1 秒可生成超百行代码</description>
+    </item>
+    <item>
+      <title>Seed 端到端同声传译大模型发布：准确率接近真人，3s 延迟，实时声音复刻</title>
+      <link>https://seed.bytedance.com/zh/blog/seed-liveinterpret-2-0-released-an-end-to-end-simultaneous-interpretation-model-featuring-ultra-high-accuracy-close-to-human-interpreters-low-latency-of-3-seconds-and-real-time-voice-cloning</link>
+      <guid isPermaLink="false">bytedance_seed-1788419581050</guid>
+      <pubDate>Wed, 23 Jul 2025 16:00:00 GMT</pubDate>
+      <description>中英同传翻译质量达到业界 SOTA，同时实现了极低的语音延迟水平</description>
+    </item>
+    <item>
+      <title>字节跳动 Seed Prover 取得 IMO 2025 银牌分数</title>
+      <link>https://seed.bytedance.com/zh/blog/bytedance-seed-prover-achieves-silver-medal-score-in-imo-2025</link>
+      <guid isPermaLink="false">bytedance_seed-298</guid>
+      <pubDate>Tue, 22 Jul 2025 16:00:00 GMT</pubDate>
+      <description>形式化验证+测算时算力拓展，提升数学思考深度</description>
+    </item>
+    <item>
+      <title>Seed Research ￨通用机器人模型 GR-3 发布！支持高泛化、长程任务、柔性物体双臂操作</title>
+      <link>https://seed.bytedance.com/zh/blog/seed-research-gr-3-released-a-generalist-robot-model-for-generalization-long-horizon-tasks-and-bi-manual-deformable-object-manipulation</link>
+      <guid isPermaLink="false">bytedance_seed-1788419707282</guid>
+      <pubDate>Mon, 21 Jul 2025 16:00:00 GMT</pubDate>
+      <description>一个可泛化、支持长程以及复杂任务的机器人操作大模型</description>
+    </item>
+    <item>
+      <title>Seed Research｜4B 模型数学推理接近 235B 表现，Seed 最新强化学习配方全面开源</title>
+      <link>https://seed.bytedance.com/zh/blog/seed-s-open-source-rl-recipe-makes-4b-model-rival-235b-on-math-reasoning</link>
+      <guid isPermaLink="false">bytedance_seed-1788418022926</guid>
+      <pubDate>Mon, 14 Jul 2025 16:00:00 GMT</pubDate>
+      <description>700 步 RL 训练，大幅提升小模型数学推理能力</description>
+    </item>
+    <item>
+      <title>25 篇成果入选，字节跳动 Seed 与你共赴 ICML 2025</title>
+      <link>https://seed.bytedance.com/zh/blog/meet-seed-at-icml-2025-25-papers-accepted</link>
+      <guid isPermaLink="false">bytedance_seed-295</guid>
+      <pubDate>Sun, 13 Jul 2025 16:00:00 GMT</pubDate>
+      <description>3 篇论文获评 Spotlight 论文</description>
+    </item>
+    <item>
+      <title>Seed-1.6-Embedding：基于 Seed1.6-Flash 构建的多模态向量化模型</title>
+      <link>https://seed.bytedance.com/zh/blog/built-on-seed1-6-flash-seed-1-6-embedding-launched</link>
+      <guid isPermaLink="false">bytedance_seed-1788493128340</guid>
+      <pubDate>Fri, 27 Jun 2025 16:00:00 GMT</pubDate>
+      <description>支持多模态混合检索</description>
+    </item>
+    <item>
+      <title>Seed1.6 系列模型技术介绍</title>
+      <link>https://seed.bytedance.com/zh/blog/introduction-to-techniques-used-in-seed1-6</link>
+      <guid isPermaLink="false">bytedance_seed-1788417741632</guid>
+      <pubDate>Tue, 24 Jun 2025 16:00:00 GMT</pubDate>
+      <description>融合多模态，可“自适应思考”（含高考分数）</description>
+    </item>
+    <item>
+      <title>字节跳动 Seed 与比亚迪锂电池深化合作：将成立 AI 联合实验室加速电池研发</title>
+      <link>https://seed.bytedance.com/zh/blog/bytedance-seed-and-byd-lithium-battery-partner-to-launch-ai-lab-for-battery-r-d</link>
+      <guid isPermaLink="false">bytedance_seed-261</guid>
+      <pubDate>Tue, 17 Jun 2025 16:00:00 GMT</pubDate>
+      <description>AI for Science + 高通量实验，攻关动力电池关键问题</description>
+    </item>
+    <item>
+      <title>Seedance 1.0 视频生成模型技术报告公开</title>
+      <link>https://seed.bytedance.com/zh/blog/tech-report-of-seedance-1-0-is-now-publicly-available</link>
+      <guid isPermaLink="false">bytedance_seed-1763521443927</guid>
+      <pubDate>Tue, 10 Jun 2025 16:00:00 GMT</pubDate>
+      <description>原生支持 2-3 个以上镜头生成，一分钟快速出片</description>
+    </item>
+    <item>
+      <title>12 篇成果入选，2 场 Talk，字节跳动 Seed 邀你相聚 CVPR 2025</title>
+      <link>https://seed.bytedance.com/zh/blog/meet-seed-at-cvpr-2025-12-papers-accepted-and-2-talks</link>
+      <guid isPermaLink="false">bytedance_seed-260</guid>
+      <pubDate>Mon, 09 Jun 2025 16:00:00 GMT</pubDate>
+      <description>4 篇论文获评 Highlight 论文</description>
+    </item>
+    <item>
+      <title>图像编辑模型 SeedEdit 3.0 发布！更强保持力，更高可用率</title>
+      <link>https://seed.bytedance.com/zh/blog/bytedance-released-image-editing-model-seededit-3-0-enhanced-image-consistency-and-usability-rate</link>
+      <guid isPermaLink="false">bytedance_seed-1763521760161</guid>
+      <pubDate>Thu, 05 Jun 2025 16:00:00 GMT</pubDate>
+      <description>已在即梦网页端开启测试，豆包 App 即将上线</description>
+    </item>
+    <item>
+      <title>Seed Research｜理解与生成统一模型 BAGEL 开源，All-in-One Model！</title>
+      <link>https://seed.bytedance.com/zh/blog/seed-research-bagel-the-open-source-unified-multimodal-model-an-all-in-one-model</link>
+      <guid isPermaLink="false">bytedance_seed-1763522006448</guid>
+      <pubDate>Tue, 27 May 2025 16:00:00 GMT</pubDate>
+      <description>支持文本、图像、视频及多模态交错</description>
+    </item>
+    <item>
+      <title>Seed-Coder 开源代码模型发布，依托 LLM 构建代码数据</title>
+      <link>https://seed.bytedance.com/zh/blog/seed-coder-open-sourced-llm-based-code-data-building-method-validated</link>
+      <guid isPermaLink="false">bytedance_seed-1788415728232</guid>
+      <pubDate>Sun, 18 May 2025 16:00:00 GMT</pubDate>
+      <description>数据流实现方法公开，BF16 精度版本开放下载</description>
+    </item>
+    <item>
+      <title>Seed VLM 技术报告首次公开：图像、视频、GUI、Game 完全体</title>
+      <link>https://seed.bytedance.com/zh/blog/first-release-of-seed-vlm-tech-report-comprehensive-solutions-for-image-video-gui-and-game</link>
+      <guid isPermaLink="false">bytedance_seed-1763522077334</guid>
+      <pubDate>Mon, 12 May 2025 16:00:00 GMT</pubDate>
+      <description>在 38 个公开评测基准中达到 SOTA</description>
+    </item>
+    <item>
+      <title>向量检索能力 SOTA，字节 Seed1.5-Embedding 模型训练细节公开</title>
+      <link>https://seed.bytedance.com/zh/blog/bytedance-s-seed1-5-embedding-model-achieves-sota-in-retrieval-training-details-unveiled</link>
+      <guid isPermaLink="false">bytedance_seed-1763522137128</guid>
+      <pubDate>Sun, 11 May 2025 16:00:00 GMT</pubDate>
+      <description>API 接口已经开放</description>
+    </item>
+    <item>
+      <title>23篇成果入选，2场交流活动，字节跳动Seed邀你相聚ICLR 2025</title>
+      <link>https://seed.bytedance.com/zh/blog/23-papers-featured-2-interactive-sessions-bytedance-seed-invites-you-to-iclr-2025</link>
+      <guid isPermaLink="false">bytedance_seed-1763620972618</guid>
+      <pubDate>Tue, 22 Apr 2025 16:00:00 GMT</pubDate>
+      <description>共有23篇成果被接收或邀请分享。</description>
+    </item>
+    <item>
+      <title>字节跳动 Seed Edge 研究计划启动招聘</title>
+      <link>https://seed.bytedance.com/zh/blog/%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8-seed-edge-%E7%A0%94%E7%A9%B6%E8%AE%A1%E5%88%92%E5%90%AF%E5%8A%A8%E6%8B%9B%E8%81%98</link>
+      <guid isPermaLink="false">bytedance_seed-1763620943502</guid>
+      <pubDate>Mon, 21 Apr 2025 16:00:00 GMT</pubDate>
+      <description>一起探索智能的无尽边界</description>
+    </item>
+    <item>
+      <title>字节 Seed 智能体模型 UI-TARS-1.5 开源！多项 Benchmark 取得 SOTA 表现</title>
+      <link>https://seed.bytedance.com/zh/blog/bytedance-seed-agent-model-ui-tars-1-5-open-source-achieving-sota-performance-in-various-benchmarks</link>
+      <guid isPermaLink="false">bytedance_seed-1763521951994</guid>
+      <pubDate>Wed, 16 Apr 2025 16:00:00 GMT</pubDate>
+      <description>新增游戏场景，交互可达 1000 步</description>
+    </item>
+    <item>
+      <title>Seedream 3.0 文生图模型技术报告发布</title>
+      <link>https://seed.bytedance.com/zh/blog/seedream-3-0-text-to-image-model-technical-report-released</link>
+      <guid isPermaLink="false">bytedance_seed-1763522182532</guid>
+      <pubDate>Tue, 15 Apr 2025 16:00:00 GMT</pubDate>
+      <description>支持 2K 高清直出，小字更准</description>
+    </item>
+    <item>
+      <title>字节跳动最新思考模型，Seed-Thinking-v1.5 技术细节公开</title>
+      <link>https://seed.bytedance.com/zh/blog/bytedance-s-latest-thinking-model-seed-thinking-v1-5-technical-details-disclosed</link>
+      <guid isPermaLink="false">bytedance_seed-1763522215224</guid>
+      <pubDate>Sun, 13 Apr 2025 16:00:00 GMT</pubDate>
+      <description>4 月 17 日 API 正式上线</description>
+    </item>
+    <item>
+      <title>Multi-SWE-bench：首个多语言代码修复基准开源</title>
+      <link>https://seed.bytedance.com/zh/blog/multi-swe-bench-first-multilingual-code-fix-benchmark-open-source</link>
+      <guid isPermaLink="false">bytedance_seed-1763522274426</guid>
+      <pubDate>Sun, 13 Apr 2025 16:00:00 GMT</pubDate>
+      <description>数据均来自 GitHub issue，历时近一年构建</description>
+    </item>
+    <item>
+      <title>Seedream 2.0 技术报告发布！数据处理、预训练、RLHF全流程公开</title>
+      <link>https://seed.bytedance.com/zh/blog/doubao-text-to-image-technical-report-released-full-disclosure-of-data-processing-pre-training-and-rlhf-workflow</link>
+      <guid isPermaLink="false">bytedance_seed-1763522369096</guid>
+      <pubDate>Tue, 11 Mar 2025 16:00:00 GMT</pubDate>
+      <description>文字渲染与国风出色，综合能力领先</description>
+    </item>
+    <item>
+      <title>万卡集群真实部署，已节省数百万 GPU 小时！MoE 通信优化技术 COMET 开源</title>
+      <link>https://seed.bytedance.com/zh/blog/comet-has-been-deployed-in-large-scale-clusters-saving-millions-of-gpu-hours-moe-communication-optimization-technology-comet-is-now-open-source</link>
+      <guid isPermaLink="false">bytedance_seed-1763522401617</guid>
+      <pubDate>Sun, 09 Mar 2025 16:00:00 GMT</pubDate>
+      <description>已开源！主流大模型均可接入，MLSys 2025 高分接收</description>
+    </item>
+    <item>
+      <title>285 学科全覆盖！豆包大模型团队开源基准测试集 SuperGPQA</title>
+      <link>https://seed.bytedance.com/zh/blog/doubao-seed-team-launched-supergpqa-an-open-source-benchmark-test-set-covering-285-disciplines</link>
+      <guid isPermaLink="false">bytedance_seed-1763522447835</guid>
+      <pubDate>Mon, 03 Mar 2025 16:00:00 GMT</pubDate>
+      <description>历时半年，填补长尾知识评估空白</description>
+    </item>
+    <item>
+      <title>Seed Research | 形式化数学推理新 SOTA！BFS-Prover 模型最新开源</title>
+      <link>https://seed.bytedance.com/zh/blog/seed-research-%E5%BD%A2%E5%BC%8F%E5%8C%96%E6%95%B0%E5%AD%A6%E6%8E%A8%E7%90%86%E6%96%B0-sota-bfs-prover-%E6%A8%A1%E5%9E%8B%E6%9C%80%E6%96%B0%E5%BC%80%E6%BA%90</link>
+      <guid isPermaLink="false">bytedance_seed-1763522622733</guid>
+      <pubDate>Mon, 24 Feb 2025 16:00:00 GMT</pubDate>
+      <description>化繁为简，鼓励机器深度思考</description>
+    </item>
+    <item>
+      <title>Seed Research | 全新超稀疏架构，推理成本较 MoE 最高可降 83%！</title>
+      <link>https://seed.bytedance.com/zh/blog/seed-research-new-ultra-sparse-architecture-reduces-inference-costs-by-up-to-83-compared-to-moe</link>
+      <guid isPermaLink="false">bytedance_seed-1763522793930</guid>
+      <pubDate>Tue, 11 Feb 2025 16:00:00 GMT</pubDate>
+      <description>推理速度较 MoE 提升 2-6 倍，论文已被 ICLR 2025 接收</description>
+    </item>
+    <item>
+      <title>Seed Research | 视频生成模型最新成果，可仅靠视觉认知世界！现已开源</title>
+      <link>https://seed.bytedance.com/zh/blog/seed-research-latest-breakthrough-in-video-generation-learning-to-understand-the-world-through-vision-alone-now-open-source</link>
+      <guid isPermaLink="false">bytedance_seed-1763522830668</guid>
+      <pubDate>Sun, 09 Feb 2025 16:00:00 GMT</pubDate>
+      <description>去掉语言模型，让 AI 仅靠“视觉”认知世界学习知识</description>
+    </item>
+    <item>
+      <title>向 AI 未知之境出发，字节跳动启动 Seed Edge 研究计划！</title>
+      <link>https://seed.bytedance.com/zh/blog/%E5%90%91-ai-%E6%9C%AA%E7%9F%A5%E4%B9%8B%E5%A2%83%E5%87%BA%E5%8F%91-%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8%E5%90%AF%E5%8A%A8-seed-edge-%E7%A0%94%E7%A9%B6%E8%AE%A1%E5%88%92</link>
+      <guid isPermaLink="false">bytedance_seed-1763523245655</guid>
+      <pubDate>Wed, 22 Jan 2025 16:00:00 GMT</pubDate>
+      <description>探索智能的无尽边界</description>
+    </item>
+    <item>
+      <title>豆包实时语音大模型上线即开放！情商智商双高</title>
+      <link>https://seed.bytedance.com/zh/blog/%E8%B1%86%E5%8C%85%E5%AE%9E%E6%97%B6%E8%AF%AD%E9%9F%B3%E5%A4%A7%E6%A8%A1%E5%9E%8B%E4%B8%8A%E7%BA%BF%E5%8D%B3%E5%BC%80%E6%94%BE-%E6%83%85%E5%95%86%E6%99%BA%E5%95%86%E5%8F%8C%E9%AB%98</link>
+      <guid isPermaLink="false">bytedance_seed-1763522969234</guid>
+      <pubDate>Sun, 19 Jan 2025 16:00:00 GMT</pubDate>
+      <description>使用原生方法深度融合语音与文本模态，实现真正意义上的端到端语音对话模型</description>
+    </item>
+    <item>
+      <title>ICLR 2025 Workshop 征稿：推动基础模型的开源、开放、可复现</title>
+      <link>https://seed.bytedance.com/zh/blog/iclr-2025-workshop-%E5%BE%81%E7%A8%BF-%E6%8E%A8%E5%8A%A8%E5%9F%BA%E7%A1%80%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%BC%80%E6%BA%90-%E5%BC%80%E6%94%BE-%E5%8F%AF%E5%A4%8D%E7%8E%B0</link>
+      <guid isPermaLink="false">bytedance_seed-1763523912357</guid>
+      <pubDate>Sun, 05 Jan 2025 16:00:00 GMT</pubDate>
+      <description>投稿通道现已开放，欢迎投递！</description>
+    </item>
+    <item>
+      <title>北京大学-字节跳动“豆包大模型系统软件联合实验室”成立，聚焦AI系统软件关键问题</title>
+      <link>https://seed.bytedance.com/zh/blog/%E5%8C%97%E4%BA%AC%E5%A4%A7%E5%AD%A6-%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8-%E8%B1%86%E5%8C%85%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%B3%BB%E7%BB%9F%E8%BD%AF%E4%BB%B6%E8%81%94%E5%90%88%E5%AE%9E%E9%AA%8C%E5%AE%A4-%E6%88%90%E7%AB%8B-%E8%81%9A%E7%84%A6ai%E7%B3%BB%E7%BB%9F%E8%BD%AF%E4%BB%B6%E5%85%B3%E9%94%AE%E9%97%AE%E9%A2%98</link>
+      <guid isPermaLink="false">bytedance_seed-1763524411309</guid>
+      <pubDate>Wed, 11 Dec 2024 16:00:00 GMT</pubDate>
+      <description>依托双方优势，共同推进大模型系统软件的技术创新与应用发展。</description>
+    </item>
+    <item>
+      <title>字节跳动与清华 AIR 成立联合研究中心，推动大模型产学研合作</title>
+      <link>https://seed.bytedance.com/zh/blog/%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8%E4%B8%8E%E6%B8%85%E5%8D%8E-air-%E6%88%90%E7%AB%8B%E8%81%94%E5%90%88%E7%A0%94%E7%A9%B6%E4%B8%AD%E5%BF%83-%E6%8E%A8%E5%8A%A8%E5%A4%A7%E6%A8%A1%E5%9E%8B%E4%BA%A7%E5%AD%A6%E7%A0%94%E5%90%88%E4%BD%9C</link>
+      <guid isPermaLink="false">bytedance_seed-1763530704765</guid>
+      <pubDate>Fri, 11 Oct 2024 10:04:28 GMT</pubDate>
+      <description>SIA Lab 旨在通过有效的产学研合作，实现大模型底层技术突破与产业应用构建。</description>
     </item>
   </channel>
 </rss>

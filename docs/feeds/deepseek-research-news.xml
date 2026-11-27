@@ -2,115 +2,115 @@
 <rss version="2.0">
   <channel>
     <title>DeepSeek 研究与动态</title>
-    <link>https://www.deepseek.com/en/news/</link>
-    <description>DeepSeek 官网 Research &amp; News 栏目的产品动态，以及 Research Index 列出的论文与项目。</description>
+    <link>https://www.deepseek.com/news/</link>
+    <description>DeepSeek 官网「研究与动态」中的产品动态，以及同页研究索引列出的论文与项目。</description>
     <language>zh-CN</language>
     <lastBuildDate>Thu, 10 Sep 2026 00:00:00 GMT</lastBuildDate>
     <generator>ai-release-notes-rss</generator>
     <item>
-      <title>Introducing DeepSeek-V4.1-Flash: smarter, faster, more efficient.</title>
-      <link>https://www.deepseek.com/en/news/deepseek-v4-1-flash/</link>
-      <guid isPermaLink="false">deepseek_research_news-652ad899c7251f86cdd737a6</guid>
+      <title>DeepSeek V4.1 Flash：更强、更快、更普惠</title>
+      <link>https://www.deepseek.com/news/deepseek-v4-1-flash/</link>
+      <guid isPermaLink="false">deepseek_research_news-deepseek-v4-1-flash</guid>
       <pubDate>Thu, 10 Sep 2026 00:00:00 GMT</pubDate>
-      <description>Introducing the smallest model in our new architecture family, with native visual understanding. Designed for greater capability, faster inference, and higher throughput.</description>
+      <description>DeepSeek V4.1 Flash 正式发布，具备原生多模态视觉理解能力。全新非对称模型结构，能力更强、速度更快、成本更低。</description>
     </item>
     <item>
       <title>DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence</title>
       <link>https://arxiv.org/abs/2606.19348</link>
-      <guid isPermaLink="false">deepseek_research_news-558d68af7fbb9782905b3c75</guid>
+      <guid isPermaLink="false">deepseek_research_news-2606.19348</guid>
       <pubDate>Wed, 24 Jun 2026 00:00:00 GMT</pubDate>
-      <description>DeepSeek Research Index 中列出的研究论文或项目。</description>
+      <description>DeepSeek 官网研究索引列出的论文或项目。</description>
     </item>
     <item>
-      <title>DeepSeek-V4 Preview: Entering the Era of Affordable Million-Token Context</title>
-      <link>https://www.deepseek.com/en/news/v4-preview/</link>
-      <guid isPermaLink="false">deepseek_research_news-87013ebcd1b849c3e48226e0</guid>
+      <title>DeepSeek-V4 预览版：迈入百万上下文普惠时代</title>
+      <link>https://www.deepseek.com/news/v4-preview/</link>
+      <guid isPermaLink="false">deepseek_research_news-v4-preview</guid>
       <pubDate>Fri, 24 Apr 2026 00:00:00 GMT</pubDate>
-      <description>DeepSeek-V4 Preview is officially live &amp; open-sourced. Welcome to the era of cost-effective 1M context length.</description>
+      <description>DeepSeek 全新系列模型 V4 预览版正式上线并同步开源，拥有百万字超长上下文。</description>
     </item>
     <item>
       <title>DualPath: Breaking the Storage Bandwidth Bottleneck in Agentic LLM Inference</title>
       <link>https://arxiv.org/abs/2602.21548</link>
-      <guid isPermaLink="false">deepseek_research_news-d774a58b8e7a608499b7cbc5</guid>
+      <guid isPermaLink="false">deepseek_research_news-2602.21548</guid>
       <pubDate>Wed, 25 Feb 2026 00:00:00 GMT</pubDate>
-      <description>DeepSeek Research Index 中列出的研究论文或项目。</description>
+      <description>DeepSeek 官网研究索引列出的论文或项目。</description>
     </item>
     <item>
       <title>DeepSeek-OCR 2: Visual Causal Flow</title>
       <link>https://arxiv.org/abs/2601.20552</link>
-      <guid isPermaLink="false">deepseek_research_news-30a27f0a01ecaca382211eba</guid>
+      <guid isPermaLink="false">deepseek_research_news-2601.20552</guid>
       <pubDate>Wed, 28 Jan 2026 00:00:00 GMT</pubDate>
-      <description>DeepSeek Research Index 中列出的研究论文或项目。</description>
+      <description>DeepSeek 官网研究索引列出的论文或项目。</description>
     </item>
     <item>
       <title>Engram: Conditional Memory via Scalable Lookup</title>
       <link>https://arxiv.org/abs/2601.07372</link>
-      <guid isPermaLink="false">deepseek_research_news-b5b7c5579e551429d5522853</guid>
+      <guid isPermaLink="false">deepseek_research_news-2601.07372</guid>
       <pubDate>Mon, 12 Jan 2026 00:00:00 GMT</pubDate>
-      <description>DeepSeek Research Index 中列出的研究论文或项目。</description>
+      <description>DeepSeek 官网研究索引列出的论文或项目。</description>
     </item>
     <item>
       <title>mHC: Manifold-Constrained Hyper-Connections</title>
       <link>https://arxiv.org/abs/2512.24880</link>
-      <guid isPermaLink="false">deepseek_research_news-1d5376ac49267266525e59ee</guid>
+      <guid isPermaLink="false">deepseek_research_news-2512.24880</guid>
       <pubDate>Wed, 31 Dec 2025 00:00:00 GMT</pubDate>
-      <description>DeepSeek Research Index 中列出的研究论文或项目。</description>
+      <description>DeepSeek 官网研究索引列出的论文或项目。</description>
     </item>
     <item>
       <title>DeepSeek-V3.2: Pushing the Frontier of Open LLMs</title>
       <link>https://arxiv.org/abs/2512.02556</link>
-      <guid isPermaLink="false">deepseek_research_news-826f4349f5599cf6e8946277</guid>
+      <guid isPermaLink="false">deepseek_research_news-2512.02556</guid>
       <pubDate>Tue, 02 Dec 2025 00:00:00 GMT</pubDate>
-      <description>DeepSeek Research Index 中列出的研究论文或项目。</description>
+      <description>DeepSeek 官网研究索引列出的论文或项目。</description>
     </item>
     <item>
-      <title>DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models</title>
-      <link>https://www.deepseek.com/en/news/deepseek-v3-2/</link>
-      <guid isPermaLink="false">deepseek_research_news-68dba7b9958939365a0deee0</guid>
+      <title>DeepSeek V3.2 正式版：强化 Agent 能力，融入思考推理</title>
+      <link>https://www.deepseek.com/news/deepseek-v3-2/</link>
+      <guid isPermaLink="false">deepseek_research_news-deepseek-v3-2</guid>
       <pubDate>Mon, 01 Dec 2025 00:00:00 GMT</pubDate>
-      <description>DeepSeek-V3.2 and V3.2-Speciale launch with world-leading reasoning, thinking in tool-use, and gold-medal performance in IMO, CMO, ICPC &amp; IOI 2025.</description>
+      <description>DeepSeek-V3.2 和 V3.2-Speciale 正式发布，推理能力全球领先，首个将思考融入工具使用的模型，斩获 IMO、CMO、ICPC、IOI 金牌。</description>
     </item>
     <item>
       <title>DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning</title>
       <link>https://arxiv.org/abs/2511.22570</link>
-      <guid isPermaLink="false">deepseek_research_news-2ee70d22f4c0e711ef5eda44</guid>
+      <guid isPermaLink="false">deepseek_research_news-2511.22570</guid>
       <pubDate>Thu, 27 Nov 2025 00:00:00 GMT</pubDate>
-      <description>DeepSeek Research Index 中列出的研究论文或项目。</description>
+      <description>DeepSeek 官网研究索引列出的论文或项目。</description>
     </item>
     <item>
       <title>Linear-Programming-Based Load Balancer (LPLB)</title>
       <link>https://github.com/deepseek-ai/LPLB</link>
-      <guid isPermaLink="false">deepseek_research_news-4583ca0272f29cb01bfe2ec4</guid>
+      <guid isPermaLink="false">deepseek_research_news-LPLB</guid>
       <pubDate>Sat, 01 Nov 2025 00:00:00 GMT</pubDate>
-      <description>DeepSeek Research Index 中列出的研究论文或项目。</description>
+      <description>DeepSeek 官网研究索引列出的论文或项目。</description>
     </item>
     <item>
       <title>DeepSeek-OCR: Contexts Optical Compression</title>
       <link>https://arxiv.org/abs/2510.18234</link>
-      <guid isPermaLink="false">deepseek_research_news-c8bc3242dfde51e739195a32</guid>
+      <guid isPermaLink="false">deepseek_research_news-2510.18234</guid>
       <pubDate>Tue, 21 Oct 2025 00:00:00 GMT</pubDate>
-      <description>DeepSeek Research Index 中列出的研究论文或项目。</description>
+      <description>DeepSeek 官网研究索引列出的论文或项目。</description>
     </item>
     <item>
-      <title>Introducing DeepSeek-V3.2-Exp</title>
-      <link>https://www.deepseek.com/en/news/v3-2-exp/</link>
-      <guid isPermaLink="false">deepseek_research_news-9b7004342f9fe8b7f7deedb6</guid>
+      <title>DeepSeek-V3.2-Exp 发布，训练推理提效，API 同步降价</title>
+      <link>https://www.deepseek.com/news/v3-2-exp/</link>
+      <guid isPermaLink="false">deepseek_research_news-v3-2-exp</guid>
       <pubDate>Mon, 29 Sep 2025 00:00:00 GMT</pubDate>
-      <description>DeepSeek-V3.2-Exp debuts DeepSeek Sparse Attention (DSA) for faster, more efficient training &amp; inference on long context, with API prices cut by 50%+.</description>
+      <description>DeepSeek-V3.2-Exp 正式发布，引入 DeepSeek Sparse Attention 稀疏注意力机制，API 价格降低 50% 以上。</description>
     </item>
     <item>
-      <title>DeepSeek-V3.1 is now DeepSeek-V3.1-Terminus</title>
-      <link>https://www.deepseek.com/en/news/v3-1-terminus/</link>
-      <guid isPermaLink="false">deepseek_research_news-4d36adddb1715dff63e11e79</guid>
+      <title>DeepSeek-V3.1 版本更新</title>
+      <link>https://www.deepseek.com/news/v3-1-terminus/</link>
+      <guid isPermaLink="false">deepseek_research_news-v3-1-terminus</guid>
       <pubDate>Mon, 22 Sep 2025 00:00:00 GMT</pubDate>
-      <description>DeepSeek-V3.1-Terminus improves language consistency, reduces CN/EN mix-ups, and upgrades Code Agent &amp; Search Agent performance.</description>
+      <description>DeepSeek-V3.1 更新至 Terminus 版本，缓解中英文混杂问题，优化 Code Agent 与 Search Agent 表现。</description>
     </item>
     <item>
       <title>Insights into DeepSeek-V3: Scaling Challenges &amp; Hardware Reflections</title>
       <link>https://arxiv.org/abs/2505.09343</link>
-      <guid isPermaLink="false">deepseek_research_news-a034399d763187d9186d2a9e</guid>
+      <guid isPermaLink="false">deepseek_research_news-2505.09343</guid>
       <pubDate>Wed, 14 May 2025 00:00:00 GMT</pubDate>
-      <description>DeepSeek Research Index 中列出的研究论文或项目。</description>
+      <description>DeepSeek 官网研究索引列出的论文或项目。</description>
     </item>
   </channel>
 </rss>
